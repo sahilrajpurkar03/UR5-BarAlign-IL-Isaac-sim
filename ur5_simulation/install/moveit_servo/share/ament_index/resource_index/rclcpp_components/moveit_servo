@@ -1,0 +1,2 @@
+moveit_servo::ServoNode;lib/libservo_node.so
+moveit_servo::JoyToServoPub;lib/libservo_controller_input.so

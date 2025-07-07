@@ -1,0 +1,203 @@
+-- The C compiler identification is GNU 11.4.0
+-- The CXX compiler identification is GNU 11.4.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found moveit_common: 2.5.9 (/opt/ros/humble/share/moveit_common/cmake)
+-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0mmoveit_servo: You did not request a specific build type: Choosing 'Release' for maximum performance[0m
+-- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+-- Found Eigen3: TRUE (found version "3.4.0") 
+-- Found control_msgs: 4.8.0 (/opt/ros/humble/share/control_msgs/cmake)
+-- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+-- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found control_toolbox: 3.6.0 (/opt/ros/humble/share/control_toolbox/cmake)
+-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+-- Found FastRTPS: /opt/ros/humble/include  
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Looking for pthread.h
+-- Looking for pthread.h - found
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE  
+-- Found moveit_core: 2.5.9 (/opt/ros/humble/share/moveit_core/cmake)
+-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: chrono date_time filesystem iostreams program_options regex serialization system thread 
+-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: filesystem 
+-- library: /usr/lib/x86_64-linux-gnu/libcurl.so
+-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+-- Found moveit_ros_planning: 2.5.9 (/opt/ros/humble/share/moveit_ros_planning/cmake)
+-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: system filesystem date_time program_options thread chrono 
+-- Found std_srvs: 4.8.0 (/opt/ros/humble/share/std_srvs/cmake)
+-- Found ament_lint_auto: 0.12.12 (/opt/ros/humble/share/ament_lint_auto/cmake)
+-- Found ament_cmake_gtest: 1.3.11 (/opt/ros/humble/share/ament_cmake_gtest/cmake)
+-- Found ros_testing: 0.4.0 (/opt/ros/humble/share/ros_testing/cmake)
+-- Found launch_testing_ament_cmake: 1.0.8 (/opt/ros/humble/share/launch_testing_ament_cmake/cmake)
+-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+-- Found PythonExtra: .so  
+-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: filesystem 
+-- Found gtest sources under '/opt/ros/humble/src/gtest_vendor': C++ tests using 'Google Test' will be built
+-- Added test 'cppcheck' to perform static code analysis on C / C++ code
+-- Configured cppcheck include dirs: /home/rajpurkar/Rahul/ur5_simulation/src/moveit_servo/include
+-- Configured cppcheck exclude dirs and/or files: 
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/rajpurkar/Rahul/ur5_simulation/build/moveit_servo
+[  9%] [32mBuilding CXX object gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o[0m
+[  9%] [32mBuilding CXX object gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o[0m
+[ 12%] [32mBuilding CXX object CMakeFiles/servo_controller_input.dir/src/teleop_demo/joystick_servo_example.cpp.o[0m
+[ 12%] [32mBuilding CXX object CMakeFiles/moveit_servo_lib_parameters.dir/src/parameter_descriptor_builder.cpp.o[0m
+[ 15%] [32mBuilding CXX object CMakeFiles/fake_command_publisher.dir/test/publish_fake_jog_commands.cpp.o[0m
+[ 18%] [32mBuilding CXX object CMakeFiles/moveit_servo_lib_parameters.dir/src/servo_parameters.cpp.o[0m
+[ 21%] [32m[1mLinking CXX static library libgtest_main.a[0m
+[ 21%] Built target gtest_main
+[01m[K/home/rajpurkar/Rahul/ur5_simulation/src/moveit_servo/src/teleop_demo/joystick_servo_example.cpp:[m[K In function ‘[01m[Kbool convertJoyToCmd(const std::vector<float, std::allocator<float> >&, const std::vector<int, std::allocator<int> >&, std::unique_ptr<geometry_msgs::msg::TwistStamped_<std::allocator<void> >, std::default_delete<geometry_msgs::msg::TwistStamped_<std::allocator<void> > > >&, std::unique_ptr<control_msgs::msg::JointJog_<std::allocator<void> >, std::default_delete<control_msgs::msg::JointJog_<std::allocator<void> > > >&)[m[K’:
+[01m[K/home/rajpurkar/Rahul/ur5_simulation/src/moveit_servo/src/teleop_demo/joystick_servo_example.cpp:106:78:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kbuttons[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  106 | bool convertJoyToCmd(const std::vector<float>& axes, [01;35m[Kconst std::vector<int>& buttons[m[K,
+      |                                                      [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~[m[K
+[01m[K/home/rajpurkar/Rahul/ur5_simulation/src/moveit_servo/src/teleop_demo/joystick_servo_example.cpp:108:68:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kjoint[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  108 |                      [01;35m[Kstd::unique_ptr<control_msgs::msg::JointJog>& joint[m[K)
+      |                      [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~[m[K
+[ 24%] [32m[1mLinking CXX executable fake_command_publisher[0m
+[ 24%] Built target fake_command_publisher
+[ 27%] [32m[1mLinking CXX static library libgtest.a[0m
+[ 27%] Built target gtest
+[ 30%] [32m[1mLinking CXX shared library libmoveit_servo_lib_parameters.so[0m
+[ 30%] Built target moveit_servo_lib_parameters
+[ 36%] [32mBuilding CXX object CMakeFiles/moveit_servo_lib.dir/src/collision_check.cpp.o[0m
+[ 36%] [32mBuilding CXX object CMakeFiles/moveit_servo_lib.dir/src/servo.cpp.o[0m
+[ 39%] [32mBuilding CXX object CMakeFiles/test_servo_integration.dir/test/test_servo_interface.cpp.o[0m
+[ 42%] [32mBuilding CXX object CMakeFiles/test_servo_collision.dir/test/test_servo_collision.cpp.o[0m
+[ 45%] [32mBuilding CXX object CMakeFiles/moveit_servo_lib.dir/src/enforce_limits.cpp.o[0m
+[ 48%] [32mBuilding CXX object CMakeFiles/moveit_servo_lib.dir/src/servo_calcs.cpp.o[0m
+[ 51%] [32mBuilding CXX object CMakeFiles/moveit_servo_lib.dir/src/utilities.cpp.o[0m
+[ 54%] [32m[1mLinking CXX shared library libservo_controller_input.so[0m
+[ 54%] Built target servo_controller_input
+[01m[K/home/rajpurkar/Rahul/ur5_simulation/src/moveit_servo/src/utilities.cpp:[m[K In function ‘[01m[Kdouble moveit_servo::velocityScalingFactorForSingularity(const moveit::core::JointModelGroup*, const VectorXd&, const Eigen::JacobiSVD<Eigen::Matrix<double, -1, -1>, 2>&, const MatrixXd&, double, double, double, rclcpp::Clock&, moveit::core::RobotStatePtr&, moveit_servo::StatusCode&)[m[K’:
+[01m[K/home/rajpurkar/Rahul/ur5_simulation/src/moveit_servo/src/utilities.cpp:92:57:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Khard_stop_singularity_threshold[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   92 |                                            [01;35m[Kconst double hard_stop_singularity_threshold[m[K,
+      |                                            [01;35m[K~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/rajpurkar/Rahul/ur5_simulation/src/moveit_servo/src/utilities.cpp:93:57:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Klower_singularity_threshold[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   93 |                                            [01;35m[Kconst double lower_singularity_threshold[m[K,
+      |                                            [01;35m[K~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/rajpurkar/Rahul/ur5_simulation/src/moveit_servo/src/utilities.cpp:94:57:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kleaving_singularity_threshold_multiplier[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   94 |                                            [01;35m[Kconst double leaving_singularity_threshold_multiplier[m[K, rclcpp::Clock& clock,
+      |                                            [01;35m[K~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/rajpurkar/Rahul/ur5_simulation/src/moveit_servo/src/utilities.cpp:94:114:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kclock[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   94 |                                            const double leaving_singularity_threshold_multiplier, [01;35m[Krclcpp::Clock& clock[m[K,
+      |                                                                                                   [01;35m[K~~~~~~~~~~~~~~~^~~~~[m[K
+[01m[K/home/rajpurkar/Rahul/ur5_simulation/src/moveit_servo/src/utilities.cpp:95:100:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kstatus[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   95 |                                            moveit::core::RobotStatePtr& current_state, [01;35m[KStatusCode& status[m[K)
+      |                                                                                        [01;35m[K~~~~~~~~~~~~^~~~~~[m[K
+[01m[K/home/rajpurkar/Rahul/ur5_simulation/src/moveit_servo/src/servo_calcs.cpp:[m[K In member function ‘[01m[Kbool moveit_servo::ServoCalcs::internalServoUpdate(Eigen::ArrayXd&, trajectory_msgs::msg::JointTrajectory&, moveit_servo::ServoType)[m[K’:
+[01m[K/home/rajpurkar/Rahul/ur5_simulation/src/moveit_servo/src/servo_calcs.cpp:672:54:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kservo_type[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  672 |                                      [01;35m[Kconst ServoType servo_type[m[K)
+      |                                      [01;35m[K~~~~~~~~~~~~~~~~^~~~~~~~~~[m[K
+[ 57%] [32m[1mLinking CXX executable test_servo_collision[0m
+[ 57%] Built target test_servo_collision
+[ 60%] [32m[1mLinking CXX executable test_servo_integration[0m
+[ 60%] Built target test_servo_integration
+[ 63%] [32m[1mLinking CXX shared library libmoveit_servo_lib.so[0m
+[ 63%] Built target moveit_servo_lib
+[ 72%] [32mBuilding CXX object CMakeFiles/pose_tracking.dir/src/pose_tracking.cpp.o[0m
+[ 72%] [32mBuilding CXX object CMakeFiles/servo_node.dir/src/servo_node.cpp.o[0m
+[ 72%] [32mBuilding CXX object CMakeFiles/servo_calcs_unit_tests.dir/test/servo_calcs_unit_tests.cpp.o[0m
+[ 75%] [32m[1mLinking CXX shared library libservo_node.so[0m
+[ 75%] Built target servo_node
+[ 78%] [32mBuilding CXX object CMakeFiles/servo_node_main.dir/src/servo_node_main.cpp.o[0m
+[ 81%] [32m[1mLinking CXX shared library libpose_tracking.so[0m
+[ 81%] Built target pose_tracking
+[ 87%] [32mBuilding CXX object CMakeFiles/test_servo_pose_tracking.dir/test/pose_tracking_test.cpp.o[0m
+[ 87%] [32mBuilding CXX object CMakeFiles/servo_pose_tracking_demo.dir/src/cpp_interface_demo/pose_tracking_demo.cpp.o[0m
+[ 90%] [32m[1mLinking CXX executable servo_node_main[0m
+[ 93%] [32m[1mLinking CXX executable servo_calcs_unit_tests[0m
+[ 93%] Built target servo_node_main
+[ 93%] Built target servo_calcs_unit_tests
+[ 96%] [32m[1mLinking CXX executable servo_pose_tracking_demo[0m
+[ 96%] Built target servo_pose_tracking_demo
+[100%] [32m[1mLinking CXX executable test_servo_pose_tracking[0m
+[100%] Built target test_servo_pose_tracking
+-- Install configuration: "Release"
+-- Installing: /home/rajpurkar/Rahul/ur5_simulation/install/moveit_servo/lib/libmoveit_servo_lib.so.2.5.7
+-- Set runtime path of "/home/rajpurkar/Rahul/ur5_simulation/install/moveit_servo/lib/libmoveit_servo_lib.so.2.5.7" to ""
+-- Installing: /home/rajpurkar/Rahul/ur5_simulation/install/moveit_servo/lib/libmoveit_servo_lib.so
+-- Installing: /home/rajpurkar/Rahul/ur5_simulation/install/moveit_servo/lib/libmoveit_servo_lib_parameters.so.2.5.7
+-- Set runtime path of "/home/rajpurkar/Rahul/ur5_simulation/install/moveit_servo/lib/libmoveit_servo_lib_parameters.so.2.5.7" to ""
+-- Installing: /home/rajpurkar/Rahul/ur5_simulation/install/moveit_servo/lib/libmoveit_servo_lib_parameters.so
+-- Installing: /home/rajpurkar/Rahul/ur5_simulation/install/moveit_servo/lib/libpose_tracking.so
+-- Set runtime path of "/home/rajpurkar/Rahul/ur5_simulation/install/moveit_servo/lib/libpose_tracking.so" to ""
+-- Installing: /home/rajpurkar/Rahul/ur5_simulation/install/moveit_servo/lib/libservo_node.so
+-- Set runtime path of "/home/rajpurkar/Rahul/ur5_simulation/install/moveit_servo/lib/libservo_node.so" to ""
+-- Installing: /home/rajpurkar/Rahul/ur5_simulation/install/moveit_servo/lib/libservo_controller_input.so
+-- Set runtime path of "/home/rajpurkar/Rahul/ur5_simulation/install/moveit_servo/lib/libservo_controller_input.so" to ""
+-- Installing: /home/rajpurkar/Rahul/ur5_simulation/install/moveit_servo/lib/moveit_servo/servo_node_main
+-- Set runtime path of "/home/rajpurkar/Rahul/ur5_simulation/install/moveit_servo/lib/moveit_servo/servo_node_main" to ""
+-- Installing: /home/rajpurkar/Rahul/ur5_simulation/install/moveit_servo/lib/moveit_servo/servo_pose_tracking_demo
+-- Set runtime path of "/home/rajpurkar/Rahul/ur5_simulation/install/moveit_servo/lib/moveit_servo/servo_pose_tracking_demo" to ""
+-- Installing: /home/rajpurkar/Rahul/ur5_simulation/install/moveit_servo/lib/moveit_servo/fake_command_publisher
+-- Set runtime path of "/home/rajpurkar/Rahul/ur5_simulation/install/moveit_servo/lib/moveit_servo/fake_command_publisher" to ""
+-- Installing: /home/rajpurkar/Rahul/ur5_simulation/install/moveit_servo/include
+-- Installing: /home/rajpurkar/Rahul/ur5_simulation/install/moveit_servo/include/moveit_servo
+-- Installing: /home/rajpurkar/Rahul/ur5_simulation/install/moveit_servo/include/moveit_servo/parameter_descriptor_builder.hpp
+-- Installing: /home/rajpurkar/Rahul/ur5_simulation/install/moveit_servo/include/moveit_servo/collision_check.h
+-- Installing: /home/rajpurkar/Rahul/ur5_simulation/install/moveit_servo/include/moveit_servo/servo_calcs.h
+-- Installing: /home/rajpurkar/Rahul/ur5_simulation/install/moveit_servo/include/moveit_servo/utilities.h
+-- Installing: /home/rajpurkar/Rahul/ur5_simulation/install/moveit_servo/include/moveit_servo/pose_tracking.h
+-- Installing: /home/rajpurkar/Rahul/ur5_simulation/install/moveit_servo/include/moveit_servo/servo_parameters.h
+-- Installing: /home/rajpurkar/Rahul/ur5_simulation/install/moveit_servo/include/moveit_servo/servo_node.h
+-- Installing: /home/rajpurkar/Rahul/ur5_simulation/install/moveit_servo/include/moveit_servo/servo.h
+-- Installing: /home/rajpurkar/Rahul/ur5_simulation/install/moveit_servo/include/moveit_servo/servo_server.h
+-- Installing: /home/rajpurkar/Rahul/ur5_simulation/install/moveit_servo/include/moveit_servo/enforce_limits.hpp
+-- Installing: /home/rajpurkar/Rahul/ur5_simulation/install/moveit_servo/include/moveit_servo/status_codes.h
+-- Installing: /home/rajpurkar/Rahul/ur5_simulation/install/moveit_servo/include/moveit_servo/make_shared_from_pool.h
+-- Installing: /home/rajpurkar/Rahul/ur5_simulation/install/moveit_servo/share/moveit_servo/launch
+-- Installing: /home/rajpurkar/Rahul/ur5_simulation/install/moveit_servo/share/moveit_servo/launch/pose_tracking_example.launch.py
+-- Installing: /home/rajpurkar/Rahul/ur5_simulation/install/moveit_servo/share/moveit_servo/launch/servo_example.launch.py
+-- Installing: /home/rajpurkar/Rahul/ur5_simulation/install/moveit_servo/share/moveit_servo/config
+-- Installing: /home/rajpurkar/Rahul/ur5_simulation/install/moveit_servo/share/moveit_servo/config/demo_rviz_pose_tracking.rviz
+-- Installing: /home/rajpurkar/Rahul/ur5_simulation/install/moveit_servo/share/moveit_servo/config/panda_simulated_config_pose_tracking.yaml
+-- Installing: /home/rajpurkar/Rahul/ur5_simulation/install/moveit_servo/share/moveit_servo/config/panda_simulated_config.yaml
+-- Installing: /home/rajpurkar/Rahul/ur5_simulation/install/moveit_servo/share/moveit_servo/config/pose_tracking_settings.yaml
+-- Installing: /home/rajpurkar/Rahul/ur5_simulation/install/moveit_servo/share/moveit_servo/config/demo_rviz_config.rviz
+-- Installing: /home/rajpurkar/Rahul/ur5_simulation/install/moveit_servo/share/moveit_servo/environment/library_path.sh
+-- Installing: /home/rajpurkar/Rahul/ur5_simulation/install/moveit_servo/share/moveit_servo/environment/library_path.dsv
+-- Installing: /home/rajpurkar/Rahul/ur5_simulation/install/moveit_servo/share/ament_index/resource_index/package_run_dependencies/moveit_servo
+-- Installing: /home/rajpurkar/Rahul/ur5_simulation/install/moveit_servo/share/ament_index/resource_index/parent_prefix_path/moveit_servo
+-- Installing: /home/rajpurkar/Rahul/ur5_simulation/install/moveit_servo/share/moveit_servo/environment/ament_prefix_path.sh
+-- Installing: /home/rajpurkar/Rahul/ur5_simulation/install/moveit_servo/share/moveit_servo/environment/ament_prefix_path.dsv
+-- Installing: /home/rajpurkar/Rahul/ur5_simulation/install/moveit_servo/share/moveit_servo/environment/path.sh
+-- Installing: /home/rajpurkar/Rahul/ur5_simulation/install/moveit_servo/share/moveit_servo/environment/path.dsv
+-- Installing: /home/rajpurkar/Rahul/ur5_simulation/install/moveit_servo/share/moveit_servo/local_setup.bash
+-- Installing: /home/rajpurkar/Rahul/ur5_simulation/install/moveit_servo/share/moveit_servo/local_setup.sh
+-- Installing: /home/rajpurkar/Rahul/ur5_simulation/install/moveit_servo/share/moveit_servo/local_setup.zsh
+-- Installing: /home/rajpurkar/Rahul/ur5_simulation/install/moveit_servo/share/moveit_servo/local_setup.dsv
+-- Installing: /home/rajpurkar/Rahul/ur5_simulation/install/moveit_servo/share/moveit_servo/package.dsv
+-- Installing: /home/rajpurkar/Rahul/ur5_simulation/install/moveit_servo/share/ament_index/resource_index/packages/moveit_servo
+-- Installing: /home/rajpurkar/Rahul/ur5_simulation/install/moveit_servo/share/ament_index/resource_index/rclcpp_components/moveit_servo
+-- Installing: /home/rajpurkar/Rahul/ur5_simulation/install/moveit_servo/share/moveit_servo/cmake/export_moveit_servoExport.cmake
+-- Installing: /home/rajpurkar/Rahul/ur5_simulation/install/moveit_servo/share/moveit_servo/cmake/export_moveit_servoExport-release.cmake
+-- Installing: /home/rajpurkar/Rahul/ur5_simulation/install/moveit_servo/share/moveit_servo/cmake/ament_cmake_export_targets-extras.cmake
+-- Installing: /home/rajpurkar/Rahul/ur5_simulation/install/moveit_servo/share/moveit_servo/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Installing: /home/rajpurkar/Rahul/ur5_simulation/install/moveit_servo/share/moveit_servo/cmake/moveit_servoConfig.cmake
+-- Installing: /home/rajpurkar/Rahul/ur5_simulation/install/moveit_servo/share/moveit_servo/cmake/moveit_servoConfig-version.cmake
+-- Installing: /home/rajpurkar/Rahul/ur5_simulation/install/moveit_servo/share/moveit_servo/package.xml

@@ -1,0 +1,64 @@
+[0.016s] Invoking command in '/home/rajpurkar/Rahul/ur5_simulation/build/ur5_moveit_config': CMAKE_PREFIX_PATH=/home/rajpurkar/Rahul/ur5_simulation/install/ur5_description:/home/rajpurkar/Rahul/ur5_simulation/install/ur5_moveit_config:/home/rajpurkar/Rahul/ur5_simulation/install/data_collection:/opt/ros/humble /usr/bin/cmake /home/rajpurkar/Rahul/ur5_simulation/src/ur5_moveit_config -DCMAKE_INSTALL_PREFIX=/home/rajpurkar/Rahul/ur5_simulation/install/ur5_moveit_config
+[0.054s] -- The C compiler identification is GNU 11.4.0
+[0.096s] -- The CXX compiler identification is GNU 11.4.0
+[0.101s] -- Detecting C compiler ABI info
+[0.152s] -- Detecting C compiler ABI info - done
+[0.158s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.158s] -- Detecting C compile features
+[0.159s] -- Detecting C compile features - done
+[0.161s] -- Detecting CXX compiler ABI info
+[0.220s] -- Detecting CXX compiler ABI info - done
+[0.227s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.227s] -- Detecting CXX compile features
+[0.228s] -- Detecting CXX compile features - done
+[0.230s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.354s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.491s] -- Configuring done
+[0.494s] -- Generating done
+[0.496s] -- Build files have been written to: /home/rajpurkar/Rahul/ur5_simulation/build/ur5_moveit_config
+[0.501s] Invoked command in '/home/rajpurkar/Rahul/ur5_simulation/build/ur5_moveit_config' returned '0': CMAKE_PREFIX_PATH=/home/rajpurkar/Rahul/ur5_simulation/install/ur5_description:/home/rajpurkar/Rahul/ur5_simulation/install/ur5_moveit_config:/home/rajpurkar/Rahul/ur5_simulation/install/data_collection:/opt/ros/humble /usr/bin/cmake /home/rajpurkar/Rahul/ur5_simulation/src/ur5_moveit_config -DCMAKE_INSTALL_PREFIX=/home/rajpurkar/Rahul/ur5_simulation/install/ur5_moveit_config
+[0.502s] Invoking command in '/home/rajpurkar/Rahul/ur5_simulation/build/ur5_moveit_config': CMAKE_PREFIX_PATH=/home/rajpurkar/Rahul/ur5_simulation/install/ur5_description:/home/rajpurkar/Rahul/ur5_simulation/install/ur5_moveit_config:/home/rajpurkar/Rahul/ur5_simulation/install/data_collection:/opt/ros/humble /usr/bin/cmake --build /home/rajpurkar/Rahul/ur5_simulation/build/ur5_moveit_config -- -j16 -l16
+[0.535s] Invoked command in '/home/rajpurkar/Rahul/ur5_simulation/build/ur5_moveit_config' returned '0': CMAKE_PREFIX_PATH=/home/rajpurkar/Rahul/ur5_simulation/install/ur5_description:/home/rajpurkar/Rahul/ur5_simulation/install/ur5_moveit_config:/home/rajpurkar/Rahul/ur5_simulation/install/data_collection:/opt/ros/humble /usr/bin/cmake --build /home/rajpurkar/Rahul/ur5_simulation/build/ur5_moveit_config -- -j16 -l16
+[0.536s] Invoking command in '/home/rajpurkar/Rahul/ur5_simulation/build/ur5_moveit_config': CMAKE_PREFIX_PATH=/home/rajpurkar/Rahul/ur5_simulation/install/ur5_description:/home/rajpurkar/Rahul/ur5_simulation/install/ur5_moveit_config:/home/rajpurkar/Rahul/ur5_simulation/install/data_collection:/opt/ros/humble /usr/bin/cmake --install /home/rajpurkar/Rahul/ur5_simulation/build/ur5_moveit_config
+[0.542s] -- Install configuration: ""
+[0.542s] -- Installing: /home/rajpurkar/Rahul/ur5_simulation/install/ur5_moveit_config/share/ament_index/resource_index/package_run_dependencies/ur5_moveit_config
+[0.542s] -- Installing: /home/rajpurkar/Rahul/ur5_simulation/install/ur5_moveit_config/share/ament_index/resource_index/parent_prefix_path/ur5_moveit_config
+[0.542s] -- Installing: /home/rajpurkar/Rahul/ur5_simulation/install/ur5_moveit_config/share/ur5_moveit_config/environment/ament_prefix_path.sh
+[0.542s] -- Installing: /home/rajpurkar/Rahul/ur5_simulation/install/ur5_moveit_config/share/ur5_moveit_config/environment/ament_prefix_path.dsv
+[0.542s] -- Installing: /home/rajpurkar/Rahul/ur5_simulation/install/ur5_moveit_config/share/ur5_moveit_config/environment/path.sh
+[0.542s] -- Installing: /home/rajpurkar/Rahul/ur5_simulation/install/ur5_moveit_config/share/ur5_moveit_config/environment/path.dsv
+[0.542s] -- Installing: /home/rajpurkar/Rahul/ur5_simulation/install/ur5_moveit_config/share/ur5_moveit_config/local_setup.bash
+[0.542s] -- Installing: /home/rajpurkar/Rahul/ur5_simulation/install/ur5_moveit_config/share/ur5_moveit_config/local_setup.sh
+[0.542s] -- Installing: /home/rajpurkar/Rahul/ur5_simulation/install/ur5_moveit_config/share/ur5_moveit_config/local_setup.zsh
+[0.543s] -- Installing: /home/rajpurkar/Rahul/ur5_simulation/install/ur5_moveit_config/share/ur5_moveit_config/local_setup.dsv
+[0.543s] -- Installing: /home/rajpurkar/Rahul/ur5_simulation/install/ur5_moveit_config/share/ur5_moveit_config/package.dsv
+[0.543s] -- Installing: /home/rajpurkar/Rahul/ur5_simulation/install/ur5_moveit_config/share/ament_index/resource_index/packages/ur5_moveit_config
+[0.543s] -- Installing: /home/rajpurkar/Rahul/ur5_simulation/install/ur5_moveit_config/share/ur5_moveit_config/cmake/ur5_moveit_configConfig.cmake
+[0.543s] -- Installing: /home/rajpurkar/Rahul/ur5_simulation/install/ur5_moveit_config/share/ur5_moveit_config/cmake/ur5_moveit_configConfig-version.cmake
+[0.543s] -- Installing: /home/rajpurkar/Rahul/ur5_simulation/install/ur5_moveit_config/share/ur5_moveit_config/package.xml
+[0.543s] -- Installing: /home/rajpurkar/Rahul/ur5_simulation/install/ur5_moveit_config/share/ur5_moveit_config/launch
+[0.543s] -- Installing: /home/rajpurkar/Rahul/ur5_simulation/install/ur5_moveit_config/share/ur5_moveit_config/launch/arm_joy_control.launch.py
+[0.543s] -- Installing: /home/rajpurkar/Rahul/ur5_simulation/install/ur5_moveit_config/share/ur5_moveit_config/launch/rsp.launch.py
+[0.543s] -- Installing: /home/rajpurkar/Rahul/ur5_simulation/install/ur5_moveit_config/share/ur5_moveit_config/launch/moveit_rviz.launch.py
+[0.543s] -- Installing: /home/rajpurkar/Rahul/ur5_simulation/install/ur5_moveit_config/share/ur5_moveit_config/launch/static_virtual_joint_tfs.launch.py
+[0.543s] -- Installing: /home/rajpurkar/Rahul/ur5_simulation/install/ur5_moveit_config/share/ur5_moveit_config/launch/arm_diffusion_control.launch.py
+[0.544s] -- Installing: /home/rajpurkar/Rahul/ur5_simulation/install/ur5_moveit_config/share/ur5_moveit_config/launch/spawn_controllers.launch.py
+[0.544s] -- Installing: /home/rajpurkar/Rahul/ur5_simulation/install/ur5_moveit_config/share/ur5_moveit_config/launch/warehouse_db.launch.py
+[0.544s] -- Installing: /home/rajpurkar/Rahul/ur5_simulation/install/ur5_moveit_config/share/ur5_moveit_config/launch/demo.launch.py
+[0.544s] -- Installing: /home/rajpurkar/Rahul/ur5_simulation/install/ur5_moveit_config/share/ur5_moveit_config/launch/setup_assistant.launch.py
+[0.544s] -- Installing: /home/rajpurkar/Rahul/ur5_simulation/install/ur5_moveit_config/share/ur5_moveit_config/launch/move_group.launch.py
+[0.544s] -- Installing: /home/rajpurkar/Rahul/ur5_simulation/install/ur5_moveit_config/share/ur5_moveit_config/config
+[0.544s] -- Installing: /home/rajpurkar/Rahul/ur5_simulation/install/ur5_moveit_config/share/ur5_moveit_config/config/initial_positions.yaml
+[0.544s] -- Installing: /home/rajpurkar/Rahul/ur5_simulation/install/ur5_moveit_config/share/ur5_moveit_config/config/ur5_simulated_config.yaml
+[0.544s] -- Installing: /home/rajpurkar/Rahul/ur5_simulation/install/ur5_moveit_config/share/ur5_moveit_config/config/arm_joy_control_rviz_config.rviz
+[0.544s] -- Installing: /home/rajpurkar/Rahul/ur5_simulation/install/ur5_moveit_config/share/ur5_moveit_config/config/ros2_controllers.yaml
+[0.544s] -- Installing: /home/rajpurkar/Rahul/ur5_simulation/install/ur5_moveit_config/share/ur5_moveit_config/config/moveit_controllers.yaml
+[0.544s] -- Installing: /home/rajpurkar/Rahul/ur5_simulation/install/ur5_moveit_config/share/ur5_moveit_config/config/kinematics.yaml
+[0.544s] -- Installing: /home/rajpurkar/Rahul/ur5_simulation/install/ur5_moveit_config/share/ur5_moveit_config/config/ur5.srdf
+[0.545s] -- Installing: /home/rajpurkar/Rahul/ur5_simulation/install/ur5_moveit_config/share/ur5_moveit_config/config/ur5.urdf.xacro
+[0.545s] -- Installing: /home/rajpurkar/Rahul/ur5_simulation/install/ur5_moveit_config/share/ur5_moveit_config/config/pilz_cartesian_limits.yaml
+[0.545s] -- Installing: /home/rajpurkar/Rahul/ur5_simulation/install/ur5_moveit_config/share/ur5_moveit_config/config/joint_limits.yaml
+[0.545s] -- Installing: /home/rajpurkar/Rahul/ur5_simulation/install/ur5_moveit_config/share/ur5_moveit_config/config/ur5.ros2_control.xacro
+[0.545s] -- Installing: /home/rajpurkar/Rahul/ur5_simulation/install/ur5_moveit_config/share/ur5_moveit_config/config/moveit.rviz
+[0.545s] -- Installing: /home/rajpurkar/Rahul/ur5_simulation/install/ur5_moveit_config/share/ur5_moveit_config/.setup_assistant
+[0.547s] Invoked command in '/home/rajpurkar/Rahul/ur5_simulation/build/ur5_moveit_config' returned '0': CMAKE_PREFIX_PATH=/home/rajpurkar/Rahul/ur5_simulation/install/ur5_description:/home/rajpurkar/Rahul/ur5_simulation/install/ur5_moveit_config:/home/rajpurkar/Rahul/ur5_simulation/install/data_collection:/opt/ros/humble /usr/bin/cmake --install /home/rajpurkar/Rahul/ur5_simulation/build/ur5_moveit_config

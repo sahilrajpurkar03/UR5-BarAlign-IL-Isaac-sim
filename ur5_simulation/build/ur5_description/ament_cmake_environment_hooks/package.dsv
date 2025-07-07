@@ -1,0 +1,4 @@
+source;share/ur5_description/local_setup.bash
+source;share/ur5_description/local_setup.dsv
+source;share/ur5_description/local_setup.sh
+source;share/ur5_description/local_setup.zsh
