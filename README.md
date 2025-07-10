@@ -145,12 +145,12 @@ pretrained_policy_path = Path("outputs/train/my_pusht_diffusion/20250329093535")
 ```
 Replace the path with the directory of your trained model.
 
-## Step 2: Open Simulation in Isaac Sim
+### Step 2: Open Simulation in Isaac Sim
 
 - Launch the `pushT.usd` scene file in **Isaac Sim**.
 - Press **Play**.
 
-## Step 3: Launch ROS2 and Run Evaluation Script
+### Step 3: Launch ROS2 and Run Evaluation Script
 
 ```bash
 cd ur5_simulation
