@@ -11,8 +11,6 @@
 
 - Launch the `pushT.usd` scene file inside **Isaac Sim**.
 
----
-
 ### Step 2: Build the Workspace
 
 ```bash
@@ -91,7 +89,7 @@ python3 create_episodes_stats_jsonl.py
 
 ### Step 3: Move Generated Metadata Files
 
-Move the generated metadata files to the `meta` directory:
+#### Move the generated metadata files to the `meta` directory:
 
 From:  
 `ur5_simulation/lerobot_related/episodes.jsonl`
@@ -100,7 +98,7 @@ From:
 To:  
 `training_data/lerobot/my_pusht/meta/`
 
-Ensure that the final directory structure looks like this:
+#### Ensure that the final directory structure looks like this:
 
 ```
 training_data/
@@ -114,4 +112,51 @@ training_data/
         └── meta/
             ├── episodes.jsonl
             └── episodes_stats.jsonl
+```
+
+## 3. Training the Robot
+
+### Step 1: Move Training Scripts
+
+Move the following scripts from `ur5_simulation/lerobot_related` to `lerobot/examples`:
+
+- `2_evalute_pretrained_policy_ROS.py`
+- `3_train_policy_mod.py`
+
+### Step 2: Run Training Script
+
+Execute the training by running:
+
+```bash
+cd lerobot/examples
+python3 3_train_policy_mod.py
+```
+
+The trained model will be saved under: `lerobot/examples/outputs/train/my_pusht_diffusion/<date_time>`
+
+## 4. Policy Evaluation
+
+### Step 1: Update Model Path
+
+Before running the evaluation script, update the path to the trained model in `2_evalute_pretrained_policy_ROS.py` (around line 40):
+
+```python
+pretrained_policy_path = Path("outputs/train/my_pusht_diffusion/20250329093535")
+```
+Replace the path with the directory of your trained model.
+
+## Step 2: Open Simulation in Isaac Sim
+
+- Launch the `pushT.usd` scene file in **Isaac Sim**.
+- Press **Play**.
+
+## Step 3: Launch ROS2 and Run Evaluation Script
+
+```bash
+cd ur5_simulation
+source install/setup.bash
+ros2 launch ur5_moveit_config arm_diffusion_control.launch.py
+
+cd lerobot/examples/
+python3 2_evalute_pretrained_policy_ROS.py
 ```
