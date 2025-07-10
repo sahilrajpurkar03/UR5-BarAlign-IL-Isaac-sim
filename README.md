@@ -54,3 +54,64 @@ self.index = <last_index_number>
 self.episode_index = 1
 ```
 Replace `<last_index_number>` with the value noted after the recording ends
+
+## 2. Organize Collected Data for LeRobot
+
+### Step 1: Create Required Directory Structure
+
+You need to organize the collected data according to the folder structure expected by **LeRobot**.
+
+Move the collected files as follows:
+
+#### Move Collected Episodes (.parquet files)
+
+From:  
+`ur5_simulation/src/data_collection/scripts/my_pusht/data/chunk_000`
+
+To:  
+`training_data/lerobot/my_pusht/data/chunk-000`
+
+#### Move Collected Recordings (.mp4 files)
+
+From:  
+`ur5_simulation/src/data_collection/scripts/my_pusht/videos/chunk_000/observation.images.state`
+
+To:  
+`training_data/lerobot/my_pusht/videos/chunk-000/observation.image`
+
+### Step 2: Generate Episode Metadata
+
+Run the following commands to generate metadata required by LeRobot:
+
+```bash
+cd ur5_simulation/lerobot_related
+python3 create_episodes_jsonl.py
+python3 create_episodes_stats_jsonl.py
+```
+
+### Step 3: Move Generated Metadata Files
+
+Move the generated metadata files to the `meta` directory:
+
+From:  
+`ur5_simulation/lerobot_related/episodes.jsonl`
+`ur5_simulation/lerobot_related/episodes_stats.jsonl`
+
+To:  
+`training_data/lerobot/my_pusht/meta/`
+
+Ensure that the final directory structure looks like this:
+
+```
+training_data/
+└── lerobot/
+    └── my_pusht/
+        ├── data/
+        │   └── chunk-000/
+        ├── videos/
+        │   └── chunk-000/
+        │       └── observation.image/
+        └── meta/
+            ├── episodes.jsonl
+            └── episodes_stats.jsonl
+```
