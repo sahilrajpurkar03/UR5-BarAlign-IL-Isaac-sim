@@ -5,6 +5,13 @@
 - [Isaac Sim](https://developer.nvidia.com/isaac-sim)
 - [lerobot](https://github.com/lerobot)
 
+## Index
+
+1. [Data Collection for Training](#1-data-collection-for-training)  
+2. [Organize Collected Data for LeRobot](#2-organize-collected-data-for-lerobot)  
+3. [Training the Robot](#3-training-the-robot)  
+4. [Policy Evaluation](#4-policy-evaluation)  
+
 ## 1. Data Collection for Training
 
 ### Step 1: Open Simulation in Isaac Sim
