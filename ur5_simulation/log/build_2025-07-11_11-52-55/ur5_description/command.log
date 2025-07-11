@@ -1,0 +1,4 @@
+Invoking command in '/home/rajpurkar/Rahul/ur5_simulation/build/ur5_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/rajpurkar/Rahul/ur5_simulation/build/ur5_description -- -j16 -l16
+Invoked command in '/home/rajpurkar/Rahul/ur5_simulation/build/ur5_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/rajpurkar/Rahul/ur5_simulation/build/ur5_description -- -j16 -l16
+Invoking command in '/home/rajpurkar/Rahul/ur5_simulation/build/ur5_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/rajpurkar/Rahul/ur5_simulation/build/ur5_description
+Invoked command in '/home/rajpurkar/Rahul/ur5_simulation/build/ur5_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/rajpurkar/Rahul/ur5_simulation/build/ur5_description

@@ -1,0 +1,617 @@
+[0.087s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.087s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=16, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x759fb7723be0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x759fb78a55a0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x759fb78a55a0>>, mixin_verb=('build',))
+[0.243s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.243s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.243s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.243s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.243s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.244s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.244s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/rajpurkar/Rahul/ur5_simulation'
+[0.244s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.244s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.244s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.244s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.244s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.244s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.244s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.244s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.244s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.258s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.258s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.258s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.258s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.258s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(configuration) by extensions ['ignore', 'ignore_ament_install']
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(configuration) by extension 'ignore'
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(configuration) by extension 'ignore_ament_install'
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(configuration) by extensions ['colcon_pkg']
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(configuration) by extension 'colcon_pkg'
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(configuration) by extensions ['colcon_meta']
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(configuration) by extension 'colcon_meta'
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(configuration) by extensions ['ros']
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(configuration) by extension 'ros'
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(configuration) by extensions ['cmake', 'python']
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(configuration) by extension 'cmake'
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(configuration) by extension 'python'
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(configuration) by extensions ['python_setup_py']
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(configuration) by extension 'python_setup_py'
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(images) by extensions ['ignore', 'ignore_ament_install']
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(images) by extension 'ignore'
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(images) by extension 'ignore_ament_install'
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(images) by extensions ['colcon_pkg']
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(images) by extension 'colcon_pkg'
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(images) by extensions ['colcon_meta']
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(images) by extension 'colcon_meta'
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(images) by extensions ['ros']
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(images) by extension 'ros'
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(images) by extensions ['cmake', 'python']
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(images) by extension 'cmake'
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(images) by extension 'python'
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(images) by extensions ['python_setup_py']
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(images) by extension 'python_setup_py'
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(lerobot_related) by extensions ['ignore', 'ignore_ament_install']
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(lerobot_related) by extension 'ignore'
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(lerobot_related) by extension 'ignore_ament_install'
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(lerobot_related) by extensions ['colcon_pkg']
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(lerobot_related) by extension 'colcon_pkg'
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(lerobot_related) by extensions ['colcon_meta']
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(lerobot_related) by extension 'colcon_meta'
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(lerobot_related) by extensions ['ros']
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(lerobot_related) by extension 'ros'
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(lerobot_related) by extensions ['cmake', 'python']
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(lerobot_related) by extension 'cmake'
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(lerobot_related) by extension 'python'
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(lerobot_related) by extensions ['python_setup_py']
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(lerobot_related) by extension 'python_setup_py'
+[0.261s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.261s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.261s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.261s] Level 1:colcon.colcon_core.package_identification:_identify(simple_table) by extensions ['ignore', 'ignore_ament_install']
+[0.261s] Level 1:colcon.colcon_core.package_identification:_identify(simple_table) by extension 'ignore'
+[0.261s] Level 1:colcon.colcon_core.package_identification:_identify(simple_table) by extension 'ignore_ament_install'
+[0.261s] Level 1:colcon.colcon_core.package_identification:_identify(simple_table) by extensions ['colcon_pkg']
+[0.261s] Level 1:colcon.colcon_core.package_identification:_identify(simple_table) by extension 'colcon_pkg'
+[0.261s] Level 1:colcon.colcon_core.package_identification:_identify(simple_table) by extensions ['colcon_meta']
+[0.261s] Level 1:colcon.colcon_core.package_identification:_identify(simple_table) by extension 'colcon_meta'
+[0.261s] Level 1:colcon.colcon_core.package_identification:_identify(simple_table) by extensions ['ros']
+[0.261s] Level 1:colcon.colcon_core.package_identification:_identify(simple_table) by extension 'ros'
+[0.261s] Level 1:colcon.colcon_core.package_identification:_identify(simple_table) by extensions ['cmake', 'python']
+[0.261s] Level 1:colcon.colcon_core.package_identification:_identify(simple_table) by extension 'cmake'
+[0.261s] Level 1:colcon.colcon_core.package_identification:_identify(simple_table) by extension 'python'
+[0.261s] Level 1:colcon.colcon_core.package_identification:_identify(simple_table) by extensions ['python_setup_py']
+[0.261s] Level 1:colcon.colcon_core.package_identification:_identify(simple_table) by extension 'python_setup_py'
+[0.261s] Level 1:colcon.colcon_core.package_identification:_identify(simple_table/simple_table) by extensions ['ignore', 'ignore_ament_install']
+[0.261s] Level 1:colcon.colcon_core.package_identification:_identify(simple_table/simple_table) by extension 'ignore'
+[0.261s] Level 1:colcon.colcon_core.package_identification:_identify(simple_table/simple_table) by extension 'ignore_ament_install'
+[0.261s] Level 1:colcon.colcon_core.package_identification:_identify(simple_table/simple_table) by extensions ['colcon_pkg']
+[0.261s] Level 1:colcon.colcon_core.package_identification:_identify(simple_table/simple_table) by extension 'colcon_pkg'
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(simple_table/simple_table) by extensions ['colcon_meta']
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(simple_table/simple_table) by extension 'colcon_meta'
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(simple_table/simple_table) by extensions ['ros']
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(simple_table/simple_table) by extension 'ros'
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(simple_table/simple_table) by extensions ['cmake', 'python']
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(simple_table/simple_table) by extension 'cmake'
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(simple_table/simple_table) by extension 'python'
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(simple_table/simple_table) by extensions ['python_setup_py']
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(simple_table/simple_table) by extension 'python_setup_py'
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(simple_table/simple_table/configuration) by extensions ['ignore', 'ignore_ament_install']
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(simple_table/simple_table/configuration) by extension 'ignore'
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(simple_table/simple_table/configuration) by extension 'ignore_ament_install'
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(simple_table/simple_table/configuration) by extensions ['colcon_pkg']
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(simple_table/simple_table/configuration) by extension 'colcon_pkg'
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(simple_table/simple_table/configuration) by extensions ['colcon_meta']
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(simple_table/simple_table/configuration) by extension 'colcon_meta'
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(simple_table/simple_table/configuration) by extensions ['ros']
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(simple_table/simple_table/configuration) by extension 'ros'
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(simple_table/simple_table/configuration) by extensions ['cmake', 'python']
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(simple_table/simple_table/configuration) by extension 'cmake'
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(simple_table/simple_table/configuration) by extension 'python'
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(simple_table/simple_table/configuration) by extensions ['python_setup_py']
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(simple_table/simple_table/configuration) by extension 'python_setup_py'
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(simple_table/simple_table/configuration/materials) by extensions ['ignore', 'ignore_ament_install']
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(simple_table/simple_table/configuration/materials) by extension 'ignore'
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(simple_table/simple_table/configuration/materials) by extension 'ignore_ament_install'
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(simple_table/simple_table/configuration/materials) by extensions ['colcon_pkg']
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(simple_table/simple_table/configuration/materials) by extension 'colcon_pkg'
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(simple_table/simple_table/configuration/materials) by extensions ['colcon_meta']
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(simple_table/simple_table/configuration/materials) by extension 'colcon_meta'
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(simple_table/simple_table/configuration/materials) by extensions ['ros']
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(simple_table/simple_table/configuration/materials) by extension 'ros'
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(simple_table/simple_table/configuration/materials) by extensions ['cmake', 'python']
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(simple_table/simple_table/configuration/materials) by extension 'cmake'
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(simple_table/simple_table/configuration/materials) by extension 'python'
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(simple_table/simple_table/configuration/materials) by extensions ['python_setup_py']
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(simple_table/simple_table/configuration/materials) by extension 'python_setup_py'
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(simple_table/simple_table/configuration/materials/textures) by extensions ['ignore', 'ignore_ament_install']
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(simple_table/simple_table/configuration/materials/textures) by extension 'ignore'
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(simple_table/simple_table/configuration/materials/textures) by extension 'ignore_ament_install'
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(simple_table/simple_table/configuration/materials/textures) by extensions ['colcon_pkg']
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(simple_table/simple_table/configuration/materials/textures) by extension 'colcon_pkg'
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(simple_table/simple_table/configuration/materials/textures) by extensions ['colcon_meta']
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(simple_table/simple_table/configuration/materials/textures) by extension 'colcon_meta'
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(simple_table/simple_table/configuration/materials/textures) by extensions ['ros']
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(simple_table/simple_table/configuration/materials/textures) by extension 'ros'
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(simple_table/simple_table/configuration/materials/textures) by extensions ['cmake', 'python']
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(simple_table/simple_table/configuration/materials/textures) by extension 'cmake'
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(simple_table/simple_table/configuration/materials/textures) by extension 'python'
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(simple_table/simple_table/configuration/materials/textures) by extensions ['python_setup_py']
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(simple_table/simple_table/configuration/materials/textures) by extension 'python_setup_py'
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(src/data_collection) by extensions ['ignore', 'ignore_ament_install']
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(src/data_collection) by extension 'ignore'
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(src/data_collection) by extension 'ignore_ament_install'
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(src/data_collection) by extensions ['colcon_pkg']
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(src/data_collection) by extension 'colcon_pkg'
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(src/data_collection) by extensions ['colcon_meta']
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(src/data_collection) by extension 'colcon_meta'
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(src/data_collection) by extensions ['ros']
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(src/data_collection) by extension 'ros'
+[0.266s] DEBUG:colcon.colcon_core.package_identification:Package 'src/data_collection' with type 'ros.ament_cmake' and name 'data_collection'
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(src/moveit_servo) by extensions ['ignore', 'ignore_ament_install']
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(src/moveit_servo) by extension 'ignore'
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(src/moveit_servo) by extension 'ignore_ament_install'
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(src/moveit_servo) by extensions ['colcon_pkg']
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(src/moveit_servo) by extension 'colcon_pkg'
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(src/moveit_servo) by extensions ['colcon_meta']
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(src/moveit_servo) by extension 'colcon_meta'
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(src/moveit_servo) by extensions ['ros']
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(src/moveit_servo) by extension 'ros'
+[0.268s] DEBUG:colcon.colcon_core.package_identification:Package 'src/moveit_servo' with type 'ros.ament_cmake' and name 'moveit_servo'
+[0.268s] Level 1:colcon.colcon_core.package_identification:_identify(src/ur5_description) by extensions ['ignore', 'ignore_ament_install']
+[0.268s] Level 1:colcon.colcon_core.package_identification:_identify(src/ur5_description) by extension 'ignore'
+[0.268s] Level 1:colcon.colcon_core.package_identification:_identify(src/ur5_description) by extension 'ignore_ament_install'
+[0.268s] Level 1:colcon.colcon_core.package_identification:_identify(src/ur5_description) by extensions ['colcon_pkg']
+[0.268s] Level 1:colcon.colcon_core.package_identification:_identify(src/ur5_description) by extension 'colcon_pkg'
+[0.268s] Level 1:colcon.colcon_core.package_identification:_identify(src/ur5_description) by extensions ['colcon_meta']
+[0.268s] Level 1:colcon.colcon_core.package_identification:_identify(src/ur5_description) by extension 'colcon_meta'
+[0.268s] Level 1:colcon.colcon_core.package_identification:_identify(src/ur5_description) by extensions ['ros']
+[0.268s] Level 1:colcon.colcon_core.package_identification:_identify(src/ur5_description) by extension 'ros'
+[0.269s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ur5_description' with type 'ros.ament_cmake' and name 'ur5_description'
+[0.269s] Level 1:colcon.colcon_core.package_identification:_identify(src/ur5_moveit_config) by extensions ['ignore', 'ignore_ament_install']
+[0.269s] Level 1:colcon.colcon_core.package_identification:_identify(src/ur5_moveit_config) by extension 'ignore'
+[0.269s] Level 1:colcon.colcon_core.package_identification:_identify(src/ur5_moveit_config) by extension 'ignore_ament_install'
+[0.269s] Level 1:colcon.colcon_core.package_identification:_identify(src/ur5_moveit_config) by extensions ['colcon_pkg']
+[0.269s] Level 1:colcon.colcon_core.package_identification:_identify(src/ur5_moveit_config) by extension 'colcon_pkg'
+[0.269s] Level 1:colcon.colcon_core.package_identification:_identify(src/ur5_moveit_config) by extensions ['colcon_meta']
+[0.269s] Level 1:colcon.colcon_core.package_identification:_identify(src/ur5_moveit_config) by extension 'colcon_meta'
+[0.269s] Level 1:colcon.colcon_core.package_identification:_identify(src/ur5_moveit_config) by extensions ['ros']
+[0.269s] Level 1:colcon.colcon_core.package_identification:_identify(src/ur5_moveit_config) by extension 'ros'
+[0.270s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ur5_moveit_config' with type 'ros.ament_cmake' and name 'ur5_moveit_config'
+[0.270s] Level 1:colcon.colcon_core.package_identification:_identify(tbar) by extensions ['ignore', 'ignore_ament_install']
+[0.270s] Level 1:colcon.colcon_core.package_identification:_identify(tbar) by extension 'ignore'
+[0.270s] Level 1:colcon.colcon_core.package_identification:_identify(tbar) by extension 'ignore_ament_install'
+[0.270s] Level 1:colcon.colcon_core.package_identification:_identify(tbar) by extensions ['colcon_pkg']
+[0.270s] Level 1:colcon.colcon_core.package_identification:_identify(tbar) by extension 'colcon_pkg'
+[0.270s] Level 1:colcon.colcon_core.package_identification:_identify(tbar) by extensions ['colcon_meta']
+[0.270s] Level 1:colcon.colcon_core.package_identification:_identify(tbar) by extension 'colcon_meta'
+[0.270s] Level 1:colcon.colcon_core.package_identification:_identify(tbar) by extensions ['ros']
+[0.270s] Level 1:colcon.colcon_core.package_identification:_identify(tbar) by extension 'ros'
+[0.270s] Level 1:colcon.colcon_core.package_identification:_identify(tbar) by extensions ['cmake', 'python']
+[0.270s] Level 1:colcon.colcon_core.package_identification:_identify(tbar) by extension 'cmake'
+[0.270s] Level 1:colcon.colcon_core.package_identification:_identify(tbar) by extension 'python'
+[0.270s] Level 1:colcon.colcon_core.package_identification:_identify(tbar) by extensions ['python_setup_py']
+[0.270s] Level 1:colcon.colcon_core.package_identification:_identify(tbar) by extension 'python_setup_py'
+[0.270s] Level 1:colcon.colcon_core.package_identification:_identify(tbar/tbar) by extensions ['ignore', 'ignore_ament_install']
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(tbar/tbar) by extension 'ignore'
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(tbar/tbar) by extension 'ignore_ament_install'
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(tbar/tbar) by extensions ['colcon_pkg']
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(tbar/tbar) by extension 'colcon_pkg'
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(tbar/tbar) by extensions ['colcon_meta']
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(tbar/tbar) by extension 'colcon_meta'
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(tbar/tbar) by extensions ['ros']
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(tbar/tbar) by extension 'ros'
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(tbar/tbar) by extensions ['cmake', 'python']
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(tbar/tbar) by extension 'cmake'
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(tbar/tbar) by extension 'python'
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(tbar/tbar) by extensions ['python_setup_py']
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(tbar/tbar) by extension 'python_setup_py'
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(tbar/tbar/configuration) by extensions ['ignore', 'ignore_ament_install']
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(tbar/tbar/configuration) by extension 'ignore'
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(tbar/tbar/configuration) by extension 'ignore_ament_install'
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(tbar/tbar/configuration) by extensions ['colcon_pkg']
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(tbar/tbar/configuration) by extension 'colcon_pkg'
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(tbar/tbar/configuration) by extensions ['colcon_meta']
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(tbar/tbar/configuration) by extension 'colcon_meta'
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(tbar/tbar/configuration) by extensions ['ros']
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(tbar/tbar/configuration) by extension 'ros'
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(tbar/tbar/configuration) by extensions ['cmake', 'python']
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(tbar/tbar/configuration) by extension 'cmake'
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(tbar/tbar/configuration) by extension 'python'
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(tbar/tbar/configuration) by extensions ['python_setup_py']
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(tbar/tbar/configuration) by extension 'python_setup_py'
+[0.272s] Level 1:colcon.colcon_core.package_identification:_identify(training_data) by extensions ['ignore', 'ignore_ament_install']
+[0.272s] Level 1:colcon.colcon_core.package_identification:_identify(training_data) by extension 'ignore'
+[0.272s] Level 1:colcon.colcon_core.package_identification:_identify(training_data) by extension 'ignore_ament_install'
+[0.272s] Level 1:colcon.colcon_core.package_identification:_identify(training_data) by extensions ['colcon_pkg']
+[0.272s] Level 1:colcon.colcon_core.package_identification:_identify(training_data) by extension 'colcon_pkg'
+[0.272s] Level 1:colcon.colcon_core.package_identification:_identify(training_data) by extensions ['colcon_meta']
+[0.272s] Level 1:colcon.colcon_core.package_identification:_identify(training_data) by extension 'colcon_meta'
+[0.272s] Level 1:colcon.colcon_core.package_identification:_identify(training_data) by extensions ['ros']
+[0.272s] Level 1:colcon.colcon_core.package_identification:_identify(training_data) by extension 'ros'
+[0.272s] Level 1:colcon.colcon_core.package_identification:_identify(training_data) by extensions ['cmake', 'python']
+[0.272s] Level 1:colcon.colcon_core.package_identification:_identify(training_data) by extension 'cmake'
+[0.272s] Level 1:colcon.colcon_core.package_identification:_identify(training_data) by extension 'python'
+[0.272s] Level 1:colcon.colcon_core.package_identification:_identify(training_data) by extensions ['python_setup_py']
+[0.272s] Level 1:colcon.colcon_core.package_identification:_identify(training_data) by extension 'python_setup_py'
+[0.272s] Level 1:colcon.colcon_core.package_identification:_identify(training_data/lerobot) by extensions ['ignore', 'ignore_ament_install']
+[0.272s] Level 1:colcon.colcon_core.package_identification:_identify(training_data/lerobot) by extension 'ignore'
+[0.272s] Level 1:colcon.colcon_core.package_identification:_identify(training_data/lerobot) by extension 'ignore_ament_install'
+[0.272s] Level 1:colcon.colcon_core.package_identification:_identify(training_data/lerobot) by extensions ['colcon_pkg']
+[0.272s] Level 1:colcon.colcon_core.package_identification:_identify(training_data/lerobot) by extension 'colcon_pkg'
+[0.272s] Level 1:colcon.colcon_core.package_identification:_identify(training_data/lerobot) by extensions ['colcon_meta']
+[0.272s] Level 1:colcon.colcon_core.package_identification:_identify(training_data/lerobot) by extension 'colcon_meta'
+[0.272s] Level 1:colcon.colcon_core.package_identification:_identify(training_data/lerobot) by extensions ['ros']
+[0.272s] Level 1:colcon.colcon_core.package_identification:_identify(training_data/lerobot) by extension 'ros'
+[0.272s] Level 1:colcon.colcon_core.package_identification:_identify(training_data/lerobot) by extensions ['cmake', 'python']
+[0.272s] Level 1:colcon.colcon_core.package_identification:_identify(training_data/lerobot) by extension 'cmake'
+[0.272s] Level 1:colcon.colcon_core.package_identification:_identify(training_data/lerobot) by extension 'python'
+[0.273s] Level 1:colcon.colcon_core.package_identification:_identify(training_data/lerobot) by extensions ['python_setup_py']
+[0.273s] Level 1:colcon.colcon_core.package_identification:_identify(training_data/lerobot) by extension 'python_setup_py'
+[0.273s] Level 1:colcon.colcon_core.package_identification:_identify(training_data/lerobot/my_pusht) by extensions ['ignore', 'ignore_ament_install']
+[0.273s] Level 1:colcon.colcon_core.package_identification:_identify(training_data/lerobot/my_pusht) by extension 'ignore'
+[0.273s] Level 1:colcon.colcon_core.package_identification:_identify(training_data/lerobot/my_pusht) by extension 'ignore_ament_install'
+[0.273s] Level 1:colcon.colcon_core.package_identification:_identify(training_data/lerobot/my_pusht) by extensions ['colcon_pkg']
+[0.273s] Level 1:colcon.colcon_core.package_identification:_identify(training_data/lerobot/my_pusht) by extension 'colcon_pkg'
+[0.273s] Level 1:colcon.colcon_core.package_identification:_identify(training_data/lerobot/my_pusht) by extensions ['colcon_meta']
+[0.273s] Level 1:colcon.colcon_core.package_identification:_identify(training_data/lerobot/my_pusht) by extension 'colcon_meta'
+[0.273s] Level 1:colcon.colcon_core.package_identification:_identify(training_data/lerobot/my_pusht) by extensions ['ros']
+[0.273s] Level 1:colcon.colcon_core.package_identification:_identify(training_data/lerobot/my_pusht) by extension 'ros'
+[0.273s] Level 1:colcon.colcon_core.package_identification:_identify(training_data/lerobot/my_pusht) by extensions ['cmake', 'python']
+[0.273s] Level 1:colcon.colcon_core.package_identification:_identify(training_data/lerobot/my_pusht) by extension 'cmake'
+[0.273s] Level 1:colcon.colcon_core.package_identification:_identify(training_data/lerobot/my_pusht) by extension 'python'
+[0.273s] Level 1:colcon.colcon_core.package_identification:_identify(training_data/lerobot/my_pusht) by extensions ['python_setup_py']
+[0.273s] Level 1:colcon.colcon_core.package_identification:_identify(training_data/lerobot/my_pusht) by extension 'python_setup_py'
+[0.273s] Level 1:colcon.colcon_core.package_identification:_identify(training_data/lerobot/my_pusht/data) by extensions ['ignore', 'ignore_ament_install']
+[0.273s] Level 1:colcon.colcon_core.package_identification:_identify(training_data/lerobot/my_pusht/data) by extension 'ignore'
+[0.273s] Level 1:colcon.colcon_core.package_identification:_identify(training_data/lerobot/my_pusht/data) by extension 'ignore_ament_install'
+[0.273s] Level 1:colcon.colcon_core.package_identification:_identify(training_data/lerobot/my_pusht/data) by extensions ['colcon_pkg']
+[0.273s] Level 1:colcon.colcon_core.package_identification:_identify(training_data/lerobot/my_pusht/data) by extension 'colcon_pkg'
+[0.273s] Level 1:colcon.colcon_core.package_identification:_identify(training_data/lerobot/my_pusht/data) by extensions ['colcon_meta']
+[0.273s] Level 1:colcon.colcon_core.package_identification:_identify(training_data/lerobot/my_pusht/data) by extension 'colcon_meta'
+[0.273s] Level 1:colcon.colcon_core.package_identification:_identify(training_data/lerobot/my_pusht/data) by extensions ['ros']
+[0.273s] Level 1:colcon.colcon_core.package_identification:_identify(training_data/lerobot/my_pusht/data) by extension 'ros'
+[0.274s] Level 1:colcon.colcon_core.package_identification:_identify(training_data/lerobot/my_pusht/data) by extensions ['cmake', 'python']
+[0.274s] Level 1:colcon.colcon_core.package_identification:_identify(training_data/lerobot/my_pusht/data) by extension 'cmake'
+[0.274s] Level 1:colcon.colcon_core.package_identification:_identify(training_data/lerobot/my_pusht/data) by extension 'python'
+[0.274s] Level 1:colcon.colcon_core.package_identification:_identify(training_data/lerobot/my_pusht/data) by extensions ['python_setup_py']
+[0.274s] Level 1:colcon.colcon_core.package_identification:_identify(training_data/lerobot/my_pusht/data) by extension 'python_setup_py'
+[0.274s] Level 1:colcon.colcon_core.package_identification:_identify(training_data/lerobot/my_pusht/data/chunk-000) by extensions ['ignore', 'ignore_ament_install']
+[0.274s] Level 1:colcon.colcon_core.package_identification:_identify(training_data/lerobot/my_pusht/data/chunk-000) by extension 'ignore'
+[0.274s] Level 1:colcon.colcon_core.package_identification:_identify(training_data/lerobot/my_pusht/data/chunk-000) by extension 'ignore_ament_install'
+[0.274s] Level 1:colcon.colcon_core.package_identification:_identify(training_data/lerobot/my_pusht/data/chunk-000) by extensions ['colcon_pkg']
+[0.274s] Level 1:colcon.colcon_core.package_identification:_identify(training_data/lerobot/my_pusht/data/chunk-000) by extension 'colcon_pkg'
+[0.274s] Level 1:colcon.colcon_core.package_identification:_identify(training_data/lerobot/my_pusht/data/chunk-000) by extensions ['colcon_meta']
+[0.274s] Level 1:colcon.colcon_core.package_identification:_identify(training_data/lerobot/my_pusht/data/chunk-000) by extension 'colcon_meta'
+[0.274s] Level 1:colcon.colcon_core.package_identification:_identify(training_data/lerobot/my_pusht/data/chunk-000) by extensions ['ros']
+[0.274s] Level 1:colcon.colcon_core.package_identification:_identify(training_data/lerobot/my_pusht/data/chunk-000) by extension 'ros'
+[0.274s] Level 1:colcon.colcon_core.package_identification:_identify(training_data/lerobot/my_pusht/data/chunk-000) by extensions ['cmake', 'python']
+[0.274s] Level 1:colcon.colcon_core.package_identification:_identify(training_data/lerobot/my_pusht/data/chunk-000) by extension 'cmake'
+[0.274s] Level 1:colcon.colcon_core.package_identification:_identify(training_data/lerobot/my_pusht/data/chunk-000) by extension 'python'
+[0.274s] Level 1:colcon.colcon_core.package_identification:_identify(training_data/lerobot/my_pusht/data/chunk-000) by extensions ['python_setup_py']
+[0.274s] Level 1:colcon.colcon_core.package_identification:_identify(training_data/lerobot/my_pusht/data/chunk-000) by extension 'python_setup_py'
+[0.274s] Level 1:colcon.colcon_core.package_identification:_identify(training_data/lerobot/my_pusht/meta) by extensions ['ignore', 'ignore_ament_install']
+[0.274s] Level 1:colcon.colcon_core.package_identification:_identify(training_data/lerobot/my_pusht/meta) by extension 'ignore'
+[0.274s] Level 1:colcon.colcon_core.package_identification:_identify(training_data/lerobot/my_pusht/meta) by extension 'ignore_ament_install'
+[0.274s] Level 1:colcon.colcon_core.package_identification:_identify(training_data/lerobot/my_pusht/meta) by extensions ['colcon_pkg']
+[0.275s] Level 1:colcon.colcon_core.package_identification:_identify(training_data/lerobot/my_pusht/meta) by extension 'colcon_pkg'
+[0.275s] Level 1:colcon.colcon_core.package_identification:_identify(training_data/lerobot/my_pusht/meta) by extensions ['colcon_meta']
+[0.275s] Level 1:colcon.colcon_core.package_identification:_identify(training_data/lerobot/my_pusht/meta) by extension 'colcon_meta'
+[0.275s] Level 1:colcon.colcon_core.package_identification:_identify(training_data/lerobot/my_pusht/meta) by extensions ['ros']
+[0.275s] Level 1:colcon.colcon_core.package_identification:_identify(training_data/lerobot/my_pusht/meta) by extension 'ros'
+[0.275s] Level 1:colcon.colcon_core.package_identification:_identify(training_data/lerobot/my_pusht/meta) by extensions ['cmake', 'python']
+[0.275s] Level 1:colcon.colcon_core.package_identification:_identify(training_data/lerobot/my_pusht/meta) by extension 'cmake'
+[0.275s] Level 1:colcon.colcon_core.package_identification:_identify(training_data/lerobot/my_pusht/meta) by extension 'python'
+[0.275s] Level 1:colcon.colcon_core.package_identification:_identify(training_data/lerobot/my_pusht/meta) by extensions ['python_setup_py']
+[0.275s] Level 1:colcon.colcon_core.package_identification:_identify(training_data/lerobot/my_pusht/meta) by extension 'python_setup_py'
+[0.275s] Level 1:colcon.colcon_core.package_identification:_identify(training_data/lerobot/my_pusht/videos) by extensions ['ignore', 'ignore_ament_install']
+[0.275s] Level 1:colcon.colcon_core.package_identification:_identify(training_data/lerobot/my_pusht/videos) by extension 'ignore'
+[0.275s] Level 1:colcon.colcon_core.package_identification:_identify(training_data/lerobot/my_pusht/videos) by extension 'ignore_ament_install'
+[0.275s] Level 1:colcon.colcon_core.package_identification:_identify(training_data/lerobot/my_pusht/videos) by extensions ['colcon_pkg']
+[0.275s] Level 1:colcon.colcon_core.package_identification:_identify(training_data/lerobot/my_pusht/videos) by extension 'colcon_pkg'
+[0.275s] Level 1:colcon.colcon_core.package_identification:_identify(training_data/lerobot/my_pusht/videos) by extensions ['colcon_meta']
+[0.275s] Level 1:colcon.colcon_core.package_identification:_identify(training_data/lerobot/my_pusht/videos) by extension 'colcon_meta'
+[0.275s] Level 1:colcon.colcon_core.package_identification:_identify(training_data/lerobot/my_pusht/videos) by extensions ['ros']
+[0.275s] Level 1:colcon.colcon_core.package_identification:_identify(training_data/lerobot/my_pusht/videos) by extension 'ros'
+[0.275s] Level 1:colcon.colcon_core.package_identification:_identify(training_data/lerobot/my_pusht/videos) by extensions ['cmake', 'python']
+[0.275s] Level 1:colcon.colcon_core.package_identification:_identify(training_data/lerobot/my_pusht/videos) by extension 'cmake'
+[0.275s] Level 1:colcon.colcon_core.package_identification:_identify(training_data/lerobot/my_pusht/videos) by extension 'python'
+[0.275s] Level 1:colcon.colcon_core.package_identification:_identify(training_data/lerobot/my_pusht/videos) by extensions ['python_setup_py']
+[0.275s] Level 1:colcon.colcon_core.package_identification:_identify(training_data/lerobot/my_pusht/videos) by extension 'python_setup_py'
+[0.275s] Level 1:colcon.colcon_core.package_identification:_identify(training_data/lerobot/my_pusht/videos/chunk-000) by extensions ['ignore', 'ignore_ament_install']
+[0.276s] Level 1:colcon.colcon_core.package_identification:_identify(training_data/lerobot/my_pusht/videos/chunk-000) by extension 'ignore'
+[0.276s] Level 1:colcon.colcon_core.package_identification:_identify(training_data/lerobot/my_pusht/videos/chunk-000) by extension 'ignore_ament_install'
+[0.276s] Level 1:colcon.colcon_core.package_identification:_identify(training_data/lerobot/my_pusht/videos/chunk-000) by extensions ['colcon_pkg']
+[0.276s] Level 1:colcon.colcon_core.package_identification:_identify(training_data/lerobot/my_pusht/videos/chunk-000) by extension 'colcon_pkg'
+[0.276s] Level 1:colcon.colcon_core.package_identification:_identify(training_data/lerobot/my_pusht/videos/chunk-000) by extensions ['colcon_meta']
+[0.276s] Level 1:colcon.colcon_core.package_identification:_identify(training_data/lerobot/my_pusht/videos/chunk-000) by extension 'colcon_meta'
+[0.276s] Level 1:colcon.colcon_core.package_identification:_identify(training_data/lerobot/my_pusht/videos/chunk-000) by extensions ['ros']
+[0.276s] Level 1:colcon.colcon_core.package_identification:_identify(training_data/lerobot/my_pusht/videos/chunk-000) by extension 'ros'
+[0.276s] Level 1:colcon.colcon_core.package_identification:_identify(training_data/lerobot/my_pusht/videos/chunk-000) by extensions ['cmake', 'python']
+[0.276s] Level 1:colcon.colcon_core.package_identification:_identify(training_data/lerobot/my_pusht/videos/chunk-000) by extension 'cmake'
+[0.276s] Level 1:colcon.colcon_core.package_identification:_identify(training_data/lerobot/my_pusht/videos/chunk-000) by extension 'python'
+[0.276s] Level 1:colcon.colcon_core.package_identification:_identify(training_data/lerobot/my_pusht/videos/chunk-000) by extensions ['python_setup_py']
+[0.276s] Level 1:colcon.colcon_core.package_identification:_identify(training_data/lerobot/my_pusht/videos/chunk-000) by extension 'python_setup_py'
+[0.276s] Level 1:colcon.colcon_core.package_identification:_identify(training_data/lerobot/my_pusht/videos/chunk-000/observation.image) by extensions ['ignore', 'ignore_ament_install']
+[0.276s] Level 1:colcon.colcon_core.package_identification:_identify(training_data/lerobot/my_pusht/videos/chunk-000/observation.image) by extension 'ignore'
+[0.276s] Level 1:colcon.colcon_core.package_identification:_identify(training_data/lerobot/my_pusht/videos/chunk-000/observation.image) by extension 'ignore_ament_install'
+[0.276s] Level 1:colcon.colcon_core.package_identification:_identify(training_data/lerobot/my_pusht/videos/chunk-000/observation.image) by extensions ['colcon_pkg']
+[0.276s] Level 1:colcon.colcon_core.package_identification:_identify(training_data/lerobot/my_pusht/videos/chunk-000/observation.image) by extension 'colcon_pkg'
+[0.276s] Level 1:colcon.colcon_core.package_identification:_identify(training_data/lerobot/my_pusht/videos/chunk-000/observation.image) by extensions ['colcon_meta']
+[0.276s] Level 1:colcon.colcon_core.package_identification:_identify(training_data/lerobot/my_pusht/videos/chunk-000/observation.image) by extension 'colcon_meta'
+[0.276s] Level 1:colcon.colcon_core.package_identification:_identify(training_data/lerobot/my_pusht/videos/chunk-000/observation.image) by extensions ['ros']
+[0.276s] Level 1:colcon.colcon_core.package_identification:_identify(training_data/lerobot/my_pusht/videos/chunk-000/observation.image) by extension 'ros'
+[0.276s] Level 1:colcon.colcon_core.package_identification:_identify(training_data/lerobot/my_pusht/videos/chunk-000/observation.image) by extensions ['cmake', 'python']
+[0.276s] Level 1:colcon.colcon_core.package_identification:_identify(training_data/lerobot/my_pusht/videos/chunk-000/observation.image) by extension 'cmake'
+[0.276s] Level 1:colcon.colcon_core.package_identification:_identify(training_data/lerobot/my_pusht/videos/chunk-000/observation.image) by extension 'python'
+[0.277s] Level 1:colcon.colcon_core.package_identification:_identify(training_data/lerobot/my_pusht/videos/chunk-000/observation.image) by extensions ['python_setup_py']
+[0.277s] Level 1:colcon.colcon_core.package_identification:_identify(training_data/lerobot/my_pusht/videos/chunk-000/observation.image) by extension 'python_setup_py'
+[0.277s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.277s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.277s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.277s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.277s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.292s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.292s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.294s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 4 installed packages in /home/rajpurkar/Rahul/ur5_simulation/install
+[0.295s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 468 installed packages in /opt/ros/humble
+[0.297s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.338s] Level 5:colcon.colcon_core.verb:set package 'data_collection' build argument 'cmake_args' from command line to 'None'
+[0.338s] Level 5:colcon.colcon_core.verb:set package 'data_collection' build argument 'cmake_target' from command line to 'None'
+[0.338s] Level 5:colcon.colcon_core.verb:set package 'data_collection' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.338s] Level 5:colcon.colcon_core.verb:set package 'data_collection' build argument 'cmake_clean_cache' from command line to 'False'
+[0.338s] Level 5:colcon.colcon_core.verb:set package 'data_collection' build argument 'cmake_clean_first' from command line to 'False'
+[0.338s] Level 5:colcon.colcon_core.verb:set package 'data_collection' build argument 'cmake_force_configure' from command line to 'False'
+[0.338s] Level 5:colcon.colcon_core.verb:set package 'data_collection' build argument 'ament_cmake_args' from command line to 'None'
+[0.338s] Level 5:colcon.colcon_core.verb:set package 'data_collection' build argument 'catkin_cmake_args' from command line to 'None'
+[0.338s] Level 5:colcon.colcon_core.verb:set package 'data_collection' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.338s] DEBUG:colcon.colcon_core.verb:Building package 'data_collection' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/rajpurkar/Rahul/ur5_simulation/build/data_collection', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/rajpurkar/Rahul/ur5_simulation/install/data_collection', 'merge_install': False, 'path': '/home/rajpurkar/Rahul/ur5_simulation/src/data_collection', 'symlink_install': False, 'test_result_base': None}
+[0.339s] Level 5:colcon.colcon_core.verb:set package 'moveit_servo' build argument 'cmake_args' from command line to 'None'
+[0.339s] Level 5:colcon.colcon_core.verb:set package 'moveit_servo' build argument 'cmake_target' from command line to 'None'
+[0.339s] Level 5:colcon.colcon_core.verb:set package 'moveit_servo' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.339s] Level 5:colcon.colcon_core.verb:set package 'moveit_servo' build argument 'cmake_clean_cache' from command line to 'False'
+[0.339s] Level 5:colcon.colcon_core.verb:set package 'moveit_servo' build argument 'cmake_clean_first' from command line to 'False'
+[0.339s] Level 5:colcon.colcon_core.verb:set package 'moveit_servo' build argument 'cmake_force_configure' from command line to 'False'
+[0.339s] Level 5:colcon.colcon_core.verb:set package 'moveit_servo' build argument 'ament_cmake_args' from command line to 'None'
+[0.339s] Level 5:colcon.colcon_core.verb:set package 'moveit_servo' build argument 'catkin_cmake_args' from command line to 'None'
+[0.339s] Level 5:colcon.colcon_core.verb:set package 'moveit_servo' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.339s] DEBUG:colcon.colcon_core.verb:Building package 'moveit_servo' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/rajpurkar/Rahul/ur5_simulation/build/moveit_servo', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/rajpurkar/Rahul/ur5_simulation/install/moveit_servo', 'merge_install': False, 'path': '/home/rajpurkar/Rahul/ur5_simulation/src/moveit_servo', 'symlink_install': False, 'test_result_base': None}
+[0.339s] Level 5:colcon.colcon_core.verb:set package 'ur5_description' build argument 'cmake_args' from command line to 'None'
+[0.339s] Level 5:colcon.colcon_core.verb:set package 'ur5_description' build argument 'cmake_target' from command line to 'None'
+[0.339s] Level 5:colcon.colcon_core.verb:set package 'ur5_description' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.339s] Level 5:colcon.colcon_core.verb:set package 'ur5_description' build argument 'cmake_clean_cache' from command line to 'False'
+[0.339s] Level 5:colcon.colcon_core.verb:set package 'ur5_description' build argument 'cmake_clean_first' from command line to 'False'
+[0.339s] Level 5:colcon.colcon_core.verb:set package 'ur5_description' build argument 'cmake_force_configure' from command line to 'False'
+[0.339s] Level 5:colcon.colcon_core.verb:set package 'ur5_description' build argument 'ament_cmake_args' from command line to 'None'
+[0.339s] Level 5:colcon.colcon_core.verb:set package 'ur5_description' build argument 'catkin_cmake_args' from command line to 'None'
+[0.339s] Level 5:colcon.colcon_core.verb:set package 'ur5_description' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.339s] DEBUG:colcon.colcon_core.verb:Building package 'ur5_description' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/rajpurkar/Rahul/ur5_simulation/build/ur5_description', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/rajpurkar/Rahul/ur5_simulation/install/ur5_description', 'merge_install': False, 'path': '/home/rajpurkar/Rahul/ur5_simulation/src/ur5_description', 'symlink_install': False, 'test_result_base': None}
+[0.340s] Level 5:colcon.colcon_core.verb:set package 'ur5_moveit_config' build argument 'cmake_args' from command line to 'None'
+[0.340s] Level 5:colcon.colcon_core.verb:set package 'ur5_moveit_config' build argument 'cmake_target' from command line to 'None'
+[0.340s] Level 5:colcon.colcon_core.verb:set package 'ur5_moveit_config' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.340s] Level 5:colcon.colcon_core.verb:set package 'ur5_moveit_config' build argument 'cmake_clean_cache' from command line to 'False'
+[0.340s] Level 5:colcon.colcon_core.verb:set package 'ur5_moveit_config' build argument 'cmake_clean_first' from command line to 'False'
+[0.340s] Level 5:colcon.colcon_core.verb:set package 'ur5_moveit_config' build argument 'cmake_force_configure' from command line to 'False'
+[0.340s] Level 5:colcon.colcon_core.verb:set package 'ur5_moveit_config' build argument 'ament_cmake_args' from command line to 'None'
+[0.340s] Level 5:colcon.colcon_core.verb:set package 'ur5_moveit_config' build argument 'catkin_cmake_args' from command line to 'None'
+[0.340s] Level 5:colcon.colcon_core.verb:set package 'ur5_moveit_config' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.340s] DEBUG:colcon.colcon_core.verb:Building package 'ur5_moveit_config' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/rajpurkar/Rahul/ur5_simulation/build/ur5_moveit_config', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/rajpurkar/Rahul/ur5_simulation/install/ur5_moveit_config', 'merge_install': False, 'path': '/home/rajpurkar/Rahul/ur5_simulation/src/ur5_moveit_config', 'symlink_install': False, 'test_result_base': None}
+[0.340s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.341s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.341s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/rajpurkar/Rahul/ur5_simulation/src/ur5_description' with build type 'ament_cmake'
+[0.341s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/rajpurkar/Rahul/ur5_simulation/src/ur5_description'
+[0.343s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.343s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.343s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.346s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/rajpurkar/Rahul/ur5_simulation/src/data_collection' with build type 'ament_cmake'
+[0.346s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/rajpurkar/Rahul/ur5_simulation/src/data_collection'
+[0.346s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.346s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.349s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/rajpurkar/Rahul/ur5_simulation/src/moveit_servo' with build type 'ament_cmake'
+[0.349s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/rajpurkar/Rahul/ur5_simulation/src/moveit_servo'
+[0.349s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.349s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.355s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/rajpurkar/Rahul/ur5_simulation/build/ur5_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble PS1=(isaac) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ /usr/bin/cmake --build /home/rajpurkar/Rahul/ur5_simulation/build/ur5_description -- -j16 -l16
+[0.357s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/rajpurkar/Rahul/ur5_simulation/build/data_collection': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble PS1=(isaac) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ /usr/bin/cmake --build /home/rajpurkar/Rahul/ur5_simulation/build/data_collection -- -j16 -l16
+[0.359s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/rajpurkar/Rahul/ur5_simulation/build/moveit_servo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble PS1=(isaac) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ /usr/bin/cmake --build /home/rajpurkar/Rahul/ur5_simulation/build/moveit_servo -- -j16 -l16
+[0.381s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/rajpurkar/Rahul/ur5_simulation/build/ur5_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble PS1=(isaac) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ /usr/bin/cmake --build /home/rajpurkar/Rahul/ur5_simulation/build/ur5_description -- -j16 -l16
+[0.388s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/rajpurkar/Rahul/ur5_simulation/build/ur5_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble PS1=(isaac) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ /usr/bin/cmake --install /home/rajpurkar/Rahul/ur5_simulation/build/ur5_description
+[0.389s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/rajpurkar/Rahul/ur5_simulation/build/data_collection' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble PS1=(isaac) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ /usr/bin/cmake --build /home/rajpurkar/Rahul/ur5_simulation/build/data_collection -- -j16 -l16
+[0.390s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/rajpurkar/Rahul/ur5_simulation/build/data_collection': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble PS1=(isaac) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ /usr/bin/cmake --install /home/rajpurkar/Rahul/ur5_simulation/build/data_collection
+[0.395s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ur5_description)
+[0.399s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/rajpurkar/Rahul/ur5_simulation/build/ur5_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble PS1=(isaac) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ /usr/bin/cmake --install /home/rajpurkar/Rahul/ur5_simulation/build/ur5_description
+[0.402s] Level 1:colcon.colcon_core.environment:checking '/home/rajpurkar/Rahul/ur5_simulation/install/ur5_description' for CMake module files
+[0.402s] Level 1:colcon.colcon_core.environment:checking '/home/rajpurkar/Rahul/ur5_simulation/install/ur5_description' for CMake config files
+[0.403s] Level 1:colcon.colcon_core.shell:create_environment_hook('ur5_description', 'cmake_prefix_path')
+[0.403s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rajpurkar/Rahul/ur5_simulation/install/ur5_description/share/ur5_description/hook/cmake_prefix_path.ps1'
+[0.403s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rajpurkar/Rahul/ur5_simulation/install/ur5_description/share/ur5_description/hook/cmake_prefix_path.dsv'
+[0.404s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rajpurkar/Rahul/ur5_simulation/install/ur5_description/share/ur5_description/hook/cmake_prefix_path.sh'
+[0.404s] Level 1:colcon.colcon_core.environment:checking '/home/rajpurkar/Rahul/ur5_simulation/install/ur5_description/bin'
+[0.404s] Level 1:colcon.colcon_core.environment:checking '/home/rajpurkar/Rahul/ur5_simulation/install/ur5_description/lib/pkgconfig/ur5_description.pc'
+[0.405s] Level 1:colcon.colcon_core.environment:checking '/home/rajpurkar/Rahul/ur5_simulation/install/ur5_description/lib/python3.10/site-packages'
+[0.405s] Level 1:colcon.colcon_core.environment:checking '/home/rajpurkar/Rahul/ur5_simulation/install/ur5_description/bin'
+[0.405s] INFO:colcon.colcon_core.shell:Creating package script '/home/rajpurkar/Rahul/ur5_simulation/install/ur5_description/share/ur5_description/package.ps1'
+[0.406s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/rajpurkar/Rahul/ur5_simulation/install/ur5_description/share/ur5_description/package.dsv'
+[0.406s] INFO:colcon.colcon_core.shell:Creating package script '/home/rajpurkar/Rahul/ur5_simulation/install/ur5_description/share/ur5_description/package.sh'
+[0.406s] INFO:colcon.colcon_core.shell:Creating package script '/home/rajpurkar/Rahul/ur5_simulation/install/ur5_description/share/ur5_description/package.bash'
+[0.407s] INFO:colcon.colcon_core.shell:Creating package script '/home/rajpurkar/Rahul/ur5_simulation/install/ur5_description/share/ur5_description/package.zsh'
+[0.408s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/rajpurkar/Rahul/ur5_simulation/install/ur5_description/share/colcon-core/packages/ur5_description)
+[0.408s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ur5_description)
+[0.409s] Level 1:colcon.colcon_core.environment:checking '/home/rajpurkar/Rahul/ur5_simulation/install/ur5_description' for CMake module files
+[0.409s] Level 1:colcon.colcon_core.environment:checking '/home/rajpurkar/Rahul/ur5_simulation/install/ur5_description' for CMake config files
+[0.409s] Level 1:colcon.colcon_core.shell:create_environment_hook('ur5_description', 'cmake_prefix_path')
+[0.409s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rajpurkar/Rahul/ur5_simulation/install/ur5_description/share/ur5_description/hook/cmake_prefix_path.ps1'
+[0.410s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rajpurkar/Rahul/ur5_simulation/install/ur5_description/share/ur5_description/hook/cmake_prefix_path.dsv'
+[0.410s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rajpurkar/Rahul/ur5_simulation/install/ur5_description/share/ur5_description/hook/cmake_prefix_path.sh'
+[0.410s] Level 1:colcon.colcon_core.environment:checking '/home/rajpurkar/Rahul/ur5_simulation/install/ur5_description/bin'
+[0.410s] Level 1:colcon.colcon_core.environment:checking '/home/rajpurkar/Rahul/ur5_simulation/install/ur5_description/lib/pkgconfig/ur5_description.pc'
+[0.411s] Level 1:colcon.colcon_core.environment:checking '/home/rajpurkar/Rahul/ur5_simulation/install/ur5_description/lib/python3.10/site-packages'
+[0.411s] Level 1:colcon.colcon_core.environment:checking '/home/rajpurkar/Rahul/ur5_simulation/install/ur5_description/bin'
+[0.411s] INFO:colcon.colcon_core.shell:Creating package script '/home/rajpurkar/Rahul/ur5_simulation/install/ur5_description/share/ur5_description/package.ps1'
+[0.411s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/rajpurkar/Rahul/ur5_simulation/install/ur5_description/share/ur5_description/package.dsv'
+[0.412s] INFO:colcon.colcon_core.shell:Creating package script '/home/rajpurkar/Rahul/ur5_simulation/install/ur5_description/share/ur5_description/package.sh'
+[0.412s] INFO:colcon.colcon_core.shell:Creating package script '/home/rajpurkar/Rahul/ur5_simulation/install/ur5_description/share/ur5_description/package.bash'
+[0.413s] INFO:colcon.colcon_core.shell:Creating package script '/home/rajpurkar/Rahul/ur5_simulation/install/ur5_description/share/ur5_description/package.zsh'
+[0.413s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/rajpurkar/Rahul/ur5_simulation/install/ur5_description/share/colcon-core/packages/ur5_description)
+[0.413s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/rajpurkar/Rahul/ur5_simulation/src/ur5_moveit_config' with build type 'ament_cmake'
+[0.413s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/rajpurkar/Rahul/ur5_simulation/src/ur5_moveit_config'
+[0.414s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.414s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.418s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(data_collection)
+[0.418s] Level 1:colcon.colcon_core.environment:checking '/home/rajpurkar/Rahul/ur5_simulation/install/data_collection' for CMake module files
+[0.419s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/rajpurkar/Rahul/ur5_simulation/build/data_collection' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble PS1=(isaac) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ /usr/bin/cmake --install /home/rajpurkar/Rahul/ur5_simulation/build/data_collection
+[0.419s] Level 1:colcon.colcon_core.environment:checking '/home/rajpurkar/Rahul/ur5_simulation/install/data_collection' for CMake config files
+[0.420s] Level 1:colcon.colcon_core.shell:create_environment_hook('data_collection', 'cmake_prefix_path')
+[0.420s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rajpurkar/Rahul/ur5_simulation/install/data_collection/share/data_collection/hook/cmake_prefix_path.ps1'
+[0.421s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rajpurkar/Rahul/ur5_simulation/install/data_collection/share/data_collection/hook/cmake_prefix_path.dsv'
+[0.421s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rajpurkar/Rahul/ur5_simulation/install/data_collection/share/data_collection/hook/cmake_prefix_path.sh'
+[0.422s] Level 1:colcon.colcon_core.environment:checking '/home/rajpurkar/Rahul/ur5_simulation/install/data_collection/lib'
+[0.422s] Level 1:colcon.colcon_core.environment:checking '/home/rajpurkar/Rahul/ur5_simulation/install/data_collection/bin'
+[0.422s] Level 1:colcon.colcon_core.environment:checking '/home/rajpurkar/Rahul/ur5_simulation/install/data_collection/lib/pkgconfig/data_collection.pc'
+[0.422s] Level 1:colcon.colcon_core.environment:checking '/home/rajpurkar/Rahul/ur5_simulation/install/data_collection/lib/python3.10/site-packages'
+[0.422s] Level 1:colcon.colcon_core.environment:checking '/home/rajpurkar/Rahul/ur5_simulation/install/data_collection/bin'
+[0.423s] INFO:colcon.colcon_core.shell:Creating package script '/home/rajpurkar/Rahul/ur5_simulation/install/data_collection/share/data_collection/package.ps1'
+[0.423s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/rajpurkar/Rahul/ur5_simulation/install/data_collection/share/data_collection/package.dsv'
+[0.424s] INFO:colcon.colcon_core.shell:Creating package script '/home/rajpurkar/Rahul/ur5_simulation/install/data_collection/share/data_collection/package.sh'
+[0.424s] INFO:colcon.colcon_core.shell:Creating package script '/home/rajpurkar/Rahul/ur5_simulation/install/data_collection/share/data_collection/package.bash'
+[0.425s] INFO:colcon.colcon_core.shell:Creating package script '/home/rajpurkar/Rahul/ur5_simulation/install/data_collection/share/data_collection/package.zsh'
+[0.425s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/rajpurkar/Rahul/ur5_simulation/install/data_collection/share/colcon-core/packages/data_collection)
+[0.426s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(data_collection)
+[0.426s] Level 1:colcon.colcon_core.environment:checking '/home/rajpurkar/Rahul/ur5_simulation/install/data_collection' for CMake module files
+[0.426s] Level 1:colcon.colcon_core.environment:checking '/home/rajpurkar/Rahul/ur5_simulation/install/data_collection' for CMake config files
+[0.426s] Level 1:colcon.colcon_core.shell:create_environment_hook('data_collection', 'cmake_prefix_path')
+[0.427s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rajpurkar/Rahul/ur5_simulation/install/data_collection/share/data_collection/hook/cmake_prefix_path.ps1'
+[0.427s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rajpurkar/Rahul/ur5_simulation/install/data_collection/share/data_collection/hook/cmake_prefix_path.dsv'
+[0.427s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rajpurkar/Rahul/ur5_simulation/install/data_collection/share/data_collection/hook/cmake_prefix_path.sh'
+[0.428s] Level 1:colcon.colcon_core.environment:checking '/home/rajpurkar/Rahul/ur5_simulation/install/data_collection/lib'
+[0.428s] Level 1:colcon.colcon_core.environment:checking '/home/rajpurkar/Rahul/ur5_simulation/install/data_collection/bin'
+[0.428s] Level 1:colcon.colcon_core.environment:checking '/home/rajpurkar/Rahul/ur5_simulation/install/data_collection/lib/pkgconfig/data_collection.pc'
+[0.428s] Level 1:colcon.colcon_core.environment:checking '/home/rajpurkar/Rahul/ur5_simulation/install/data_collection/lib/python3.10/site-packages'
+[0.428s] Level 1:colcon.colcon_core.environment:checking '/home/rajpurkar/Rahul/ur5_simulation/install/data_collection/bin'
+[0.428s] INFO:colcon.colcon_core.shell:Creating package script '/home/rajpurkar/Rahul/ur5_simulation/install/data_collection/share/data_collection/package.ps1'
+[0.429s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/rajpurkar/Rahul/ur5_simulation/install/data_collection/share/data_collection/package.dsv'
+[0.429s] INFO:colcon.colcon_core.shell:Creating package script '/home/rajpurkar/Rahul/ur5_simulation/install/data_collection/share/data_collection/package.sh'
+[0.430s] INFO:colcon.colcon_core.shell:Creating package script '/home/rajpurkar/Rahul/ur5_simulation/install/data_collection/share/data_collection/package.bash'
+[0.430s] INFO:colcon.colcon_core.shell:Creating package script '/home/rajpurkar/Rahul/ur5_simulation/install/data_collection/share/data_collection/package.zsh'
+[0.430s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/rajpurkar/Rahul/ur5_simulation/install/data_collection/share/colcon-core/packages/data_collection)
+[0.433s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/rajpurkar/Rahul/ur5_simulation/build/ur5_moveit_config': CMAKE_PREFIX_PATH=/home/rajpurkar/Rahul/ur5_simulation/install/ur5_description:/home/rajpurkar/Rahul/ur5_simulation/install/ur5_moveit_config:/home/rajpurkar/Rahul/ur5_simulation/install/moveit_servo:/home/rajpurkar/Rahul/ur5_simulation/install/data_collection:/opt/ros/humble PS1=(isaac) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ /usr/bin/cmake --build /home/rajpurkar/Rahul/ur5_simulation/build/ur5_moveit_config -- -j16 -l16
+[0.458s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/rajpurkar/Rahul/ur5_simulation/build/ur5_moveit_config' returned '0': CMAKE_PREFIX_PATH=/home/rajpurkar/Rahul/ur5_simulation/install/ur5_description:/home/rajpurkar/Rahul/ur5_simulation/install/ur5_moveit_config:/home/rajpurkar/Rahul/ur5_simulation/install/moveit_servo:/home/rajpurkar/Rahul/ur5_simulation/install/data_collection:/opt/ros/humble PS1=(isaac) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ /usr/bin/cmake --build /home/rajpurkar/Rahul/ur5_simulation/build/ur5_moveit_config -- -j16 -l16
+[0.459s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/rajpurkar/Rahul/ur5_simulation/build/ur5_moveit_config': CMAKE_PREFIX_PATH=/home/rajpurkar/Rahul/ur5_simulation/install/ur5_description:/home/rajpurkar/Rahul/ur5_simulation/install/ur5_moveit_config:/home/rajpurkar/Rahul/ur5_simulation/install/moveit_servo:/home/rajpurkar/Rahul/ur5_simulation/install/data_collection:/opt/ros/humble PS1=(isaac) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ /usr/bin/cmake --install /home/rajpurkar/Rahul/ur5_simulation/build/ur5_moveit_config
+[0.466s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ur5_moveit_config)
+[0.467s] Level 1:colcon.colcon_core.environment:checking '/home/rajpurkar/Rahul/ur5_simulation/install/ur5_moveit_config' for CMake module files
+[0.468s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/rajpurkar/Rahul/ur5_simulation/build/ur5_moveit_config' returned '0': CMAKE_PREFIX_PATH=/home/rajpurkar/Rahul/ur5_simulation/install/ur5_description:/home/rajpurkar/Rahul/ur5_simulation/install/ur5_moveit_config:/home/rajpurkar/Rahul/ur5_simulation/install/moveit_servo:/home/rajpurkar/Rahul/ur5_simulation/install/data_collection:/opt/ros/humble PS1=(isaac) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ /usr/bin/cmake --install /home/rajpurkar/Rahul/ur5_simulation/build/ur5_moveit_config
+[0.468s] Level 1:colcon.colcon_core.environment:checking '/home/rajpurkar/Rahul/ur5_simulation/install/ur5_moveit_config' for CMake config files
+[0.468s] Level 1:colcon.colcon_core.shell:create_environment_hook('ur5_moveit_config', 'cmake_prefix_path')
+[0.469s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rajpurkar/Rahul/ur5_simulation/install/ur5_moveit_config/share/ur5_moveit_config/hook/cmake_prefix_path.ps1'
+[0.469s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rajpurkar/Rahul/ur5_simulation/install/ur5_moveit_config/share/ur5_moveit_config/hook/cmake_prefix_path.dsv'
+[0.469s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rajpurkar/Rahul/ur5_simulation/install/ur5_moveit_config/share/ur5_moveit_config/hook/cmake_prefix_path.sh'
+[0.470s] Level 1:colcon.colcon_core.environment:checking '/home/rajpurkar/Rahul/ur5_simulation/install/ur5_moveit_config/bin'
+[0.470s] Level 1:colcon.colcon_core.environment:checking '/home/rajpurkar/Rahul/ur5_simulation/install/ur5_moveit_config/lib/pkgconfig/ur5_moveit_config.pc'
+[0.470s] Level 1:colcon.colcon_core.environment:checking '/home/rajpurkar/Rahul/ur5_simulation/install/ur5_moveit_config/lib/python3.10/site-packages'
+[0.470s] Level 1:colcon.colcon_core.environment:checking '/home/rajpurkar/Rahul/ur5_simulation/install/ur5_moveit_config/bin'
+[0.471s] INFO:colcon.colcon_core.shell:Creating package script '/home/rajpurkar/Rahul/ur5_simulation/install/ur5_moveit_config/share/ur5_moveit_config/package.ps1'
+[0.471s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/rajpurkar/Rahul/ur5_simulation/install/ur5_moveit_config/share/ur5_moveit_config/package.dsv'
+[0.472s] INFO:colcon.colcon_core.shell:Creating package script '/home/rajpurkar/Rahul/ur5_simulation/install/ur5_moveit_config/share/ur5_moveit_config/package.sh'
+[0.472s] INFO:colcon.colcon_core.shell:Creating package script '/home/rajpurkar/Rahul/ur5_simulation/install/ur5_moveit_config/share/ur5_moveit_config/package.bash'
+[0.472s] INFO:colcon.colcon_core.shell:Creating package script '/home/rajpurkar/Rahul/ur5_simulation/install/ur5_moveit_config/share/ur5_moveit_config/package.zsh'
+[0.472s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/rajpurkar/Rahul/ur5_simulation/install/ur5_moveit_config/share/colcon-core/packages/ur5_moveit_config)
+[0.473s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ur5_moveit_config)
+[0.473s] Level 1:colcon.colcon_core.environment:checking '/home/rajpurkar/Rahul/ur5_simulation/install/ur5_moveit_config' for CMake module files
+[0.473s] Level 1:colcon.colcon_core.environment:checking '/home/rajpurkar/Rahul/ur5_simulation/install/ur5_moveit_config' for CMake config files
+[0.473s] Level 1:colcon.colcon_core.shell:create_environment_hook('ur5_moveit_config', 'cmake_prefix_path')
+[0.474s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rajpurkar/Rahul/ur5_simulation/install/ur5_moveit_config/share/ur5_moveit_config/hook/cmake_prefix_path.ps1'
+[0.474s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rajpurkar/Rahul/ur5_simulation/install/ur5_moveit_config/share/ur5_moveit_config/hook/cmake_prefix_path.dsv'
+[0.474s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rajpurkar/Rahul/ur5_simulation/install/ur5_moveit_config/share/ur5_moveit_config/hook/cmake_prefix_path.sh'
+[0.475s] Level 1:colcon.colcon_core.environment:checking '/home/rajpurkar/Rahul/ur5_simulation/install/ur5_moveit_config/bin'
+[0.475s] Level 1:colcon.colcon_core.environment:checking '/home/rajpurkar/Rahul/ur5_simulation/install/ur5_moveit_config/lib/pkgconfig/ur5_moveit_config.pc'
+[0.475s] Level 1:colcon.colcon_core.environment:checking '/home/rajpurkar/Rahul/ur5_simulation/install/ur5_moveit_config/lib/python3.10/site-packages'
+[0.475s] Level 1:colcon.colcon_core.environment:checking '/home/rajpurkar/Rahul/ur5_simulation/install/ur5_moveit_config/bin'
+[0.475s] INFO:colcon.colcon_core.shell:Creating package script '/home/rajpurkar/Rahul/ur5_simulation/install/ur5_moveit_config/share/ur5_moveit_config/package.ps1'
+[0.476s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/rajpurkar/Rahul/ur5_simulation/install/ur5_moveit_config/share/ur5_moveit_config/package.dsv'
+[0.476s] INFO:colcon.colcon_core.shell:Creating package script '/home/rajpurkar/Rahul/ur5_simulation/install/ur5_moveit_config/share/ur5_moveit_config/package.sh'
+[0.476s] INFO:colcon.colcon_core.shell:Creating package script '/home/rajpurkar/Rahul/ur5_simulation/install/ur5_moveit_config/share/ur5_moveit_config/package.bash'
+[0.477s] INFO:colcon.colcon_core.shell:Creating package script '/home/rajpurkar/Rahul/ur5_simulation/install/ur5_moveit_config/share/ur5_moveit_config/package.zsh'
+[0.477s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/rajpurkar/Rahul/ur5_simulation/install/ur5_moveit_config/share/colcon-core/packages/ur5_moveit_config)
+[0.528s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/rajpurkar/Rahul/ur5_simulation/build/moveit_servo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble PS1=(isaac) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ /usr/bin/cmake --build /home/rajpurkar/Rahul/ur5_simulation/build/moveit_servo -- -j16 -l16
+[0.529s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/rajpurkar/Rahul/ur5_simulation/build/moveit_servo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble PS1=(isaac) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ /usr/bin/cmake --install /home/rajpurkar/Rahul/ur5_simulation/build/moveit_servo
+[0.538s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(moveit_servo)
+[0.538s] Level 1:colcon.colcon_core.environment:checking '/home/rajpurkar/Rahul/ur5_simulation/install/moveit_servo' for CMake module files
+[0.539s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/rajpurkar/Rahul/ur5_simulation/build/moveit_servo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble PS1=(isaac) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ /usr/bin/cmake --install /home/rajpurkar/Rahul/ur5_simulation/build/moveit_servo
+[0.539s] Level 1:colcon.colcon_core.environment:checking '/home/rajpurkar/Rahul/ur5_simulation/install/moveit_servo' for CMake config files
+[0.539s] Level 1:colcon.colcon_core.shell:create_environment_hook('moveit_servo', 'cmake_prefix_path')
+[0.539s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rajpurkar/Rahul/ur5_simulation/install/moveit_servo/share/moveit_servo/hook/cmake_prefix_path.ps1'
+[0.540s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rajpurkar/Rahul/ur5_simulation/install/moveit_servo/share/moveit_servo/hook/cmake_prefix_path.dsv'
+[0.540s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rajpurkar/Rahul/ur5_simulation/install/moveit_servo/share/moveit_servo/hook/cmake_prefix_path.sh'
+[0.540s] Level 1:colcon.colcon_core.environment:checking '/home/rajpurkar/Rahul/ur5_simulation/install/moveit_servo/lib'
+[0.540s] Level 1:colcon.colcon_core.shell:create_environment_hook('moveit_servo', 'ld_library_path_lib')
+[0.541s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rajpurkar/Rahul/ur5_simulation/install/moveit_servo/share/moveit_servo/hook/ld_library_path_lib.ps1'
+[0.541s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rajpurkar/Rahul/ur5_simulation/install/moveit_servo/share/moveit_servo/hook/ld_library_path_lib.dsv'
+[0.541s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rajpurkar/Rahul/ur5_simulation/install/moveit_servo/share/moveit_servo/hook/ld_library_path_lib.sh'
+[0.542s] Level 1:colcon.colcon_core.environment:checking '/home/rajpurkar/Rahul/ur5_simulation/install/moveit_servo/bin'
+[0.542s] Level 1:colcon.colcon_core.environment:checking '/home/rajpurkar/Rahul/ur5_simulation/install/moveit_servo/lib/pkgconfig/moveit_servo.pc'
+[0.542s] Level 1:colcon.colcon_core.environment:checking '/home/rajpurkar/Rahul/ur5_simulation/install/moveit_servo/lib/python3.10/site-packages'
+[0.542s] Level 1:colcon.colcon_core.environment:checking '/home/rajpurkar/Rahul/ur5_simulation/install/moveit_servo/bin'
+[0.542s] INFO:colcon.colcon_core.shell:Creating package script '/home/rajpurkar/Rahul/ur5_simulation/install/moveit_servo/share/moveit_servo/package.ps1'
+[0.543s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/rajpurkar/Rahul/ur5_simulation/install/moveit_servo/share/moveit_servo/package.dsv'
+[0.543s] INFO:colcon.colcon_core.shell:Creating package script '/home/rajpurkar/Rahul/ur5_simulation/install/moveit_servo/share/moveit_servo/package.sh'
+[0.543s] INFO:colcon.colcon_core.shell:Creating package script '/home/rajpurkar/Rahul/ur5_simulation/install/moveit_servo/share/moveit_servo/package.bash'
+[0.544s] INFO:colcon.colcon_core.shell:Creating package script '/home/rajpurkar/Rahul/ur5_simulation/install/moveit_servo/share/moveit_servo/package.zsh'
+[0.544s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/rajpurkar/Rahul/ur5_simulation/install/moveit_servo/share/colcon-core/packages/moveit_servo)
+[0.544s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(moveit_servo)
+[0.544s] Level 1:colcon.colcon_core.environment:checking '/home/rajpurkar/Rahul/ur5_simulation/install/moveit_servo' for CMake module files
+[0.545s] Level 1:colcon.colcon_core.environment:checking '/home/rajpurkar/Rahul/ur5_simulation/install/moveit_servo' for CMake config files
+[0.545s] Level 1:colcon.colcon_core.shell:create_environment_hook('moveit_servo', 'cmake_prefix_path')
+[0.545s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rajpurkar/Rahul/ur5_simulation/install/moveit_servo/share/moveit_servo/hook/cmake_prefix_path.ps1'
+[0.545s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rajpurkar/Rahul/ur5_simulation/install/moveit_servo/share/moveit_servo/hook/cmake_prefix_path.dsv'
+[0.546s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rajpurkar/Rahul/ur5_simulation/install/moveit_servo/share/moveit_servo/hook/cmake_prefix_path.sh'
+[0.546s] Level 1:colcon.colcon_core.environment:checking '/home/rajpurkar/Rahul/ur5_simulation/install/moveit_servo/lib'
+[0.546s] Level 1:colcon.colcon_core.shell:create_environment_hook('moveit_servo', 'ld_library_path_lib')
+[0.546s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rajpurkar/Rahul/ur5_simulation/install/moveit_servo/share/moveit_servo/hook/ld_library_path_lib.ps1'
+[0.546s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rajpurkar/Rahul/ur5_simulation/install/moveit_servo/share/moveit_servo/hook/ld_library_path_lib.dsv'
+[0.547s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rajpurkar/Rahul/ur5_simulation/install/moveit_servo/share/moveit_servo/hook/ld_library_path_lib.sh'
+[0.547s] Level 1:colcon.colcon_core.environment:checking '/home/rajpurkar/Rahul/ur5_simulation/install/moveit_servo/bin'
+[0.547s] Level 1:colcon.colcon_core.environment:checking '/home/rajpurkar/Rahul/ur5_simulation/install/moveit_servo/lib/pkgconfig/moveit_servo.pc'
+[0.547s] Level 1:colcon.colcon_core.environment:checking '/home/rajpurkar/Rahul/ur5_simulation/install/moveit_servo/lib/python3.10/site-packages'
+[0.547s] Level 1:colcon.colcon_core.environment:checking '/home/rajpurkar/Rahul/ur5_simulation/install/moveit_servo/bin'
+[0.548s] INFO:colcon.colcon_core.shell:Creating package script '/home/rajpurkar/Rahul/ur5_simulation/install/moveit_servo/share/moveit_servo/package.ps1'
+[0.548s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/rajpurkar/Rahul/ur5_simulation/install/moveit_servo/share/moveit_servo/package.dsv'
+[0.548s] INFO:colcon.colcon_core.shell:Creating package script '/home/rajpurkar/Rahul/ur5_simulation/install/moveit_servo/share/moveit_servo/package.sh'
+[0.549s] INFO:colcon.colcon_core.shell:Creating package script '/home/rajpurkar/Rahul/ur5_simulation/install/moveit_servo/share/moveit_servo/package.bash'
+[0.549s] INFO:colcon.colcon_core.shell:Creating package script '/home/rajpurkar/Rahul/ur5_simulation/install/moveit_servo/share/moveit_servo/package.zsh'
+[0.550s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/rajpurkar/Rahul/ur5_simulation/install/moveit_servo/share/colcon-core/packages/moveit_servo)
+[0.550s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[0.550s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[0.550s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[0.550s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[0.554s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[0.554s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[0.554s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[0.569s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[0.569s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/rajpurkar/Rahul/ur5_simulation/install/local_setup.ps1'
+[0.570s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/rajpurkar/Rahul/ur5_simulation/install/_local_setup_util_ps1.py'
+[0.571s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/rajpurkar/Rahul/ur5_simulation/install/setup.ps1'
+[0.572s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/rajpurkar/Rahul/ur5_simulation/install/local_setup.sh'
+[0.572s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/rajpurkar/Rahul/ur5_simulation/install/_local_setup_util_sh.py'
+[0.573s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/rajpurkar/Rahul/ur5_simulation/install/setup.sh'
+[0.573s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/rajpurkar/Rahul/ur5_simulation/install/local_setup.bash'
+[0.574s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/rajpurkar/Rahul/ur5_simulation/install/setup.bash'
+[0.575s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/rajpurkar/Rahul/ur5_simulation/install/local_setup.zsh'
+[0.575s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/rajpurkar/Rahul/ur5_simulation/install/setup.zsh'

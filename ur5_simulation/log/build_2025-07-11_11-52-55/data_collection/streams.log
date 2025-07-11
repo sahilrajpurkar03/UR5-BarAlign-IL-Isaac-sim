@@ -1,0 +1,39 @@
+[0.012s] Invoking command in '/home/rajpurkar/Rahul/ur5_simulation/build/data_collection': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/rajpurkar/Rahul/ur5_simulation/build/data_collection -- -j16 -l16
+[0.041s] Invoked command in '/home/rajpurkar/Rahul/ur5_simulation/build/data_collection' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/rajpurkar/Rahul/ur5_simulation/build/data_collection -- -j16 -l16
+[0.043s] Invoking command in '/home/rajpurkar/Rahul/ur5_simulation/build/data_collection': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/rajpurkar/Rahul/ur5_simulation/build/data_collection
+[0.051s] -- Install configuration: ""
+[0.051s] -- Up-to-date: /home/rajpurkar/Rahul/ur5_simulation/install/data_collection/share/data_collection//scripts
+[0.051s] -- Installing: /home/rajpurkar/Rahul/ur5_simulation/install/data_collection/share/data_collection//scripts/data_collection.py
+[0.051s] -- Up-to-date: /home/rajpurkar/Rahul/ur5_simulation/install/data_collection/share/data_collection//scripts/my_pusht
+[0.051s] -- Up-to-date: /home/rajpurkar/Rahul/ur5_simulation/install/data_collection/share/data_collection//scripts/my_pusht/videos
+[0.051s] -- Up-to-date: /home/rajpurkar/Rahul/ur5_simulation/install/data_collection/share/data_collection//scripts/my_pusht/videos/chunk_000
+[0.051s] -- Up-to-date: /home/rajpurkar/Rahul/ur5_simulation/install/data_collection/share/data_collection//scripts/my_pusht/videos/chunk_000/observation.images.state
+[0.051s] -- Up-to-date: /home/rajpurkar/Rahul/ur5_simulation/install/data_collection/share/data_collection//scripts/my_pusht/videos/chunk_000/observation.images.state/episode_000001.mp4
+[0.051s] -- Up-to-date: /home/rajpurkar/Rahul/ur5_simulation/install/data_collection/share/data_collection//scripts/my_pusht/videos/chunk_000/observation.images.state/episode_000000.mp4
+[0.051s] -- Up-to-date: /home/rajpurkar/Rahul/ur5_simulation/install/data_collection/share/data_collection//scripts/my_pusht/videos/chunk_000/observation.images.top
+[0.052s] -- Up-to-date: /home/rajpurkar/Rahul/ur5_simulation/install/data_collection/share/data_collection//scripts/my_pusht/videos/chunk_000/observation.images.top/episode_000001.mp4
+[0.052s] -- Up-to-date: /home/rajpurkar/Rahul/ur5_simulation/install/data_collection/share/data_collection//scripts/my_pusht/videos/chunk_000/observation.images.top/episode_000000.mp4
+[0.052s] -- Up-to-date: /home/rajpurkar/Rahul/ur5_simulation/install/data_collection/share/data_collection//scripts/my_pusht/videos/chunk_000/observation.images.wrist
+[0.052s] -- Up-to-date: /home/rajpurkar/Rahul/ur5_simulation/install/data_collection/share/data_collection//scripts/my_pusht/videos/chunk_000/observation.images.wrist/episode_000001.mp4
+[0.052s] -- Up-to-date: /home/rajpurkar/Rahul/ur5_simulation/install/data_collection/share/data_collection//scripts/my_pusht/videos/chunk_000/observation.images.wrist/episode_000000.mp4
+[0.052s] -- Up-to-date: /home/rajpurkar/Rahul/ur5_simulation/install/data_collection/share/data_collection//scripts/my_pusht/data
+[0.052s] -- Up-to-date: /home/rajpurkar/Rahul/ur5_simulation/install/data_collection/share/data_collection//scripts/my_pusht/data/chunk_000
+[0.052s] -- Up-to-date: /home/rajpurkar/Rahul/ur5_simulation/install/data_collection/share/data_collection//scripts/my_pusht/data/chunk_000/episode_000000.parquet
+[0.052s] -- Up-to-date: /home/rajpurkar/Rahul/ur5_simulation/install/data_collection/share/data_collection//scripts/my_pusht/data/chunk_000/episode_000001.parquet
+[0.052s] -- Installing: /home/rajpurkar/Rahul/ur5_simulation/install/data_collection/lib/data_collection/data_collection.py
+[0.052s] -- Up-to-date: /home/rajpurkar/Rahul/ur5_simulation/install/data_collection/share/ament_index/resource_index/package_run_dependencies/data_collection
+[0.052s] -- Up-to-date: /home/rajpurkar/Rahul/ur5_simulation/install/data_collection/share/ament_index/resource_index/parent_prefix_path/data_collection
+[0.052s] -- Up-to-date: /home/rajpurkar/Rahul/ur5_simulation/install/data_collection/share/data_collection/environment/ament_prefix_path.sh
+[0.052s] -- Up-to-date: /home/rajpurkar/Rahul/ur5_simulation/install/data_collection/share/data_collection/environment/ament_prefix_path.dsv
+[0.052s] -- Up-to-date: /home/rajpurkar/Rahul/ur5_simulation/install/data_collection/share/data_collection/environment/path.sh
+[0.052s] -- Up-to-date: /home/rajpurkar/Rahul/ur5_simulation/install/data_collection/share/data_collection/environment/path.dsv
+[0.052s] -- Up-to-date: /home/rajpurkar/Rahul/ur5_simulation/install/data_collection/share/data_collection/local_setup.bash
+[0.052s] -- Up-to-date: /home/rajpurkar/Rahul/ur5_simulation/install/data_collection/share/data_collection/local_setup.sh
+[0.053s] -- Up-to-date: /home/rajpurkar/Rahul/ur5_simulation/install/data_collection/share/data_collection/local_setup.zsh
+[0.053s] -- Up-to-date: /home/rajpurkar/Rahul/ur5_simulation/install/data_collection/share/data_collection/local_setup.dsv
+[0.053s] -- Installing: /home/rajpurkar/Rahul/ur5_simulation/install/data_collection/share/data_collection/package.dsv
+[0.053s] -- Up-to-date: /home/rajpurkar/Rahul/ur5_simulation/install/data_collection/share/ament_index/resource_index/packages/data_collection
+[0.053s] -- Up-to-date: /home/rajpurkar/Rahul/ur5_simulation/install/data_collection/share/data_collection/cmake/data_collectionConfig.cmake
+[0.053s] -- Up-to-date: /home/rajpurkar/Rahul/ur5_simulation/install/data_collection/share/data_collection/cmake/data_collectionConfig-version.cmake
+[0.053s] -- Up-to-date: /home/rajpurkar/Rahul/ur5_simulation/install/data_collection/share/data_collection/package.xml
+[0.070s] Invoked command in '/home/rajpurkar/Rahul/ur5_simulation/build/data_collection' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/rajpurkar/Rahul/ur5_simulation/build/data_collection
