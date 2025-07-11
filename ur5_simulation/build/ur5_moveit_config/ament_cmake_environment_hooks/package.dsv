@@ -1,4 +1,0 @@
-source;share/ur5_moveit_config/local_setup.bash
-source;share/ur5_moveit_config/local_setup.dsv
-source;share/ur5_moveit_config/local_setup.sh
-source;share/ur5_moveit_config/local_setup.zsh

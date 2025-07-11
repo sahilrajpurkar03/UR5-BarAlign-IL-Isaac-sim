@@ -1,4 +1,0 @@
-Invoking command in '/home/rajpurkar/Rahul/ur5_simulation/build/moveit_servo': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/rajpurkar/Rahul/ur5_simulation/build/moveit_servo -- -j16 -l16
-Invoked command in '/home/rajpurkar/Rahul/ur5_simulation/build/moveit_servo' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/rajpurkar/Rahul/ur5_simulation/build/moveit_servo -- -j16 -l16
-Invoking command in '/home/rajpurkar/Rahul/ur5_simulation/build/moveit_servo': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/rajpurkar/Rahul/ur5_simulation/build/moveit_servo
-Invoked command in '/home/rajpurkar/Rahul/ur5_simulation/build/moveit_servo' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/rajpurkar/Rahul/ur5_simulation/build/moveit_servo

@@ -1,9 +1,0 @@
-/home/rajpurkar/Rahul/ur5_simulation/build/data_collection/CMakeFiles/uninstall.dir
-/home/rajpurkar/Rahul/ur5_simulation/build/data_collection/CMakeFiles/data_collection_uninstall.dir
-/home/rajpurkar/Rahul/ur5_simulation/build/data_collection/CMakeFiles/test.dir
-/home/rajpurkar/Rahul/ur5_simulation/build/data_collection/CMakeFiles/edit_cache.dir
-/home/rajpurkar/Rahul/ur5_simulation/build/data_collection/CMakeFiles/rebuild_cache.dir
-/home/rajpurkar/Rahul/ur5_simulation/build/data_collection/CMakeFiles/list_install_components.dir
-/home/rajpurkar/Rahul/ur5_simulation/build/data_collection/CMakeFiles/install.dir
-/home/rajpurkar/Rahul/ur5_simulation/build/data_collection/CMakeFiles/install/local.dir
-/home/rajpurkar/Rahul/ur5_simulation/build/data_collection/CMakeFiles/install/strip.dir
