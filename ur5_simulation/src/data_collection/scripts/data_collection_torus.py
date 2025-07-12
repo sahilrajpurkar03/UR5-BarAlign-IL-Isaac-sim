@@ -142,7 +142,7 @@ class Data_Recorder(Node):
         self.data_recorded = False
 
         #### log files for multiple runs are NOT overwritten
-        base_dir = os.environ["HOME"] + "/Rahul/ur5_simulation/src/data_collection/scripts/my_pusht/"
+        base_dir = os.environ["HOME"] + "/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/src/data_collection/scripts/my_pusht/"
         self.log_dir = base_dir + "data/chunk_000/"
         if not os.path.exists(self.log_dir):
             os.makedirs(self.log_dir)
@@ -161,7 +161,7 @@ class Data_Recorder(Node):
             os.makedirs(self.state_vid_dir)
 
         # image of a torus shape on the table (background)
-        self.initial_image = cv2.imread(os.environ['HOME'] + "/Rahul/ur5_simulation/images/torus_top_plane.png")
+        self.initial_image = cv2.imread(os.environ['HOME'] + "/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/images/torus_top_plane.png")
         self.initial_image = cv2.rotate(self.initial_image, cv2.ROTATE_90_COUNTERCLOCKWISE)
 
         # mask for torus region, will be drawn as circle dynamically
