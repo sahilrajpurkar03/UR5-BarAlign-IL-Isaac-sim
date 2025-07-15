@@ -1,0 +1,1188 @@
+[0.000000] (-) TimerEvent: {}
+[0.000368] (data_collection) JobQueued: {'identifier': 'data_collection', 'dependencies': OrderedDict()}
+[0.000505] (moveit_servo) JobQueued: {'identifier': 'moveit_servo', 'dependencies': OrderedDict()}
+[0.000521] (ur5_description) JobQueued: {'identifier': 'ur5_description', 'dependencies': OrderedDict()}
+[0.000534] (ur5_moveit_config) JobQueued: {'identifier': 'ur5_moveit_config', 'dependencies': OrderedDict([('ur5_description', '/home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/ur5_description')])}
+[0.000551] (ur5_description) JobStarted: {'identifier': 'ur5_description'}
+[0.004369] (data_collection) JobStarted: {'identifier': 'data_collection'}
+[0.006772] (moveit_servo) JobStarted: {'identifier': 'moveit_servo'}
+[0.009818] (ur5_description) JobProgress: {'identifier': 'ur5_description', 'progress': 'cmake'}
+[0.010312] (ur5_description) Command: {'cmd': ['/usr/bin/cmake', '/home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/src/ur5_description', '-DCMAKE_INSTALL_PREFIX=/home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/ur5_description'], 'cwd': '/home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/build/ur5_description', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'rajpurkar'), ('LC_TIME', 'de_DE.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/rajpurkar'), ('OLDPWD', '/home/rajpurkar'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'de_DE.UTF-8'), ('SYSTEMD_EXEC_PID', '4221'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1001/bus'), ('COLORTERM', 'truecolor'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'rajpurkar'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'rajpurkar'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/rajpurkar/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/cni-mothership:@/tmp/.ICE-unix/4198,unix/cni-mothership:/tmp/.ICE-unix/4198'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'de_DE.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/b151ab05_a579_4922_b8c0_f73b447959f8'), ('KUBECONFIG', '/root/.kube/config'), ('XDG_RUNTIME_DIR', '/run/user/1001'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'de_DE.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1001/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.170'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1001/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'de_DE.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'de_DE.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1001/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'de_DE.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/build/ur5_description'), ('TURTLEBOT3_MODEL', 'waffle'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'de_DE.UTF-8'), ('LC_PAPER', 'de_DE.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.011620] (data_collection) JobProgress: {'identifier': 'data_collection', 'progress': 'cmake'}
+[0.011939] (data_collection) Command: {'cmd': ['/usr/bin/cmake', '/home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/src/data_collection', '-DCMAKE_INSTALL_PREFIX=/home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/data_collection'], 'cwd': '/home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/build/data_collection', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'rajpurkar'), ('LC_TIME', 'de_DE.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/rajpurkar'), ('OLDPWD', '/home/rajpurkar'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'de_DE.UTF-8'), ('SYSTEMD_EXEC_PID', '4221'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1001/bus'), ('COLORTERM', 'truecolor'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'rajpurkar'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'rajpurkar'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/rajpurkar/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/cni-mothership:@/tmp/.ICE-unix/4198,unix/cni-mothership:/tmp/.ICE-unix/4198'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'de_DE.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/b151ab05_a579_4922_b8c0_f73b447959f8'), ('KUBECONFIG', '/root/.kube/config'), ('XDG_RUNTIME_DIR', '/run/user/1001'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'de_DE.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1001/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.170'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1001/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'de_DE.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'de_DE.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1001/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'de_DE.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/build/data_collection'), ('TURTLEBOT3_MODEL', 'waffle'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'de_DE.UTF-8'), ('LC_PAPER', 'de_DE.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.013883] (moveit_servo) JobProgress: {'identifier': 'moveit_servo', 'progress': 'cmake'}
+[0.014271] (moveit_servo) Command: {'cmd': ['/usr/bin/cmake', '/home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/src/moveit_servo', '-DCMAKE_INSTALL_PREFIX=/home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/moveit_servo'], 'cwd': '/home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/build/moveit_servo', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'rajpurkar'), ('LC_TIME', 'de_DE.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/rajpurkar'), ('OLDPWD', '/home/rajpurkar'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'de_DE.UTF-8'), ('SYSTEMD_EXEC_PID', '4221'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1001/bus'), ('COLORTERM', 'truecolor'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'rajpurkar'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'rajpurkar'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/rajpurkar/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/cni-mothership:@/tmp/.ICE-unix/4198,unix/cni-mothership:/tmp/.ICE-unix/4198'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'de_DE.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/b151ab05_a579_4922_b8c0_f73b447959f8'), ('KUBECONFIG', '/root/.kube/config'), ('XDG_RUNTIME_DIR', '/run/user/1001'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'de_DE.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1001/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.170'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1001/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'de_DE.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'de_DE.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1001/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'de_DE.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/build/moveit_servo'), ('TURTLEBOT3_MODEL', 'waffle'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'de_DE.UTF-8'), ('LC_PAPER', 'de_DE.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.082659] (moveit_servo) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.082820] (ur5_description) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.082902] (data_collection) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.099933] (-) TimerEvent: {}
+[0.135861] (data_collection) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.136049] (moveit_servo) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.136593] (ur5_description) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.143363] (moveit_servo) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.143559] (data_collection) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.143686] (ur5_description) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.190806] (moveit_servo) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.190968] (data_collection) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.191029] (ur5_description) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.196590] (moveit_servo) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.196699] (ur5_description) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.196777] (data_collection) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.196851] (ur5_description) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.196919] (data_collection) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.196986] (moveit_servo) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.197360] (data_collection) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.197441] (ur5_description) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.197488] (moveit_servo) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.200039] (moveit_servo) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.200093] (-) TimerEvent: {}
+[0.200211] (data_collection) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.200285] (ur5_description) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.254933] (data_collection) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.255182] (moveit_servo) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.255431] (ur5_description) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.260849] (data_collection) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.261052] (data_collection) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.261152] (moveit_servo) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.261410] (data_collection) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.261580] (moveit_servo) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.261687] (ur5_description) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.261811] (ur5_description) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.261880] (moveit_servo) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.261991] (ur5_description) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.264069] (moveit_servo) StdoutLine: {'line': b'-- Found moveit_common: 2.5.9 (/opt/ros/humble/share/moveit_common/cmake)\n'}
+[0.265969] (data_collection) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.266089] (moveit_servo) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.266146] (ur5_description) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.300246] (-) TimerEvent: {}
+[0.378339] (moveit_servo) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[0.378952] (ur5_description) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[0.386046] (data_collection) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[0.400312] (-) TimerEvent: {}
+[0.458524] (data_collection) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.12 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[0.500433] (-) TimerEvent: {}
+[0.502438] (moveit_servo) StderrLine: {'line': b"\x1b[0mmoveit_servo: You did not request a specific build type: Choosing 'Release' for maximum performance\x1b[0m\n"}
+[0.504181] (moveit_servo) StdoutLine: {'line': b'-- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)\n'}
+[0.504526] (ur5_description) StdoutLine: {'line': b'-- Configuring done\n'}
+[0.506264] (ur5_description) StdoutLine: {'line': b'-- Generating done\n'}
+[0.507465] (ur5_description) StdoutLine: {'line': b'-- Build files have been written to: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/build/ur5_description\n'}
+[0.510146] (ur5_description) CommandEnded: {'returncode': 0}
+[0.511059] (ur5_description) JobProgress: {'identifier': 'ur5_description', 'progress': 'build'}
+[0.511755] (ur5_description) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/build/ur5_description', '--', '-j16', '-l16'], 'cwd': '/home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/build/ur5_description', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'rajpurkar'), ('LC_TIME', 'de_DE.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/rajpurkar'), ('OLDPWD', '/home/rajpurkar'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'de_DE.UTF-8'), ('SYSTEMD_EXEC_PID', '4221'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1001/bus'), ('COLORTERM', 'truecolor'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'rajpurkar'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'rajpurkar'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/rajpurkar/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/cni-mothership:@/tmp/.ICE-unix/4198,unix/cni-mothership:/tmp/.ICE-unix/4198'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'de_DE.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/b151ab05_a579_4922_b8c0_f73b447959f8'), ('KUBECONFIG', '/root/.kube/config'), ('XDG_RUNTIME_DIR', '/run/user/1001'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'de_DE.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1001/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.170'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1001/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'de_DE.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'de_DE.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1001/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'de_DE.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/build/ur5_description'), ('TURTLEBOT3_MODEL', 'waffle'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'de_DE.UTF-8'), ('LC_PAPER', 'de_DE.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.512010] (moveit_servo) StdoutLine: {'line': b'-- Found Eigen3: TRUE (found version "3.4.0") \n'}
+[0.512284] (moveit_servo) StdoutLine: {'line': b'-- Found control_msgs: 4.8.0 (/opt/ros/humble/share/control_msgs/cmake)\n'}
+[0.519673] (data_collection) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[0.520185] (data_collection) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[0.520751] (data_collection) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[0.522044] (data_collection) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[0.522848] (data_collection) StdoutLine: {'line': b'-- Configuring done\n'}
+[0.524697] (data_collection) StdoutLine: {'line': b'-- Generating done\n'}
+[0.525947] (data_collection) StdoutLine: {'line': b'-- Build files have been written to: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/build/data_collection\n'}
+[0.528966] (data_collection) CommandEnded: {'returncode': 0}
+[0.529456] (data_collection) JobProgress: {'identifier': 'data_collection', 'progress': 'build'}
+[0.530109] (data_collection) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/build/data_collection', '--', '-j16', '-l16'], 'cwd': '/home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/build/data_collection', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'rajpurkar'), ('LC_TIME', 'de_DE.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/rajpurkar'), ('OLDPWD', '/home/rajpurkar'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'de_DE.UTF-8'), ('SYSTEMD_EXEC_PID', '4221'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1001/bus'), ('COLORTERM', 'truecolor'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'rajpurkar'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'rajpurkar'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/rajpurkar/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/cni-mothership:@/tmp/.ICE-unix/4198,unix/cni-mothership:/tmp/.ICE-unix/4198'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'de_DE.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/b151ab05_a579_4922_b8c0_f73b447959f8'), ('KUBECONFIG', '/root/.kube/config'), ('XDG_RUNTIME_DIR', '/run/user/1001'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'de_DE.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1001/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.170'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1001/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'de_DE.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'de_DE.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1001/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'de_DE.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/build/data_collection'), ('TURTLEBOT3_MODEL', 'waffle'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'de_DE.UTF-8'), ('LC_PAPER', 'de_DE.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.535748] (ur5_description) CommandEnded: {'returncode': 0}
+[0.536336] (ur5_description) JobProgress: {'identifier': 'ur5_description', 'progress': 'install'}
+[0.541762] (ur5_description) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/build/ur5_description'], 'cwd': '/home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/build/ur5_description', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'rajpurkar'), ('LC_TIME', 'de_DE.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/rajpurkar'), ('OLDPWD', '/home/rajpurkar'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'de_DE.UTF-8'), ('SYSTEMD_EXEC_PID', '4221'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1001/bus'), ('COLORTERM', 'truecolor'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'rajpurkar'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'rajpurkar'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/rajpurkar/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/cni-mothership:@/tmp/.ICE-unix/4198,unix/cni-mothership:/tmp/.ICE-unix/4198'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'de_DE.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/b151ab05_a579_4922_b8c0_f73b447959f8'), ('KUBECONFIG', '/root/.kube/config'), ('XDG_RUNTIME_DIR', '/run/user/1001'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'de_DE.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1001/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.170'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1001/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'de_DE.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'de_DE.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1001/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'de_DE.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/build/ur5_description'), ('TURTLEBOT3_MODEL', 'waffle'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'de_DE.UTF-8'), ('LC_PAPER', 'de_DE.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.546486] (ur5_description) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.546772] (ur5_description) StdoutLine: {'line': b'-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/ur5_description/share/ament_index/resource_index/package_run_dependencies/ur5_description\n'}
+[0.546882] (ur5_description) StdoutLine: {'line': b'-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/ur5_description/share/ament_index/resource_index/parent_prefix_path/ur5_description\n'}
+[0.546988] (ur5_description) StdoutLine: {'line': b'-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/ur5_description/share/ur5_description/environment/ament_prefix_path.sh\n'}
+[0.547065] (ur5_description) StdoutLine: {'line': b'-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/ur5_description/share/ur5_description/environment/ament_prefix_path.dsv\n'}
+[0.547160] (ur5_description) StdoutLine: {'line': b'-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/ur5_description/share/ur5_description/environment/path.sh\n'}
+[0.547315] (ur5_description) StdoutLine: {'line': b'-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/ur5_description/share/ur5_description/environment/path.dsv\n'}
+[0.547393] (ur5_description) StdoutLine: {'line': b'-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/ur5_description/share/ur5_description/local_setup.bash\n'}
+[0.547442] (ur5_description) StdoutLine: {'line': b'-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/ur5_description/share/ur5_description/local_setup.sh\n'}
+[0.547539] (ur5_description) StdoutLine: {'line': b'-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/ur5_description/share/ur5_description/local_setup.zsh\n'}
+[0.547595] (ur5_description) StdoutLine: {'line': b'-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/ur5_description/share/ur5_description/local_setup.dsv\n'}
+[0.547659] (ur5_description) StdoutLine: {'line': b'-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/ur5_description/share/ur5_description/package.dsv\n'}
+[0.547755] (ur5_description) StdoutLine: {'line': b'-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/ur5_description/share/ament_index/resource_index/packages/ur5_description\n'}
+[0.547879] (ur5_description) StdoutLine: {'line': b'-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/ur5_description/share/ur5_description/cmake/ur5_descriptionConfig.cmake\n'}
+[0.548001] (ur5_description) StdoutLine: {'line': b'-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/ur5_description/share/ur5_description/cmake/ur5_descriptionConfig-version.cmake\n'}
+[0.548090] (ur5_description) StdoutLine: {'line': b'-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/ur5_description/share/ur5_description/package.xml\n'}
+[0.548206] (ur5_description) StdoutLine: {'line': b'-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/ur5_description/share/ur5_description/meshes\n'}
+[0.548329] (ur5_description) StdoutLine: {'line': b'-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/ur5_description/share/ur5_description/meshes/visual\n'}
+[0.548407] (ur5_description) StdoutLine: {'line': b'-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/ur5_description/share/ur5_description/meshes/visual/wrist1.dae\n'}
+[0.549556] (ur5_description) StdoutLine: {'line': b'-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/ur5_description/share/ur5_description/meshes/visual/tool_old.dae\n'}
+[0.550083] (ur5_description) StdoutLine: {'line': b'-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/ur5_description/share/ur5_description/meshes/visual/forearm.dae\n'}
+[0.551835] (ur5_description) StdoutLine: {'line': b'-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/ur5_description/share/ur5_description/meshes/visual/shoulder.dae\n'}
+[0.553153] (ur5_description) StdoutLine: {'line': b'-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/ur5_description/share/ur5_description/meshes/visual/base.dae\n'}
+[0.553725] (ur5_description) StdoutLine: {'line': b'-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/ur5_description/share/ur5_description/meshes/visual/upperarm.dae\n'}
+[0.554477] (data_collection) CommandEnded: {'returncode': 0}
+[0.554959] (data_collection) JobProgress: {'identifier': 'data_collection', 'progress': 'install'}
+[0.555186] (data_collection) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/build/data_collection'], 'cwd': '/home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/build/data_collection', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'rajpurkar'), ('LC_TIME', 'de_DE.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/rajpurkar'), ('OLDPWD', '/home/rajpurkar'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'de_DE.UTF-8'), ('SYSTEMD_EXEC_PID', '4221'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1001/bus'), ('COLORTERM', 'truecolor'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'rajpurkar'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'rajpurkar'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/rajpurkar/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/cni-mothership:@/tmp/.ICE-unix/4198,unix/cni-mothership:/tmp/.ICE-unix/4198'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'de_DE.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/b151ab05_a579_4922_b8c0_f73b447959f8'), ('KUBECONFIG', '/root/.kube/config'), ('XDG_RUNTIME_DIR', '/run/user/1001'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'de_DE.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1001/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.170'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1001/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'de_DE.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'de_DE.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1001/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'de_DE.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/build/data_collection'), ('TURTLEBOT3_MODEL', 'waffle'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'de_DE.UTF-8'), ('LC_PAPER', 'de_DE.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.556100] (moveit_servo) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.556257] (ur5_description) StdoutLine: {'line': b'-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/ur5_description/share/ur5_description/meshes/visual/wrist2.dae\n'}
+[0.556885] (ur5_description) StdoutLine: {'line': b'-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/ur5_description/share/ur5_description/meshes/visual/ur5_stand.dae\n'}
+[0.557179] (ur5_description) StdoutLine: {'line': b'-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/ur5_description/share/ur5_description/meshes/visual/wrist3.dae\n'}
+[0.557626] (ur5_description) StdoutLine: {'line': b'-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/ur5_description/share/ur5_description/meshes/visual/tool.dae\n'}
+[0.558253] (ur5_description) StdoutLine: {'line': b'-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/ur5_description/share/ur5_description/meshes/collision\n'}
+[0.558370] (ur5_description) StdoutLine: {'line': b'-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/ur5_description/share/ur5_description/meshes/collision/upperarm.stl\n'}
+[0.558632] (ur5_description) StdoutLine: {'line': b'-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/ur5_description/share/ur5_description/meshes/collision/ur5_stand.stl\n'}
+[0.558906] (ur5_description) StdoutLine: {'line': b'-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/ur5_description/share/ur5_description/meshes/collision/forearm.stl\n'}
+[0.559253] (ur5_description) StdoutLine: {'line': b'-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/ur5_description/share/ur5_description/meshes/collision/wrist1.stl\n'}
+[0.559582] (ur5_description) StdoutLine: {'line': b'-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/ur5_description/share/ur5_description/meshes/collision/wrist3.stl\n'}
+[0.559854] (ur5_description) StdoutLine: {'line': b'-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/ur5_description/share/ur5_description/meshes/collision/tool.stl\n'}
+[0.560177] (data_collection) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.560394] (data_collection) StdoutLine: {'line': b'-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/data_collection/share/data_collection//scripts\n'}
+[0.560513] (data_collection) StdoutLine: {'line': b'-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/data_collection/share/data_collection//scripts/data_collection_torus.py\n'}
+[0.560618] (data_collection) StdoutLine: {'line': b'-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/data_collection/share/data_collection//scripts/data_collection.py\n'}
+[0.560699] (ur5_description) StdoutLine: {'line': b'-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/ur5_description/share/ur5_description/meshes/collision/base.stl\n'}
+[0.560816] (data_collection) StdoutLine: {'line': b'-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/data_collection/share/data_collection//scripts/my_pusht\n'}
+[0.560888] (data_collection) StdoutLine: {'line': b'-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/data_collection/share/data_collection//scripts/my_pusht/videos\n'}
+[0.560957] (data_collection) StdoutLine: {'line': b'-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/data_collection/share/data_collection//scripts/my_pusht/videos/chunk_000\n'}
+[0.561033] (data_collection) StdoutLine: {'line': b'-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/data_collection/share/data_collection//scripts/my_pusht/videos/chunk_000/observation.images.state\n'}
+[0.561108] (data_collection) StdoutLine: {'line': b'-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/data_collection/share/data_collection//scripts/my_pusht/videos/chunk_000/observation.images.state/episode_000001.mp4\n'}
+[0.561179] (ur5_description) StdoutLine: {'line': b'-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/ur5_description/share/ur5_description/meshes/collision/shoulder.stl\n'}
+[0.561275] (ur5_description) StdoutLine: {'line': b'-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/ur5_description/share/ur5_description/meshes/collision/wrist2.stl\n'}
+[0.561374] (data_collection) StdoutLine: {'line': b'-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/data_collection/share/data_collection//scripts/my_pusht/videos/chunk_000/observation.images.state/episode_000000.mp4\n'}
+[0.561471] (ur5_description) StdoutLine: {'line': b'-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/ur5_description/share/ur5_description/meshes/collision/tool_old.stl\n'}
+[0.561972] (data_collection) StdoutLine: {'line': b'-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/data_collection/share/data_collection//scripts/my_pusht/videos/chunk_000/observation.images.top\n'}
+[0.562079] (moveit_servo) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.562155] (data_collection) StdoutLine: {'line': b'-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/data_collection/share/data_collection//scripts/my_pusht/videos/chunk_000/observation.images.top/episode_000001.mp4\n'}
+[0.562243] (ur5_description) StdoutLine: {'line': b'-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/ur5_description/share/ur5_description/urdf\n'}
+[0.562297] (ur5_description) StdoutLine: {'line': b'-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/ur5_description/share/ur5_description/urdf/ur5.urdf\n'}
+[0.562439] (ur5_description) StdoutLine: {'line': b'-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/ur5_description/share/ur5_description/urdf/ur5\n'}
+[0.562518] (ur5_description) StdoutLine: {'line': b'-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/ur5_description/share/ur5_description/urdf/ur5/ur5.usd\n'}
+[0.562635] (ur5_description) StdoutLine: {'line': b'-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/ur5_description/share/ur5_description/urdf/ur5/configuration\n'}
+[0.562730] (ur5_description) StdoutLine: {'line': b'-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/ur5_description/share/ur5_description/urdf/ur5/configuration/ur5_sensor.usd\n'}
+[0.562825] (data_collection) StdoutLine: {'line': b'-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/data_collection/share/data_collection//scripts/my_pusht/videos/chunk_000/observation.images.top/episode_000000.mp4\n'}
+[0.562904] (ur5_description) StdoutLine: {'line': b'-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/ur5_description/share/ur5_description/urdf/ur5/configuration/ur5_physics.usd\n'}
+[0.563065] (ur5_description) StdoutLine: {'line': b'-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/ur5_description/share/ur5_description/urdf/ur5/configuration/ur5_base.usd\n'}
+[0.564015] (data_collection) StdoutLine: {'line': b'-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/data_collection/share/data_collection//scripts/my_pusht/videos/chunk_000/observation.images.wrist\n'}
+[0.564136] (data_collection) StdoutLine: {'line': b'-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/data_collection/share/data_collection//scripts/my_pusht/videos/chunk_000/observation.images.wrist/episode_000001.mp4\n'}
+[0.565163] (data_collection) StdoutLine: {'line': b'-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/data_collection/share/data_collection//scripts/my_pusht/videos/chunk_000/observation.images.wrist/episode_000000.mp4\n'}
+[0.566713] (data_collection) StdoutLine: {'line': b'-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/data_collection/share/data_collection//scripts/my_pusht/data\n'}
+[0.566835] (data_collection) StdoutLine: {'line': b'-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/data_collection/share/data_collection//scripts/my_pusht/data/chunk_000\n'}
+[0.566933] (data_collection) StdoutLine: {'line': b'-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/data_collection/share/data_collection//scripts/my_pusht/data/chunk_000/episode_000000.parquet\n'}
+[0.567102] (data_collection) StdoutLine: {'line': b'-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/data_collection/share/data_collection//scripts/my_pusht/data/chunk_000/episode_000001.parquet\n'}
+[0.567476] (data_collection) StdoutLine: {'line': b'-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/data_collection/lib/data_collection/data_collection.py\n'}
+[0.567638] (data_collection) StdoutLine: {'line': b'-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/data_collection/share/ament_index/resource_index/package_run_dependencies/data_collection\n'}
+[0.567740] (data_collection) StdoutLine: {'line': b'-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/data_collection/share/ament_index/resource_index/parent_prefix_path/data_collection\n'}
+[0.567853] (data_collection) StdoutLine: {'line': b'-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/data_collection/share/data_collection/environment/ament_prefix_path.sh\n'}
+[0.567957] (data_collection) StdoutLine: {'line': b'-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/data_collection/share/data_collection/environment/ament_prefix_path.dsv\n'}
+[0.568046] (data_collection) StdoutLine: {'line': b'-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/data_collection/share/data_collection/environment/path.sh\n'}
+[0.568130] (data_collection) StdoutLine: {'line': b'-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/data_collection/share/data_collection/environment/path.dsv\n'}
+[0.568236] (data_collection) StdoutLine: {'line': b'-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/data_collection/share/data_collection/local_setup.bash\n'}
+[0.568330] (data_collection) StdoutLine: {'line': b'-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/data_collection/share/data_collection/local_setup.sh\n'}
+[0.568436] (data_collection) StdoutLine: {'line': b'-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/data_collection/share/data_collection/local_setup.zsh\n'}
+[0.568520] (data_collection) StdoutLine: {'line': b'-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/data_collection/share/data_collection/local_setup.dsv\n'}
+[0.568612] (data_collection) StdoutLine: {'line': b'-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/data_collection/share/data_collection/package.dsv\n'}
+[0.568716] (data_collection) StdoutLine: {'line': b'-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/data_collection/share/ament_index/resource_index/packages/data_collection\n'}
+[0.568802] (data_collection) StdoutLine: {'line': b'-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/data_collection/share/data_collection/cmake/data_collectionConfig.cmake\n'}
+[0.568900] (data_collection) StdoutLine: {'line': b'-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/data_collection/share/data_collection/cmake/data_collectionConfig-version.cmake\n'}
+[0.568999] (data_collection) StdoutLine: {'line': b'-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/data_collection/share/data_collection/package.xml\n'}
+[0.570074] (data_collection) CommandEnded: {'returncode': 0}
+[0.573529] (moveit_servo) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.582373] (data_collection) JobEnded: {'identifier': 'data_collection', 'rc': 0}
+[0.583521] (ur5_description) CommandEnded: {'returncode': 0}
+[0.588044] (moveit_servo) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.591356] (ur5_description) JobEnded: {'identifier': 'ur5_description', 'rc': 0}
+[0.592070] (ur5_moveit_config) JobStarted: {'identifier': 'ur5_moveit_config'}
+[0.595627] (ur5_moveit_config) JobProgress: {'identifier': 'ur5_moveit_config', 'progress': 'cmake'}
+[0.596284] (ur5_moveit_config) Command: {'cmd': ['/usr/bin/cmake', '/home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/src/ur5_moveit_config', '-DCMAKE_INSTALL_PREFIX=/home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/ur5_moveit_config'], 'cwd': '/home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/build/ur5_moveit_config', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'rajpurkar'), ('LC_TIME', 'de_DE.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/rajpurkar'), ('OLDPWD', '/home/rajpurkar'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'de_DE.UTF-8'), ('SYSTEMD_EXEC_PID', '4221'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1001/bus'), ('COLORTERM', 'truecolor'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'rajpurkar'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'rajpurkar'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/rajpurkar/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/cni-mothership:@/tmp/.ICE-unix/4198,unix/cni-mothership:/tmp/.ICE-unix/4198'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'de_DE.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/b151ab05_a579_4922_b8c0_f73b447959f8'), ('KUBECONFIG', '/root/.kube/config'), ('XDG_RUNTIME_DIR', '/run/user/1001'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'de_DE.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1001/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.170'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1001/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/ur5_description:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'de_DE.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'de_DE.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1001/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'de_DE.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/build/ur5_moveit_config'), ('TURTLEBOT3_MODEL', 'waffle'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'de_DE.UTF-8'), ('LC_PAPER', 'de_DE.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/ur5_description:/opt/ros/humble')]), 'shell': False}
+[0.600497] (-) TimerEvent: {}
+[0.605487] (moveit_servo) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.630532] (ur5_moveit_config) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.666355] (ur5_moveit_config) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.671160] (ur5_moveit_config) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.700606] (-) TimerEvent: {}
+[0.714461] (ur5_moveit_config) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.720155] (ur5_moveit_config) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.720374] (ur5_moveit_config) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.720644] (ur5_moveit_config) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.722751] (ur5_moveit_config) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.730914] (moveit_servo) StdoutLine: {'line': b'-- Found control_toolbox: 3.6.0 (/opt/ros/humble/share/control_toolbox/cmake)\n'}
+[0.773647] (ur5_moveit_config) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.779426] (ur5_moveit_config) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.779605] (ur5_moveit_config) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.779979] (ur5_moveit_config) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.780046] (moveit_servo) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.781879] (ur5_moveit_config) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.782975] (moveit_servo) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.800697] (-) TimerEvent: {}
+[0.847894] (moveit_servo) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[0.868089] (moveit_servo) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[0.885125] (ur5_moveit_config) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[0.896989] (moveit_servo) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.900787] (-) TimerEvent: {}
+[0.907322] (moveit_servo) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[0.984190] (moveit_servo) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[0.984586] (moveit_servo) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[1.000869] (-) TimerEvent: {}
+[1.006217] (ur5_moveit_config) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.007932] (ur5_moveit_config) StdoutLine: {'line': b'-- Generating done\n'}
+[1.009142] (ur5_moveit_config) StdoutLine: {'line': b'-- Build files have been written to: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/build/ur5_moveit_config\n'}
+[1.011990] (ur5_moveit_config) CommandEnded: {'returncode': 0}
+[1.012449] (ur5_moveit_config) JobProgress: {'identifier': 'ur5_moveit_config', 'progress': 'build'}
+[1.013072] (ur5_moveit_config) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/build/ur5_moveit_config', '--', '-j16', '-l16'], 'cwd': '/home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/build/ur5_moveit_config', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'rajpurkar'), ('LC_TIME', 'de_DE.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/rajpurkar'), ('OLDPWD', '/home/rajpurkar'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'de_DE.UTF-8'), ('SYSTEMD_EXEC_PID', '4221'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1001/bus'), ('COLORTERM', 'truecolor'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'rajpurkar'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'rajpurkar'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/rajpurkar/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/cni-mothership:@/tmp/.ICE-unix/4198,unix/cni-mothership:/tmp/.ICE-unix/4198'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'de_DE.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/b151ab05_a579_4922_b8c0_f73b447959f8'), ('KUBECONFIG', '/root/.kube/config'), ('XDG_RUNTIME_DIR', '/run/user/1001'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'de_DE.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1001/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.170'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1001/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/ur5_description:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'de_DE.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'de_DE.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1001/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'de_DE.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/build/ur5_moveit_config'), ('TURTLEBOT3_MODEL', 'waffle'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'de_DE.UTF-8'), ('LC_PAPER', 'de_DE.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/ur5_description:/opt/ros/humble')]), 'shell': False}
+[1.036376] (ur5_moveit_config) CommandEnded: {'returncode': 0}
+[1.036815] (ur5_moveit_config) JobProgress: {'identifier': 'ur5_moveit_config', 'progress': 'install'}
+[1.037042] (ur5_moveit_config) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/build/ur5_moveit_config'], 'cwd': '/home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/build/ur5_moveit_config', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'rajpurkar'), ('LC_TIME', 'de_DE.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/rajpurkar'), ('OLDPWD', '/home/rajpurkar'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'de_DE.UTF-8'), ('SYSTEMD_EXEC_PID', '4221'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1001/bus'), ('COLORTERM', 'truecolor'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'rajpurkar'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'rajpurkar'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/rajpurkar/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/cni-mothership:@/tmp/.ICE-unix/4198,unix/cni-mothership:/tmp/.ICE-unix/4198'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'de_DE.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/b151ab05_a579_4922_b8c0_f73b447959f8'), ('KUBECONFIG', '/root/.kube/config'), ('XDG_RUNTIME_DIR', '/run/user/1001'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'de_DE.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1001/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.170'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1001/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/ur5_description:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'de_DE.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'de_DE.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1001/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'de_DE.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/build/ur5_moveit_config'), ('TURTLEBOT3_MODEL', 'waffle'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'de_DE.UTF-8'), ('LC_PAPER', 'de_DE.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/ur5_description:/opt/ros/humble')]), 'shell': False}
+[1.042409] (ur5_moveit_config) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[1.042649] (ur5_moveit_config) StdoutLine: {'line': b'-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/ur5_moveit_config/share/ament_index/resource_index/package_run_dependencies/ur5_moveit_config\n'}
+[1.042813] (ur5_moveit_config) StdoutLine: {'line': b'-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/ur5_moveit_config/share/ament_index/resource_index/parent_prefix_path/ur5_moveit_config\n'}
+[1.042907] (ur5_moveit_config) StdoutLine: {'line': b'-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/ur5_moveit_config/share/ur5_moveit_config/environment/ament_prefix_path.sh\n'}
+[1.042978] (ur5_moveit_config) StdoutLine: {'line': b'-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/ur5_moveit_config/share/ur5_moveit_config/environment/ament_prefix_path.dsv\n'}
+[1.043087] (ur5_moveit_config) StdoutLine: {'line': b'-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/ur5_moveit_config/share/ur5_moveit_config/environment/path.sh\n'}
+[1.043151] (ur5_moveit_config) StdoutLine: {'line': b'-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/ur5_moveit_config/share/ur5_moveit_config/environment/path.dsv\n'}
+[1.043261] (ur5_moveit_config) StdoutLine: {'line': b'-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/ur5_moveit_config/share/ur5_moveit_config/local_setup.bash\n'}
+[1.043353] (ur5_moveit_config) StdoutLine: {'line': b'-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/ur5_moveit_config/share/ur5_moveit_config/local_setup.sh\n'}
+[1.043417] (ur5_moveit_config) StdoutLine: {'line': b'-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/ur5_moveit_config/share/ur5_moveit_config/local_setup.zsh\n'}
+[1.043478] (ur5_moveit_config) StdoutLine: {'line': b'-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/ur5_moveit_config/share/ur5_moveit_config/local_setup.dsv\n'}
+[1.043550] (ur5_moveit_config) StdoutLine: {'line': b'-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/ur5_moveit_config/share/ur5_moveit_config/package.dsv\n'}
+[1.043651] (ur5_moveit_config) StdoutLine: {'line': b'-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/ur5_moveit_config/share/ament_index/resource_index/packages/ur5_moveit_config\n'}
+[1.043749] (ur5_moveit_config) StdoutLine: {'line': b'-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/ur5_moveit_config/share/ur5_moveit_config/cmake/ur5_moveit_configConfig.cmake\n'}
+[1.043819] (ur5_moveit_config) StdoutLine: {'line': b'-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/ur5_moveit_config/share/ur5_moveit_config/cmake/ur5_moveit_configConfig-version.cmake\n'}
+[1.043889] (ur5_moveit_config) StdoutLine: {'line': b'-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/ur5_moveit_config/share/ur5_moveit_config/package.xml\n'}
+[1.043974] (ur5_moveit_config) StdoutLine: {'line': b'-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/ur5_moveit_config/share/ur5_moveit_config/launch\n'}
+[1.044052] (ur5_moveit_config) StdoutLine: {'line': b'-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/ur5_moveit_config/share/ur5_moveit_config/launch/arm_joy_control.launch.py\n'}
+[1.044119] (ur5_moveit_config) StdoutLine: {'line': b'-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/ur5_moveit_config/share/ur5_moveit_config/launch/rsp.launch.py\n'}
+[1.044183] (ur5_moveit_config) StdoutLine: {'line': b'-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/ur5_moveit_config/share/ur5_moveit_config/launch/moveit_rviz.launch.py\n'}
+[1.044297] (ur5_moveit_config) StdoutLine: {'line': b'-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/ur5_moveit_config/share/ur5_moveit_config/launch/static_virtual_joint_tfs.launch.py\n'}
+[1.044363] (ur5_moveit_config) StdoutLine: {'line': b'-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/ur5_moveit_config/share/ur5_moveit_config/launch/arm_diffusion_control.launch.py\n'}
+[1.044433] (ur5_moveit_config) StdoutLine: {'line': b'-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/ur5_moveit_config/share/ur5_moveit_config/launch/spawn_controllers.launch.py\n'}
+[1.044479] (ur5_moveit_config) StdoutLine: {'line': b'-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/ur5_moveit_config/share/ur5_moveit_config/launch/warehouse_db.launch.py\n'}
+[1.044541] (ur5_moveit_config) StdoutLine: {'line': b'-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/ur5_moveit_config/share/ur5_moveit_config/launch/demo.launch.py\n'}
+[1.044602] (ur5_moveit_config) StdoutLine: {'line': b'-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/ur5_moveit_config/share/ur5_moveit_config/launch/setup_assistant.launch.py\n'}
+[1.044646] (ur5_moveit_config) StdoutLine: {'line': b'-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/ur5_moveit_config/share/ur5_moveit_config/launch/move_group.launch.py\n'}
+[1.044708] (ur5_moveit_config) StdoutLine: {'line': b'-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/ur5_moveit_config/share/ur5_moveit_config/config\n'}
+[1.044771] (ur5_moveit_config) StdoutLine: {'line': b'-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/ur5_moveit_config/share/ur5_moveit_config/config/initial_positions.yaml\n'}
+[1.044851] (ur5_moveit_config) StdoutLine: {'line': b'-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/ur5_moveit_config/share/ur5_moveit_config/config/ur5_simulated_config.yaml\n'}
+[1.045024] (ur5_moveit_config) StdoutLine: {'line': b'-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/ur5_moveit_config/share/ur5_moveit_config/config/arm_joy_control_rviz_config.rviz\n'}
+[1.045201] (ur5_moveit_config) StdoutLine: {'line': b'-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/ur5_moveit_config/share/ur5_moveit_config/config/ros2_controllers.yaml\n'}
+[1.045392] (ur5_moveit_config) StdoutLine: {'line': b'-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/ur5_moveit_config/share/ur5_moveit_config/config/moveit_controllers.yaml\n'}
+[1.045534] (ur5_moveit_config) StdoutLine: {'line': b'-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/ur5_moveit_config/share/ur5_moveit_config/config/kinematics.yaml\n'}
+[1.045694] (ur5_moveit_config) StdoutLine: {'line': b'-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/ur5_moveit_config/share/ur5_moveit_config/config/ur5.srdf\n'}
+[1.045836] (ur5_moveit_config) StdoutLine: {'line': b'-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/ur5_moveit_config/share/ur5_moveit_config/config/ur5.urdf.xacro\n'}
+[1.045988] (ur5_moveit_config) StdoutLine: {'line': b'-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/ur5_moveit_config/share/ur5_moveit_config/config/pilz_cartesian_limits.yaml\n'}
+[1.046139] (ur5_moveit_config) StdoutLine: {'line': b'-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/ur5_moveit_config/share/ur5_moveit_config/config/joint_limits.yaml\n'}
+[1.046334] (ur5_moveit_config) StdoutLine: {'line': b'-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/ur5_moveit_config/share/ur5_moveit_config/config/ur5.ros2_control.xacro\n'}
+[1.046510] (ur5_moveit_config) StdoutLine: {'line': b'-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/ur5_moveit_config/share/ur5_moveit_config/config/moveit.rviz\n'}
+[1.046770] (ur5_moveit_config) StdoutLine: {'line': b'-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/ur5_moveit_config/share/ur5_moveit_config/.setup_assistant\n'}
+[1.048197] (ur5_moveit_config) CommandEnded: {'returncode': 0}
+[1.055142] (moveit_servo) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[1.055873] (moveit_servo) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[1.057156] (ur5_moveit_config) JobEnded: {'identifier': 'ur5_moveit_config', 'rc': 0}
+[1.100958] (-) TimerEvent: {}
+[1.177138] (moveit_servo) StdoutLine: {'line': b'-- Found moveit_core: 2.5.9 (/opt/ros/humble/share/moveit_core/cmake)\n'}
+[1.201072] (-) TimerEvent: {}
+[1.213548] (moveit_servo) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: chrono date_time filesystem iostreams program_options regex serialization system thread \n'}
+[1.243198] (moveit_servo) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: filesystem \n'}
+[1.294396] (moveit_servo) StdoutLine: {'line': b'-- library: /usr/lib/x86_64-linux-gnu/libcurl.so\n'}
+[1.301167] (-) TimerEvent: {}
+[1.336706] (moveit_servo) StdoutLine: {'line': b'-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target\n'}
+[1.401277] (-) TimerEvent: {}
+[1.500126] (moveit_servo) StdoutLine: {'line': b'-- Found moveit_ros_planning: 2.5.9 (/opt/ros/humble/share/moveit_ros_planning/cmake)\n'}
+[1.501341] (-) TimerEvent: {}
+[1.503872] (moveit_servo) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: system filesystem date_time program_options thread chrono \n'}
+[1.524530] (moveit_servo) StdoutLine: {'line': b'-- Found std_srvs: 4.8.0 (/opt/ros/humble/share/std_srvs/cmake)\n'}
+[1.568629] (moveit_servo) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.12 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[1.570565] (moveit_servo) StdoutLine: {'line': b'-- Found ament_cmake_gtest: 1.3.11 (/opt/ros/humble/share/ament_cmake_gtest/cmake)\n'}
+[1.572911] (moveit_servo) StdoutLine: {'line': b'-- Found ros_testing: 0.4.0 (/opt/ros/humble/share/ros_testing/cmake)\n'}
+[1.574501] (moveit_servo) StdoutLine: {'line': b'-- Found launch_testing_ament_cmake: 1.0.8 (/opt/ros/humble/share/launch_testing_ament_cmake/cmake)\n'}
+[1.576251] (moveit_servo) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[1.590399] (moveit_servo) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") \n'}
+[1.594379] (moveit_servo) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") \n'}
+[1.594448] (moveit_servo) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[1.594493] (moveit_servo) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[1.594533] (moveit_servo) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so\n'}
+[1.601439] (-) TimerEvent: {}
+[1.608113] (moveit_servo) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[1.611319] (moveit_servo) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: filesystem \n'}
+[1.662762] (moveit_servo) StdoutLine: {'line': b"-- Found gtest sources under '/opt/ros/humble/src/gtest_vendor': C++ tests using 'Google Test' will be built\n"}
+[1.688557] (moveit_servo) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[1.689811] (moveit_servo) StdoutLine: {'line': b'-- Configured cppcheck include dirs: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/src/moveit_servo/include\n'}
+[1.689920] (moveit_servo) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[1.690537] (moveit_servo) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[1.691036] (moveit_servo) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[1.691609] (moveit_servo) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[1.692768] (moveit_servo) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.701516] (-) TimerEvent: {}
+[1.801722] (-) TimerEvent: {}
+[1.803542] (moveit_servo) StdoutLine: {'line': b'-- Generating done\n'}
+[1.841709] (moveit_servo) StdoutLine: {'line': b'-- Build files have been written to: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/build/moveit_servo\n'}
+[1.852156] (moveit_servo) CommandEnded: {'returncode': 0}
+[1.852637] (moveit_servo) JobProgress: {'identifier': 'moveit_servo', 'progress': 'build'}
+[1.852882] (moveit_servo) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/build/moveit_servo', '--', '-j16', '-l16'], 'cwd': '/home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/build/moveit_servo', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'rajpurkar'), ('LC_TIME', 'de_DE.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/rajpurkar'), ('OLDPWD', '/home/rajpurkar'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'de_DE.UTF-8'), ('SYSTEMD_EXEC_PID', '4221'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1001/bus'), ('COLORTERM', 'truecolor'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'rajpurkar'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'rajpurkar'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/rajpurkar/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/cni-mothership:@/tmp/.ICE-unix/4198,unix/cni-mothership:/tmp/.ICE-unix/4198'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'de_DE.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/b151ab05_a579_4922_b8c0_f73b447959f8'), ('KUBECONFIG', '/root/.kube/config'), ('XDG_RUNTIME_DIR', '/run/user/1001'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'de_DE.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1001/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.170'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1001/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'de_DE.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'de_DE.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1001/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'de_DE.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/build/moveit_servo'), ('TURTLEBOT3_MODEL', 'waffle'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'de_DE.UTF-8'), ('LC_PAPER', 'de_DE.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[1.888095] (moveit_servo) StdoutLine: {'line': b'[ 18%] \x1b[32mBuilding CXX object CMakeFiles/moveit_servo_lib_parameters.dir/src/parameter_descriptor_builder.cpp.o\x1b[0m\n'}
+[1.888327] (moveit_servo) StdoutLine: {'line': b'[ 18%] \x1b[32mBuilding CXX object gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o\x1b[0m\n'}
+[1.888417] (moveit_servo) StdoutLine: {'line': b'[ 18%] \x1b[32mBuilding CXX object CMakeFiles/fake_command_publisher.dir/test/publish_fake_jog_commands.cpp.o\x1b[0m\n'}
+[1.888488] (moveit_servo) StdoutLine: {'line': b'[ 18%] \x1b[32mBuilding CXX object gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o\x1b[0m\n'}
+[1.888554] (moveit_servo) StdoutLine: {'line': b'[ 18%] \x1b[32mBuilding CXX object CMakeFiles/moveit_servo_lib_parameters.dir/src/servo_parameters.cpp.o\x1b[0m\n'}
+[1.888644] (moveit_servo) StdoutLine: {'line': b'[ 18%] \x1b[32mBuilding CXX object CMakeFiles/servo_controller_input.dir/src/teleop_demo/joystick_servo_example.cpp.o\x1b[0m\n'}
+[1.901811] (-) TimerEvent: {}
+[2.002053] (-) TimerEvent: {}
+[2.102383] (-) TimerEvent: {}
+[2.202689] (-) TimerEvent: {}
+[2.302978] (-) TimerEvent: {}
+[2.403265] (-) TimerEvent: {}
+[2.503509] (-) TimerEvent: {}
+[2.603771] (-) TimerEvent: {}
+[2.633405] (moveit_servo) StdoutLine: {'line': b'[ 21%] \x1b[32m\x1b[1mLinking CXX static library libgtest_main.a\x1b[0m\n'}
+[2.656586] (moveit_servo) StdoutLine: {'line': b'[ 21%] Built target gtest_main\n'}
+[2.703892] (-) TimerEvent: {}
+[2.804108] (-) TimerEvent: {}
+[2.904331] (-) TimerEvent: {}
+[3.004568] (-) TimerEvent: {}
+[3.104843] (-) TimerEvent: {}
+[3.193197] (moveit_servo) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/src/moveit_servo/src/teleop_demo/joystick_servo_example.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kbool convertJoyToCmd(const std::vector<float, std::allocator<float> >&, const std::vector<int, std::allocator<int> >&, std::unique_ptr<geometry_msgs::msg::TwistStamped_<std::allocator<void> >, std::default_delete<geometry_msgs::msg::TwistStamped_<std::allocator<void> > > >&, std::unique_ptr<control_msgs::msg::JointJog_<std::allocator<void> >, std::default_delete<control_msgs::msg::JointJog_<std::allocator<void> > > >&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[3.193335] (moveit_servo) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/src/moveit_servo/src/teleop_demo/joystick_servo_example.cpp:106:78:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kbuttons\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[3.193386] (moveit_servo) StderrLine: {'line': b'  106 | bool convertJoyToCmd(const std::vector<float>& axes, \x1b[01;35m\x1b[Kconst std::vector<int>& buttons\x1b[m\x1b[K,\n'}
+[3.193429] (moveit_servo) StderrLine: {'line': b'      |                                                      \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~\x1b[m\x1b[K\n'}
+[3.193479] (moveit_servo) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/src/moveit_servo/src/teleop_demo/joystick_servo_example.cpp:108:68:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kjoint\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[3.193527] (moveit_servo) StderrLine: {'line': b'  108 |                      \x1b[01;35m\x1b[Kstd::unique_ptr<control_msgs::msg::JointJog>& joint\x1b[m\x1b[K)\n'}
+[3.193567] (moveit_servo) StderrLine: {'line': b'      |                      \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~\x1b[m\x1b[K\n'}
+[3.204962] (-) TimerEvent: {}
+[3.305210] (-) TimerEvent: {}
+[3.405455] (-) TimerEvent: {}
+[3.505704] (-) TimerEvent: {}
+[3.605949] (-) TimerEvent: {}
+[3.706194] (-) TimerEvent: {}
+[3.806445] (-) TimerEvent: {}
+[3.906697] (-) TimerEvent: {}
+[4.006954] (-) TimerEvent: {}
+[4.107217] (-) TimerEvent: {}
+[4.207458] (-) TimerEvent: {}
+[4.307704] (-) TimerEvent: {}
+[4.407942] (-) TimerEvent: {}
+[4.508178] (-) TimerEvent: {}
+[4.608420] (-) TimerEvent: {}
+[4.708656] (-) TimerEvent: {}
+[4.808896] (-) TimerEvent: {}
+[4.909140] (-) TimerEvent: {}
+[5.009389] (-) TimerEvent: {}
+[5.109627] (-) TimerEvent: {}
+[5.209862] (-) TimerEvent: {}
+[5.310100] (-) TimerEvent: {}
+[5.410355] (-) TimerEvent: {}
+[5.510619] (-) TimerEvent: {}
+[5.610871] (-) TimerEvent: {}
+[5.639786] (moveit_servo) StdoutLine: {'line': b'[ 24%] \x1b[32m\x1b[1mLinking CXX executable fake_command_publisher\x1b[0m\n'}
+[5.710991] (-) TimerEvent: {}
+[5.758717] (moveit_servo) StdoutLine: {'line': b'[ 24%] Built target fake_command_publisher\n'}
+[5.811120] (-) TimerEvent: {}
+[5.911393] (-) TimerEvent: {}
+[6.011658] (-) TimerEvent: {}
+[6.111960] (-) TimerEvent: {}
+[6.212231] (-) TimerEvent: {}
+[6.312498] (-) TimerEvent: {}
+[6.412759] (-) TimerEvent: {}
+[6.513023] (-) TimerEvent: {}
+[6.613283] (-) TimerEvent: {}
+[6.713553] (-) TimerEvent: {}
+[6.813821] (-) TimerEvent: {}
+[6.914081] (-) TimerEvent: {}
+[7.014322] (-) TimerEvent: {}
+[7.114580] (-) TimerEvent: {}
+[7.214807] (-) TimerEvent: {}
+[7.315121] (-) TimerEvent: {}
+[7.415367] (-) TimerEvent: {}
+[7.515631] (-) TimerEvent: {}
+[7.540154] (moveit_servo) StdoutLine: {'line': b'[ 27%] \x1b[32m\x1b[1mLinking CXX static library libgtest.a\x1b[0m\n'}
+[7.566388] (moveit_servo) StdoutLine: {'line': b'[ 27%] Built target gtest\n'}
+[7.615762] (-) TimerEvent: {}
+[7.716005] (-) TimerEvent: {}
+[7.816248] (-) TimerEvent: {}
+[7.916454] (-) TimerEvent: {}
+[8.016688] (-) TimerEvent: {}
+[8.116936] (-) TimerEvent: {}
+[8.217169] (-) TimerEvent: {}
+[8.317386] (-) TimerEvent: {}
+[8.417615] (-) TimerEvent: {}
+[8.517853] (-) TimerEvent: {}
+[8.618088] (-) TimerEvent: {}
+[8.718295] (-) TimerEvent: {}
+[8.818530] (-) TimerEvent: {}
+[8.918765] (-) TimerEvent: {}
+[9.019001] (-) TimerEvent: {}
+[9.119244] (-) TimerEvent: {}
+[9.219448] (-) TimerEvent: {}
+[9.319682] (-) TimerEvent: {}
+[9.419918] (-) TimerEvent: {}
+[9.520152] (-) TimerEvent: {}
+[9.620377] (-) TimerEvent: {}
+[9.720613] (-) TimerEvent: {}
+[9.820848] (-) TimerEvent: {}
+[9.856280] (moveit_servo) StdoutLine: {'line': b'[ 30%] \x1b[32m\x1b[1mLinking CXX shared library libmoveit_servo_lib_parameters.so\x1b[0m\n'}
+[9.920964] (-) TimerEvent: {}
+[10.021209] (-) TimerEvent: {}
+[10.054996] (moveit_servo) StdoutLine: {'line': b'[ 30%] Built target moveit_servo_lib_parameters\n'}
+[10.069444] (moveit_servo) StdoutLine: {'line': b'[ 45%] \x1b[32mBuilding CXX object CMakeFiles/moveit_servo_lib.dir/src/enforce_limits.cpp.o\x1b[0m\n'}
+[10.069634] (moveit_servo) StdoutLine: {'line': b'[ 45%] \x1b[32mBuilding CXX object CMakeFiles/moveit_servo_lib.dir/src/utilities.cpp.o\x1b[0m\n'}
+[10.069728] (moveit_servo) StdoutLine: {'line': b'[ 42%] \x1b[32mBuilding CXX object CMakeFiles/test_servo_integration.dir/test/test_servo_interface.cpp.o\x1b[0m\n'}
+[10.069808] (moveit_servo) StdoutLine: {'line': b'[ 42%] \x1b[32mBuilding CXX object CMakeFiles/moveit_servo_lib.dir/src/servo_calcs.cpp.o\x1b[0m\n'}
+[10.069886] (moveit_servo) StdoutLine: {'line': b'[ 42%] \x1b[32mBuilding CXX object CMakeFiles/moveit_servo_lib.dir/src/collision_check.cpp.o\x1b[0m\n'}
+[10.070811] (moveit_servo) StdoutLine: {'line': b'[ 48%] \x1b[32mBuilding CXX object CMakeFiles/test_servo_collision.dir/test/test_servo_collision.cpp.o\x1b[0m\n'}
+[10.071397] (moveit_servo) StdoutLine: {'line': b'[ 51%] \x1b[32mBuilding CXX object CMakeFiles/moveit_servo_lib.dir/src/servo.cpp.o\x1b[0m\n'}
+[10.121263] (-) TimerEvent: {}
+[10.221536] (-) TimerEvent: {}
+[10.321806] (-) TimerEvent: {}
+[10.422076] (-) TimerEvent: {}
+[10.522382] (-) TimerEvent: {}
+[10.622719] (-) TimerEvent: {}
+[10.628935] (moveit_servo) StdoutLine: {'line': b'[ 54%] \x1b[32m\x1b[1mLinking CXX shared library libservo_controller_input.so\x1b[0m\n'}
+[10.722832] (-) TimerEvent: {}
+[10.823127] (-) TimerEvent: {}
+[10.923433] (-) TimerEvent: {}
+[11.023734] (-) TimerEvent: {}
+[11.053506] (moveit_servo) StdoutLine: {'line': b'[ 54%] Built target servo_controller_input\n'}
+[11.123844] (-) TimerEvent: {}
+[11.224134] (-) TimerEvent: {}
+[11.324437] (-) TimerEvent: {}
+[11.424723] (-) TimerEvent: {}
+[11.525014] (-) TimerEvent: {}
+[11.625336] (-) TimerEvent: {}
+[11.725634] (-) TimerEvent: {}
+[11.825923] (-) TimerEvent: {}
+[11.926238] (-) TimerEvent: {}
+[12.026533] (-) TimerEvent: {}
+[12.126830] (-) TimerEvent: {}
+[12.227129] (-) TimerEvent: {}
+[12.327441] (-) TimerEvent: {}
+[12.427747] (-) TimerEvent: {}
+[12.528046] (-) TimerEvent: {}
+[12.628354] (-) TimerEvent: {}
+[12.728646] (-) TimerEvent: {}
+[12.828939] (-) TimerEvent: {}
+[12.929245] (-) TimerEvent: {}
+[13.029579] (-) TimerEvent: {}
+[13.129917] (-) TimerEvent: {}
+[13.230228] (-) TimerEvent: {}
+[13.330514] (-) TimerEvent: {}
+[13.430798] (-) TimerEvent: {}
+[13.531091] (-) TimerEvent: {}
+[13.631624] (-) TimerEvent: {}
+[13.708439] (moveit_servo) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/src/moveit_servo/src/utilities.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kdouble moveit_servo::velocityScalingFactorForSingularity(const moveit::core::JointModelGroup*, const VectorXd&, const Eigen::JacobiSVD<Eigen::Matrix<double, -1, -1>, 2>&, const MatrixXd&, double, double, double, rclcpp::Clock&, moveit::core::RobotStatePtr&, moveit_servo::StatusCode&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[13.708580] (moveit_servo) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/src/moveit_servo/src/utilities.cpp:92:57:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Khard_stop_singularity_threshold\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[13.708641] (moveit_servo) StderrLine: {'line': b'   92 |                                            \x1b[01;35m\x1b[Kconst double hard_stop_singularity_threshold\x1b[m\x1b[K,\n'}
+[13.708690] (moveit_servo) StderrLine: {'line': b'      |                                            \x1b[01;35m\x1b[K~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[13.708736] (moveit_servo) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/src/moveit_servo/src/utilities.cpp:93:57:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Klower_singularity_threshold\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[13.708783] (moveit_servo) StderrLine: {'line': b'   93 |                                            \x1b[01;35m\x1b[Kconst double lower_singularity_threshold\x1b[m\x1b[K,\n'}
+[13.708828] (moveit_servo) StderrLine: {'line': b'      |                                            \x1b[01;35m\x1b[K~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[13.708872] (moveit_servo) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/src/moveit_servo/src/utilities.cpp:94:57:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kleaving_singularity_threshold_multiplier\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[13.708925] (moveit_servo) StderrLine: {'line': b'   94 |                                            \x1b[01;35m\x1b[Kconst double leaving_singularity_threshold_multiplier\x1b[m\x1b[K, rclcpp::Clock& clock,\n'}
+[13.708969] (moveit_servo) StderrLine: {'line': b'      |                                            \x1b[01;35m\x1b[K~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[13.709017] (moveit_servo) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/src/moveit_servo/src/utilities.cpp:94:114:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kclock\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[13.709072] (moveit_servo) StderrLine: {'line': b'   94 |                                            const double leaving_singularity_threshold_multiplier, \x1b[01;35m\x1b[Krclcpp::Clock& clock\x1b[m\x1b[K,\n'}
+[13.709114] (moveit_servo) StderrLine: {'line': b'      |                                                                                                   \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~^~~~~\x1b[m\x1b[K\n'}
+[13.709162] (moveit_servo) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/src/moveit_servo/src/utilities.cpp:95:100:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kstatus\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[13.709244] (moveit_servo) StderrLine: {'line': b'   95 |                                            moveit::core::RobotStatePtr& current_state, \x1b[01;35m\x1b[KStatusCode& status\x1b[m\x1b[K)\n'}
+[13.709312] (moveit_servo) StderrLine: {'line': b'      |                                                                                        \x1b[01;35m\x1b[K~~~~~~~~~~~~^~~~~~\x1b[m\x1b[K\n'}
+[13.731705] (-) TimerEvent: {}
+[13.831950] (-) TimerEvent: {}
+[13.932245] (-) TimerEvent: {}
+[14.032519] (-) TimerEvent: {}
+[14.132801] (-) TimerEvent: {}
+[14.233068] (-) TimerEvent: {}
+[14.333403] (-) TimerEvent: {}
+[14.433720] (-) TimerEvent: {}
+[14.534024] (-) TimerEvent: {}
+[14.634311] (-) TimerEvent: {}
+[14.734593] (-) TimerEvent: {}
+[14.834918] (-) TimerEvent: {}
+[14.935307] (-) TimerEvent: {}
+[15.035614] (-) TimerEvent: {}
+[15.135940] (-) TimerEvent: {}
+[15.236247] (-) TimerEvent: {}
+[15.336539] (-) TimerEvent: {}
+[15.436838] (-) TimerEvent: {}
+[15.537167] (-) TimerEvent: {}
+[15.637569] (-) TimerEvent: {}
+[15.737897] (-) TimerEvent: {}
+[15.838228] (-) TimerEvent: {}
+[15.938605] (-) TimerEvent: {}
+[16.038917] (-) TimerEvent: {}
+[16.139314] (-) TimerEvent: {}
+[16.239661] (-) TimerEvent: {}
+[16.252687] (moveit_servo) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/src/moveit_servo/src/servo_calcs.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kbool moveit_servo::ServoCalcs::internalServoUpdate(Eigen::ArrayXd&, trajectory_msgs::msg::JointTrajectory&, moveit_servo::ServoType)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[16.252832] (moveit_servo) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/src/moveit_servo/src/servo_calcs.cpp:672:54:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kservo_type\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[16.252892] (moveit_servo) StderrLine: {'line': b'  672 |                                      \x1b[01;35m\x1b[Kconst ServoType servo_type\x1b[m\x1b[K)\n'}
+[16.252949] (moveit_servo) StderrLine: {'line': b'      |                                      \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~^~~~~~~~~~\x1b[m\x1b[K\n'}
+[16.339785] (-) TimerEvent: {}
+[16.440039] (-) TimerEvent: {}
+[16.540292] (-) TimerEvent: {}
+[16.640536] (-) TimerEvent: {}
+[16.740822] (-) TimerEvent: {}
+[16.841079] (-) TimerEvent: {}
+[16.941358] (-) TimerEvent: {}
+[17.041605] (-) TimerEvent: {}
+[17.141880] (-) TimerEvent: {}
+[17.242168] (-) TimerEvent: {}
+[17.342425] (-) TimerEvent: {}
+[17.442671] (-) TimerEvent: {}
+[17.542893] (-) TimerEvent: {}
+[17.643128] (-) TimerEvent: {}
+[17.743482] (-) TimerEvent: {}
+[17.843786] (-) TimerEvent: {}
+[17.944098] (-) TimerEvent: {}
+[18.044415] (-) TimerEvent: {}
+[18.144720] (-) TimerEvent: {}
+[18.245022] (-) TimerEvent: {}
+[18.345300] (-) TimerEvent: {}
+[18.445612] (-) TimerEvent: {}
+[18.545897] (-) TimerEvent: {}
+[18.646178] (-) TimerEvent: {}
+[18.746472] (-) TimerEvent: {}
+[18.846755] (-) TimerEvent: {}
+[18.947069] (-) TimerEvent: {}
+[19.047360] (-) TimerEvent: {}
+[19.147649] (-) TimerEvent: {}
+[19.247936] (-) TimerEvent: {}
+[19.348422] (-) TimerEvent: {}
+[19.448713] (-) TimerEvent: {}
+[19.549006] (-) TimerEvent: {}
+[19.649357] (-) TimerEvent: {}
+[19.749642] (-) TimerEvent: {}
+[19.849938] (-) TimerEvent: {}
+[19.950246] (-) TimerEvent: {}
+[20.050553] (-) TimerEvent: {}
+[20.150854] (-) TimerEvent: {}
+[20.251253] (-) TimerEvent: {}
+[20.351542] (-) TimerEvent: {}
+[20.451844] (-) TimerEvent: {}
+[20.552135] (-) TimerEvent: {}
+[20.652474] (-) TimerEvent: {}
+[20.752761] (-) TimerEvent: {}
+[20.853030] (-) TimerEvent: {}
+[20.953332] (-) TimerEvent: {}
+[21.053629] (-) TimerEvent: {}
+[21.153921] (-) TimerEvent: {}
+[21.254213] (-) TimerEvent: {}
+[21.354517] (-) TimerEvent: {}
+[21.454784] (-) TimerEvent: {}
+[21.555059] (-) TimerEvent: {}
+[21.655349] (-) TimerEvent: {}
+[21.755626] (-) TimerEvent: {}
+[21.855911] (-) TimerEvent: {}
+[21.956212] (-) TimerEvent: {}
+[22.056495] (-) TimerEvent: {}
+[22.156784] (-) TimerEvent: {}
+[22.257066] (-) TimerEvent: {}
+[22.357352] (-) TimerEvent: {}
+[22.457637] (-) TimerEvent: {}
+[22.557917] (-) TimerEvent: {}
+[22.658199] (-) TimerEvent: {}
+[22.758528] (-) TimerEvent: {}
+[22.858810] (-) TimerEvent: {}
+[22.959094] (-) TimerEvent: {}
+[23.059442] (-) TimerEvent: {}
+[23.159726] (-) TimerEvent: {}
+[23.260035] (-) TimerEvent: {}
+[23.360310] (-) TimerEvent: {}
+[23.460592] (-) TimerEvent: {}
+[23.560870] (-) TimerEvent: {}
+[23.661218] (-) TimerEvent: {}
+[23.761484] (-) TimerEvent: {}
+[23.861754] (-) TimerEvent: {}
+[23.962027] (-) TimerEvent: {}
+[24.062310] (-) TimerEvent: {}
+[24.162589] (-) TimerEvent: {}
+[24.262872] (-) TimerEvent: {}
+[24.363157] (-) TimerEvent: {}
+[24.463441] (-) TimerEvent: {}
+[24.563708] (-) TimerEvent: {}
+[24.664002] (-) TimerEvent: {}
+[24.764353] (-) TimerEvent: {}
+[24.864625] (-) TimerEvent: {}
+[24.965140] (-) TimerEvent: {}
+[25.065424] (-) TimerEvent: {}
+[25.165708] (-) TimerEvent: {}
+[25.265993] (-) TimerEvent: {}
+[25.366265] (-) TimerEvent: {}
+[25.466544] (-) TimerEvent: {}
+[25.566820] (-) TimerEvent: {}
+[25.667098] (-) TimerEvent: {}
+[25.767447] (-) TimerEvent: {}
+[25.867725] (-) TimerEvent: {}
+[25.968004] (-) TimerEvent: {}
+[26.068292] (-) TimerEvent: {}
+[26.168586] (-) TimerEvent: {}
+[26.268874] (-) TimerEvent: {}
+[26.369166] (-) TimerEvent: {}
+[26.469460] (-) TimerEvent: {}
+[26.569780] (-) TimerEvent: {}
+[26.670116] (-) TimerEvent: {}
+[26.770443] (-) TimerEvent: {}
+[26.870753] (-) TimerEvent: {}
+[26.971055] (-) TimerEvent: {}
+[27.071327] (-) TimerEvent: {}
+[27.171601] (-) TimerEvent: {}
+[27.271873] (-) TimerEvent: {}
+[27.372146] (-) TimerEvent: {}
+[27.472455] (-) TimerEvent: {}
+[27.572721] (-) TimerEvent: {}
+[27.672984] (-) TimerEvent: {}
+[27.773264] (-) TimerEvent: {}
+[27.873500] (-) TimerEvent: {}
+[27.973727] (-) TimerEvent: {}
+[28.073969] (-) TimerEvent: {}
+[28.174249] (-) TimerEvent: {}
+[28.274486] (-) TimerEvent: {}
+[28.374711] (-) TimerEvent: {}
+[28.474976] (-) TimerEvent: {}
+[28.575251] (-) TimerEvent: {}
+[28.675493] (-) TimerEvent: {}
+[28.775724] (-) TimerEvent: {}
+[28.875985] (-) TimerEvent: {}
+[28.976239] (-) TimerEvent: {}
+[29.076477] (-) TimerEvent: {}
+[29.176737] (-) TimerEvent: {}
+[29.277011] (-) TimerEvent: {}
+[29.377290] (-) TimerEvent: {}
+[29.477509] (-) TimerEvent: {}
+[29.577735] (-) TimerEvent: {}
+[29.678016] (-) TimerEvent: {}
+[29.778293] (-) TimerEvent: {}
+[29.878518] (-) TimerEvent: {}
+[29.978774] (-) TimerEvent: {}
+[30.079031] (-) TimerEvent: {}
+[30.179289] (-) TimerEvent: {}
+[30.279510] (-) TimerEvent: {}
+[30.379738] (-) TimerEvent: {}
+[30.480077] (-) TimerEvent: {}
+[30.580302] (-) TimerEvent: {}
+[30.680525] (-) TimerEvent: {}
+[30.780748] (-) TimerEvent: {}
+[30.881005] (-) TimerEvent: {}
+[30.981269] (-) TimerEvent: {}
+[31.081521] (-) TimerEvent: {}
+[31.181989] (-) TimerEvent: {}
+[31.282293] (-) TimerEvent: {}
+[31.382525] (-) TimerEvent: {}
+[31.482787] (-) TimerEvent: {}
+[31.583093] (-) TimerEvent: {}
+[31.683362] (-) TimerEvent: {}
+[31.783632] (-) TimerEvent: {}
+[31.883897] (-) TimerEvent: {}
+[31.984133] (-) TimerEvent: {}
+[32.084442] (-) TimerEvent: {}
+[32.150573] (moveit_servo) StdoutLine: {'line': b'[ 57%] \x1b[32m\x1b[1mLinking CXX executable test_servo_collision\x1b[0m\n'}
+[32.184530] (-) TimerEvent: {}
+[32.284755] (-) TimerEvent: {}
+[32.385027] (-) TimerEvent: {}
+[32.433560] (moveit_servo) StdoutLine: {'line': b'[ 57%] Built target test_servo_collision\n'}
+[32.485148] (-) TimerEvent: {}
+[32.585400] (-) TimerEvent: {}
+[32.685641] (-) TimerEvent: {}
+[32.785893] (-) TimerEvent: {}
+[32.886137] (-) TimerEvent: {}
+[32.986436] (-) TimerEvent: {}
+[33.086684] (-) TimerEvent: {}
+[33.186933] (-) TimerEvent: {}
+[33.287195] (-) TimerEvent: {}
+[33.387438] (-) TimerEvent: {}
+[33.487674] (-) TimerEvent: {}
+[33.587925] (-) TimerEvent: {}
+[33.688171] (-) TimerEvent: {}
+[33.788490] (-) TimerEvent: {}
+[33.843648] (moveit_servo) StdoutLine: {'line': b'[ 60%] \x1b[32m\x1b[1mLinking CXX executable test_servo_integration\x1b[0m\n'}
+[33.888579] (-) TimerEvent: {}
+[33.988823] (-) TimerEvent: {}
+[34.089072] (-) TimerEvent: {}
+[34.138010] (moveit_servo) StdoutLine: {'line': b'[ 60%] Built target test_servo_integration\n'}
+[34.189193] (-) TimerEvent: {}
+[34.289440] (-) TimerEvent: {}
+[34.389694] (-) TimerEvent: {}
+[34.489948] (-) TimerEvent: {}
+[34.590210] (-) TimerEvent: {}
+[34.690433] (-) TimerEvent: {}
+[34.790689] (-) TimerEvent: {}
+[34.890942] (-) TimerEvent: {}
+[34.991197] (-) TimerEvent: {}
+[35.091459] (-) TimerEvent: {}
+[35.191710] (-) TimerEvent: {}
+[35.291933] (-) TimerEvent: {}
+[35.392182] (-) TimerEvent: {}
+[35.492451] (-) TimerEvent: {}
+[35.592667] (-) TimerEvent: {}
+[35.692919] (-) TimerEvent: {}
+[35.793170] (-) TimerEvent: {}
+[35.893437] (-) TimerEvent: {}
+[35.993690] (-) TimerEvent: {}
+[36.093948] (-) TimerEvent: {}
+[36.194203] (-) TimerEvent: {}
+[36.294435] (-) TimerEvent: {}
+[36.394691] (-) TimerEvent: {}
+[36.494944] (-) TimerEvent: {}
+[36.595201] (-) TimerEvent: {}
+[36.695468] (-) TimerEvent: {}
+[36.795724] (-) TimerEvent: {}
+[36.895975] (-) TimerEvent: {}
+[36.996235] (-) TimerEvent: {}
+[37.096490] (-) TimerEvent: {}
+[37.196745] (-) TimerEvent: {}
+[37.296998] (-) TimerEvent: {}
+[37.397252] (-) TimerEvent: {}
+[37.497468] (-) TimerEvent: {}
+[37.597721] (-) TimerEvent: {}
+[37.697968] (-) TimerEvent: {}
+[37.798245] (-) TimerEvent: {}
+[37.898515] (-) TimerEvent: {}
+[37.998769] (-) TimerEvent: {}
+[38.099028] (-) TimerEvent: {}
+[38.199313] (-) TimerEvent: {}
+[38.299551] (-) TimerEvent: {}
+[38.399788] (-) TimerEvent: {}
+[38.500044] (-) TimerEvent: {}
+[38.600298] (-) TimerEvent: {}
+[38.700551] (-) TimerEvent: {}
+[38.800809] (-) TimerEvent: {}
+[38.901068] (-) TimerEvent: {}
+[39.001328] (-) TimerEvent: {}
+[39.101583] (-) TimerEvent: {}
+[39.201835] (-) TimerEvent: {}
+[39.302070] (-) TimerEvent: {}
+[39.402324] (-) TimerEvent: {}
+[39.502580] (-) TimerEvent: {}
+[39.602836] (-) TimerEvent: {}
+[39.703071] (-) TimerEvent: {}
+[39.803277] (-) TimerEvent: {}
+[39.903499] (-) TimerEvent: {}
+[40.003720] (-) TimerEvent: {}
+[40.103979] (-) TimerEvent: {}
+[40.204239] (-) TimerEvent: {}
+[40.304495] (-) TimerEvent: {}
+[40.404749] (-) TimerEvent: {}
+[40.505004] (-) TimerEvent: {}
+[40.605262] (-) TimerEvent: {}
+[40.705484] (-) TimerEvent: {}
+[40.805739] (-) TimerEvent: {}
+[40.905992] (-) TimerEvent: {}
+[41.006245] (-) TimerEvent: {}
+[41.106463] (-) TimerEvent: {}
+[41.206726] (-) TimerEvent: {}
+[41.306988] (-) TimerEvent: {}
+[41.407249] (-) TimerEvent: {}
+[41.507506] (-) TimerEvent: {}
+[41.607760] (-) TimerEvent: {}
+[41.708012] (-) TimerEvent: {}
+[41.808251] (-) TimerEvent: {}
+[41.908510] (-) TimerEvent: {}
+[42.008770] (-) TimerEvent: {}
+[42.109025] (-) TimerEvent: {}
+[42.209281] (-) TimerEvent: {}
+[42.309535] (-) TimerEvent: {}
+[42.409812] (-) TimerEvent: {}
+[42.510073] (-) TimerEvent: {}
+[42.610306] (-) TimerEvent: {}
+[42.710560] (-) TimerEvent: {}
+[42.810816] (-) TimerEvent: {}
+[42.911071] (-) TimerEvent: {}
+[43.011338] (-) TimerEvent: {}
+[43.111591] (-) TimerEvent: {}
+[43.211845] (-) TimerEvent: {}
+[43.312098] (-) TimerEvent: {}
+[43.412368] (-) TimerEvent: {}
+[43.512604] (-) TimerEvent: {}
+[43.612878] (-) TimerEvent: {}
+[43.713135] (-) TimerEvent: {}
+[43.813371] (-) TimerEvent: {}
+[43.913609] (-) TimerEvent: {}
+[44.013865] (-) TimerEvent: {}
+[44.114119] (-) TimerEvent: {}
+[44.214386] (-) TimerEvent: {}
+[44.314648] (-) TimerEvent: {}
+[44.414897] (-) TimerEvent: {}
+[44.515170] (-) TimerEvent: {}
+[44.615439] (-) TimerEvent: {}
+[44.715693] (-) TimerEvent: {}
+[44.815949] (-) TimerEvent: {}
+[44.916256] (-) TimerEvent: {}
+[45.016544] (-) TimerEvent: {}
+[45.116800] (-) TimerEvent: {}
+[45.217057] (-) TimerEvent: {}
+[45.226143] (moveit_servo) StdoutLine: {'line': b'[ 63%] \x1b[32m\x1b[1mLinking CXX shared library libmoveit_servo_lib.so\x1b[0m\n'}
+[45.317177] (-) TimerEvent: {}
+[45.417479] (-) TimerEvent: {}
+[45.486778] (moveit_servo) StdoutLine: {'line': b'[ 63%] Built target moveit_servo_lib\n'}
+[45.499884] (moveit_servo) StdoutLine: {'line': b'[ 72%] \x1b[32mBuilding CXX object CMakeFiles/pose_tracking.dir/src/pose_tracking.cpp.o\x1b[0m\n'}
+[45.500007] (moveit_servo) StdoutLine: {'line': b'[ 72%] \x1b[32mBuilding CXX object CMakeFiles/servo_node.dir/src/servo_node.cpp.o\x1b[0m\n'}
+[45.500062] (moveit_servo) StdoutLine: {'line': b'[ 72%] \x1b[32mBuilding CXX object CMakeFiles/servo_calcs_unit_tests.dir/test/servo_calcs_unit_tests.cpp.o\x1b[0m\n'}
+[45.517568] (-) TimerEvent: {}
+[45.617818] (-) TimerEvent: {}
+[45.718073] (-) TimerEvent: {}
+[45.818344] (-) TimerEvent: {}
+[45.918586] (-) TimerEvent: {}
+[46.018848] (-) TimerEvent: {}
+[46.119145] (-) TimerEvent: {}
+[46.219416] (-) TimerEvent: {}
+[46.319677] (-) TimerEvent: {}
+[46.419945] (-) TimerEvent: {}
+[46.520221] (-) TimerEvent: {}
+[46.620448] (-) TimerEvent: {}
+[46.720672] (-) TimerEvent: {}
+[46.820933] (-) TimerEvent: {}
+[46.921198] (-) TimerEvent: {}
+[47.021438] (-) TimerEvent: {}
+[47.121668] (-) TimerEvent: {}
+[47.221942] (-) TimerEvent: {}
+[47.322227] (-) TimerEvent: {}
+[47.422460] (-) TimerEvent: {}
+[47.522722] (-) TimerEvent: {}
+[47.622987] (-) TimerEvent: {}
+[47.723252] (-) TimerEvent: {}
+[47.823516] (-) TimerEvent: {}
+[47.923781] (-) TimerEvent: {}
+[48.024052] (-) TimerEvent: {}
+[48.124290] (-) TimerEvent: {}
+[48.224521] (-) TimerEvent: {}
+[48.324785] (-) TimerEvent: {}
+[48.425046] (-) TimerEvent: {}
+[48.525289] (-) TimerEvent: {}
+[48.625544] (-) TimerEvent: {}
+[48.725816] (-) TimerEvent: {}
+[48.826079] (-) TimerEvent: {}
+[48.926325] (-) TimerEvent: {}
+[49.026590] (-) TimerEvent: {}
+[49.126860] (-) TimerEvent: {}
+[49.227127] (-) TimerEvent: {}
+[49.327404] (-) TimerEvent: {}
+[49.427678] (-) TimerEvent: {}
+[49.527947] (-) TimerEvent: {}
+[49.628229] (-) TimerEvent: {}
+[49.728459] (-) TimerEvent: {}
+[49.828725] (-) TimerEvent: {}
+[49.928993] (-) TimerEvent: {}
+[50.029262] (-) TimerEvent: {}
+[50.129567] (-) TimerEvent: {}
+[50.229869] (-) TimerEvent: {}
+[50.330143] (-) TimerEvent: {}
+[50.430394] (-) TimerEvent: {}
+[50.530661] (-) TimerEvent: {}
+[50.630934] (-) TimerEvent: {}
+[50.731234] (-) TimerEvent: {}
+[50.831517] (-) TimerEvent: {}
+[50.931808] (-) TimerEvent: {}
+[51.032081] (-) TimerEvent: {}
+[51.132328] (-) TimerEvent: {}
+[51.232577] (-) TimerEvent: {}
+[51.332845] (-) TimerEvent: {}
+[51.433115] (-) TimerEvent: {}
+[51.533365] (-) TimerEvent: {}
+[51.633633] (-) TimerEvent: {}
+[51.733896] (-) TimerEvent: {}
+[51.834165] (-) TimerEvent: {}
+[51.934410] (-) TimerEvent: {}
+[52.034674] (-) TimerEvent: {}
+[52.134946] (-) TimerEvent: {}
+[52.235237] (-) TimerEvent: {}
+[52.335502] (-) TimerEvent: {}
+[52.435800] (-) TimerEvent: {}
+[52.536079] (-) TimerEvent: {}
+[52.636328] (-) TimerEvent: {}
+[52.736560] (-) TimerEvent: {}
+[52.836825] (-) TimerEvent: {}
+[52.937100] (-) TimerEvent: {}
+[53.037349] (-) TimerEvent: {}
+[53.137622] (-) TimerEvent: {}
+[53.237892] (-) TimerEvent: {}
+[53.338164] (-) TimerEvent: {}
+[53.438402] (-) TimerEvent: {}
+[53.538671] (-) TimerEvent: {}
+[53.638976] (-) TimerEvent: {}
+[53.739246] (-) TimerEvent: {}
+[53.839512] (-) TimerEvent: {}
+[53.939778] (-) TimerEvent: {}
+[54.040040] (-) TimerEvent: {}
+[54.140302] (-) TimerEvent: {}
+[54.240579] (-) TimerEvent: {}
+[54.340822] (-) TimerEvent: {}
+[54.341847] (moveit_servo) StdoutLine: {'line': b'[ 75%] \x1b[32m\x1b[1mLinking CXX shared library libservo_node.so\x1b[0m\n'}
+[54.440925] (-) TimerEvent: {}
+[54.513260] (moveit_servo) StdoutLine: {'line': b'[ 75%] Built target servo_node\n'}
+[54.527858] (moveit_servo) StdoutLine: {'line': b'[ 78%] \x1b[32mBuilding CXX object CMakeFiles/servo_node_main.dir/src/servo_node_main.cpp.o\x1b[0m\n'}
+[54.541043] (-) TimerEvent: {}
+[54.641287] (-) TimerEvent: {}
+[54.741555] (-) TimerEvent: {}
+[54.841823] (-) TimerEvent: {}
+[54.942092] (-) TimerEvent: {}
+[55.042332] (-) TimerEvent: {}
+[55.142599] (-) TimerEvent: {}
+[55.242871] (-) TimerEvent: {}
+[55.343143] (-) TimerEvent: {}
+[55.443395] (-) TimerEvent: {}
+[55.543617] (-) TimerEvent: {}
+[55.643878] (-) TimerEvent: {}
+[55.744145] (-) TimerEvent: {}
+[55.844389] (-) TimerEvent: {}
+[55.944655] (-) TimerEvent: {}
+[56.044932] (-) TimerEvent: {}
+[56.145200] (-) TimerEvent: {}
+[56.245423] (-) TimerEvent: {}
+[56.345687] (-) TimerEvent: {}
+[56.445953] (-) TimerEvent: {}
+[56.546202] (-) TimerEvent: {}
+[56.646509] (-) TimerEvent: {}
+[56.746760] (-) TimerEvent: {}
+[56.847034] (-) TimerEvent: {}
+[56.947288] (-) TimerEvent: {}
+[57.047529] (-) TimerEvent: {}
+[57.147795] (-) TimerEvent: {}
+[57.248061] (-) TimerEvent: {}
+[57.348327] (-) TimerEvent: {}
+[57.448593] (-) TimerEvent: {}
+[57.548834] (-) TimerEvent: {}
+[57.649077] (-) TimerEvent: {}
+[57.749292] (-) TimerEvent: {}
+[57.849497] (-) TimerEvent: {}
+[57.949748] (-) TimerEvent: {}
+[58.050016] (-) TimerEvent: {}
+[58.150282] (-) TimerEvent: {}
+[58.250543] (-) TimerEvent: {}
+[58.350803] (-) TimerEvent: {}
+[58.451071] (-) TimerEvent: {}
+[58.551314] (-) TimerEvent: {}
+[58.651539] (-) TimerEvent: {}
+[58.751748] (-) TimerEvent: {}
+[58.852004] (-) TimerEvent: {}
+[58.952268] (-) TimerEvent: {}
+[59.052496] (-) TimerEvent: {}
+[59.152760] (-) TimerEvent: {}
+[59.253021] (-) TimerEvent: {}
+[59.353277] (-) TimerEvent: {}
+[59.453518] (-) TimerEvent: {}
+[59.553783] (-) TimerEvent: {}
+[59.654045] (-) TimerEvent: {}
+[59.754287] (-) TimerEvent: {}
+[59.854614] (-) TimerEvent: {}
+[59.954886] (-) TimerEvent: {}
+[60.055116] (-) TimerEvent: {}
+[60.155370] (-) TimerEvent: {}
+[60.255633] (-) TimerEvent: {}
+[60.314932] (moveit_servo) StdoutLine: {'line': b'[ 81%] \x1b[32m\x1b[1mLinking CXX shared library libpose_tracking.so\x1b[0m\n'}
+[60.355755] (-) TimerEvent: {}
+[60.455994] (-) TimerEvent: {}
+[60.513171] (moveit_servo) StdoutLine: {'line': b'[ 81%] Built target pose_tracking\n'}
+[60.527648] (moveit_servo) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding CXX object CMakeFiles/servo_pose_tracking_demo.dir/src/cpp_interface_demo/pose_tracking_demo.cpp.o\x1b[0m\n'}
+[60.527774] (moveit_servo) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding CXX object CMakeFiles/test_servo_pose_tracking.dir/test/pose_tracking_test.cpp.o\x1b[0m\n'}
+[60.556111] (-) TimerEvent: {}
+[60.656330] (-) TimerEvent: {}
+[60.756540] (-) TimerEvent: {}
+[60.856772] (-) TimerEvent: {}
+[60.957057] (-) TimerEvent: {}
+[61.057279] (-) TimerEvent: {}
+[61.157490] (-) TimerEvent: {}
+[61.257728] (-) TimerEvent: {}
+[61.357971] (-) TimerEvent: {}
+[61.458224] (-) TimerEvent: {}
+[61.558438] (-) TimerEvent: {}
+[61.658683] (-) TimerEvent: {}
+[61.758934] (-) TimerEvent: {}
+[61.859183] (-) TimerEvent: {}
+[61.876916] (moveit_servo) StdoutLine: {'line': b'[ 90%] \x1b[32m\x1b[1mLinking CXX executable servo_calcs_unit_tests\x1b[0m\n'}
+[61.959289] (-) TimerEvent: {}
+[62.059544] (-) TimerEvent: {}
+[62.158229] (moveit_servo) StdoutLine: {'line': b'[ 93%] \x1b[32m\x1b[1mLinking CXX executable servo_node_main\x1b[0m\n'}
+[62.159637] (-) TimerEvent: {}
+[62.174630] (moveit_servo) StdoutLine: {'line': b'[ 93%] Built target servo_calcs_unit_tests\n'}
+[62.259766] (-) TimerEvent: {}
+[62.360039] (-) TimerEvent: {}
+[62.390803] (moveit_servo) StdoutLine: {'line': b'[ 93%] Built target servo_node_main\n'}
+[62.460163] (-) TimerEvent: {}
+[62.560382] (-) TimerEvent: {}
+[62.660594] (-) TimerEvent: {}
+[62.760826] (-) TimerEvent: {}
+[62.861065] (-) TimerEvent: {}
+[62.961280] (-) TimerEvent: {}
+[63.061523] (-) TimerEvent: {}
+[63.161769] (-) TimerEvent: {}
+[63.262009] (-) TimerEvent: {}
+[63.362260] (-) TimerEvent: {}
+[63.462496] (-) TimerEvent: {}
+[63.562733] (-) TimerEvent: {}
+[63.662971] (-) TimerEvent: {}
+[63.763224] (-) TimerEvent: {}
+[63.863436] (-) TimerEvent: {}
+[63.963674] (-) TimerEvent: {}
+[64.063913] (-) TimerEvent: {}
+[64.164155] (-) TimerEvent: {}
+[64.264380] (-) TimerEvent: {}
+[64.364619] (-) TimerEvent: {}
+[64.464885] (-) TimerEvent: {}
+[64.565132] (-) TimerEvent: {}
+[64.665407] (-) TimerEvent: {}
+[64.765642] (-) TimerEvent: {}
+[64.865881] (-) TimerEvent: {}
+[64.966119] (-) TimerEvent: {}
+[65.066338] (-) TimerEvent: {}
+[65.166576] (-) TimerEvent: {}
+[65.266817] (-) TimerEvent: {}
+[65.367056] (-) TimerEvent: {}
+[65.467277] (-) TimerEvent: {}
+[65.567520] (-) TimerEvent: {}
+[65.667735] (-) TimerEvent: {}
+[65.767994] (-) TimerEvent: {}
+[65.868245] (-) TimerEvent: {}
+[65.968459] (-) TimerEvent: {}
+[66.068696] (-) TimerEvent: {}
+[66.168948] (-) TimerEvent: {}
+[66.269190] (-) TimerEvent: {}
+[66.369411] (-) TimerEvent: {}
+[66.469661] (-) TimerEvent: {}
+[66.569903] (-) TimerEvent: {}
+[66.670146] (-) TimerEvent: {}
+[66.770376] (-) TimerEvent: {}
+[66.870612] (-) TimerEvent: {}
+[66.970848] (-) TimerEvent: {}
+[67.071088] (-) TimerEvent: {}
+[67.171316] (-) TimerEvent: {}
+[67.271603] (-) TimerEvent: {}
+[67.371846] (-) TimerEvent: {}
+[67.472086] (-) TimerEvent: {}
+[67.572294] (-) TimerEvent: {}
+[67.672560] (-) TimerEvent: {}
+[67.772799] (-) TimerEvent: {}
+[67.873033] (-) TimerEvent: {}
+[67.973278] (-) TimerEvent: {}
+[68.073510] (-) TimerEvent: {}
+[68.173749] (-) TimerEvent: {}
+[68.273984] (-) TimerEvent: {}
+[68.374227] (-) TimerEvent: {}
+[68.474437] (-) TimerEvent: {}
+[68.574668] (-) TimerEvent: {}
+[68.674905] (-) TimerEvent: {}
+[68.775138] (-) TimerEvent: {}
+[68.875350] (-) TimerEvent: {}
+[68.975593] (-) TimerEvent: {}
+[69.075830] (-) TimerEvent: {}
+[69.176072] (-) TimerEvent: {}
+[69.276287] (-) TimerEvent: {}
+[69.376522] (-) TimerEvent: {}
+[69.476759] (-) TimerEvent: {}
+[69.576997] (-) TimerEvent: {}
+[69.677240] (-) TimerEvent: {}
+[69.777445] (-) TimerEvent: {}
+[69.877677] (-) TimerEvent: {}
+[69.977911] (-) TimerEvent: {}
+[70.078156] (-) TimerEvent: {}
+[70.178372] (-) TimerEvent: {}
+[70.278607] (-) TimerEvent: {}
+[70.378841] (-) TimerEvent: {}
+[70.479079] (-) TimerEvent: {}
+[70.579327] (-) TimerEvent: {}
+[70.679574] (-) TimerEvent: {}
+[70.779814] (-) TimerEvent: {}
+[70.880056] (-) TimerEvent: {}
+[70.980277] (-) TimerEvent: {}
+[71.080506] (-) TimerEvent: {}
+[71.180735] (-) TimerEvent: {}
+[71.280971] (-) TimerEvent: {}
+[71.381199] (-) TimerEvent: {}
+[71.481414] (-) TimerEvent: {}
+[71.581639] (-) TimerEvent: {}
+[71.681874] (-) TimerEvent: {}
+[71.782109] (-) TimerEvent: {}
+[71.882329] (-) TimerEvent: {}
+[71.982551] (-) TimerEvent: {}
+[72.082750] (-) TimerEvent: {}
+[72.182986] (-) TimerEvent: {}
+[72.283283] (-) TimerEvent: {}
+[72.383496] (-) TimerEvent: {}
+[72.483718] (-) TimerEvent: {}
+[72.583943] (-) TimerEvent: {}
+[72.684168] (-) TimerEvent: {}
+[72.784386] (-) TimerEvent: {}
+[72.884658] (-) TimerEvent: {}
+[72.984892] (-) TimerEvent: {}
+[73.085117] (-) TimerEvent: {}
+[73.185328] (-) TimerEvent: {}
+[73.285524] (-) TimerEvent: {}
+[73.385748] (-) TimerEvent: {}
+[73.485976] (-) TimerEvent: {}
+[73.586212] (-) TimerEvent: {}
+[73.640894] (moveit_servo) StdoutLine: {'line': b'[ 96%] \x1b[32m\x1b[1mLinking CXX executable servo_pose_tracking_demo\x1b[0m\n'}
+[73.686296] (-) TimerEvent: {}
+[73.786537] (-) TimerEvent: {}
+[73.886784] (-) TimerEvent: {}
+[73.916874] (moveit_servo) StdoutLine: {'line': b'[ 96%] Built target servo_pose_tracking_demo\n'}
+[73.986905] (-) TimerEvent: {}
+[74.087153] (-) TimerEvent: {}
+[74.187419] (-) TimerEvent: {}
+[74.287636] (-) TimerEvent: {}
+[74.387881] (-) TimerEvent: {}
+[74.488130] (-) TimerEvent: {}
+[74.588398] (-) TimerEvent: {}
+[74.688651] (-) TimerEvent: {}
+[74.788902] (-) TimerEvent: {}
+[74.889151] (-) TimerEvent: {}
+[74.989414] (-) TimerEvent: {}
+[75.089669] (-) TimerEvent: {}
+[75.189926] (-) TimerEvent: {}
+[75.290283] (-) TimerEvent: {}
+[75.390519] (-) TimerEvent: {}
+[75.419169] (moveit_servo) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable test_servo_pose_tracking\x1b[0m\n'}
+[75.490644] (-) TimerEvent: {}
+[75.590913] (-) TimerEvent: {}
+[75.691139] (-) TimerEvent: {}
+[75.700198] (moveit_servo) StdoutLine: {'line': b'[100%] Built target test_servo_pose_tracking\n'}
+[75.709380] (moveit_servo) CommandEnded: {'returncode': 0}
+[75.709796] (moveit_servo) JobProgress: {'identifier': 'moveit_servo', 'progress': 'install'}
+[75.710088] (moveit_servo) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/build/moveit_servo'], 'cwd': '/home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/build/moveit_servo', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'rajpurkar'), ('LC_TIME', 'de_DE.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/rajpurkar'), ('OLDPWD', '/home/rajpurkar'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'de_DE.UTF-8'), ('SYSTEMD_EXEC_PID', '4221'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1001/bus'), ('COLORTERM', 'truecolor'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'rajpurkar'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'rajpurkar'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/rajpurkar/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/cni-mothership:@/tmp/.ICE-unix/4198,unix/cni-mothership:/tmp/.ICE-unix/4198'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'de_DE.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/b151ab05_a579_4922_b8c0_f73b447959f8'), ('KUBECONFIG', '/root/.kube/config'), ('XDG_RUNTIME_DIR', '/run/user/1001'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'de_DE.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1001/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.170'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1001/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'de_DE.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'de_DE.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1001/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'de_DE.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/build/moveit_servo'), ('TURTLEBOT3_MODEL', 'waffle'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'de_DE.UTF-8'), ('LC_PAPER', 'de_DE.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[75.715046] (moveit_servo) StdoutLine: {'line': b'-- Install configuration: "Release"\n'}
+[75.715155] (moveit_servo) StdoutLine: {'line': b'-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/moveit_servo/lib/libmoveit_servo_lib.so.2.5.7\n'}
+[75.716949] (moveit_servo) StdoutLine: {'line': b'-- Set runtime path of "/home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/moveit_servo/lib/libmoveit_servo_lib.so.2.5.7" to ""\n'}
+[75.717089] (moveit_servo) StdoutLine: {'line': b'-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/moveit_servo/lib/libmoveit_servo_lib.so\n'}
+[75.717153] (moveit_servo) StdoutLine: {'line': b'-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/moveit_servo/lib/libmoveit_servo_lib_parameters.so.2.5.7\n'}
+[75.717486] (moveit_servo) StdoutLine: {'line': b'-- Set runtime path of "/home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/moveit_servo/lib/libmoveit_servo_lib_parameters.so.2.5.7" to ""\n'}
+[75.717607] (moveit_servo) StdoutLine: {'line': b'-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/moveit_servo/lib/libmoveit_servo_lib_parameters.so\n'}
+[75.717656] (moveit_servo) StdoutLine: {'line': b'-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/moveit_servo/lib/libpose_tracking.so\n'}
+[75.718293] (moveit_servo) StdoutLine: {'line': b'-- Set runtime path of "/home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/moveit_servo/lib/libpose_tracking.so" to ""\n'}
+[75.718400] (moveit_servo) StdoutLine: {'line': b'-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/moveit_servo/lib/libservo_node.so\n'}
+[75.718691] (moveit_servo) StdoutLine: {'line': b'-- Set runtime path of "/home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/moveit_servo/lib/libservo_node.so" to ""\n'}
+[75.718758] (moveit_servo) StdoutLine: {'line': b'-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/moveit_servo/lib/libservo_controller_input.so\n'}
+[75.719556] (moveit_servo) StdoutLine: {'line': b'-- Set runtime path of "/home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/moveit_servo/lib/libservo_controller_input.so" to ""\n'}
+[75.719653] (moveit_servo) StdoutLine: {'line': b'-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/moveit_servo/lib/moveit_servo/servo_node_main\n'}
+[75.719872] (moveit_servo) StdoutLine: {'line': b'-- Set runtime path of "/home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/moveit_servo/lib/moveit_servo/servo_node_main" to ""\n'}
+[75.719930] (moveit_servo) StdoutLine: {'line': b'-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/moveit_servo/lib/moveit_servo/servo_pose_tracking_demo\n'}
+[75.720643] (moveit_servo) StdoutLine: {'line': b'-- Set runtime path of "/home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/moveit_servo/lib/moveit_servo/servo_pose_tracking_demo" to ""\n'}
+[75.720738] (moveit_servo) StdoutLine: {'line': b'-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/moveit_servo/lib/moveit_servo/fake_command_publisher\n'}
+[75.721025] (moveit_servo) StdoutLine: {'line': b'-- Set runtime path of "/home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/moveit_servo/lib/moveit_servo/fake_command_publisher" to ""\n'}
+[75.721088] (moveit_servo) StdoutLine: {'line': b'-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/moveit_servo/include\n'}
+[75.721160] (moveit_servo) StdoutLine: {'line': b'-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/moveit_servo/include/moveit_servo\n'}
+[75.721207] (moveit_servo) StdoutLine: {'line': b'-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/moveit_servo/include/moveit_servo/parameter_descriptor_builder.hpp\n'}
+[75.721330] (moveit_servo) StdoutLine: {'line': b'-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/moveit_servo/include/moveit_servo/collision_check.h\n'}
+[75.721392] (moveit_servo) StdoutLine: {'line': b'-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/moveit_servo/include/moveit_servo/servo_calcs.h\n'}
+[75.721451] (moveit_servo) StdoutLine: {'line': b'-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/moveit_servo/include/moveit_servo/utilities.h\n'}
+[75.721508] (moveit_servo) StdoutLine: {'line': b'-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/moveit_servo/include/moveit_servo/pose_tracking.h\n'}
+[75.721569] (moveit_servo) StdoutLine: {'line': b'-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/moveit_servo/include/moveit_servo/servo_parameters.h\n'}
+[75.721638] (moveit_servo) StdoutLine: {'line': b'-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/moveit_servo/include/moveit_servo/servo_node.h\n'}
+[75.721699] (moveit_servo) StdoutLine: {'line': b'-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/moveit_servo/include/moveit_servo/servo.h\n'}
+[75.721758] (moveit_servo) StdoutLine: {'line': b'-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/moveit_servo/include/moveit_servo/servo_server.h\n'}
+[75.721955] (moveit_servo) StdoutLine: {'line': b'-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/moveit_servo/include/moveit_servo/enforce_limits.hpp\n'}
+[75.722019] (moveit_servo) StdoutLine: {'line': b'-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/moveit_servo/include/moveit_servo/status_codes.h\n'}
+[75.722087] (moveit_servo) StdoutLine: {'line': b'-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/moveit_servo/include/moveit_servo/make_shared_from_pool.h\n'}
+[75.722170] (moveit_servo) StdoutLine: {'line': b'-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/moveit_servo/share/moveit_servo/launch\n'}
+[75.722294] (moveit_servo) StdoutLine: {'line': b'-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/moveit_servo/share/moveit_servo/launch/pose_tracking_example.launch.py\n'}
+[75.722375] (moveit_servo) StdoutLine: {'line': b'-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/moveit_servo/share/moveit_servo/launch/servo_example.launch.py\n'}
+[75.722457] (moveit_servo) StdoutLine: {'line': b'-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/moveit_servo/share/moveit_servo/config\n'}
+[75.722517] (moveit_servo) StdoutLine: {'line': b'-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/moveit_servo/share/moveit_servo/config/demo_rviz_pose_tracking.rviz\n'}
+[75.722715] (moveit_servo) StdoutLine: {'line': b'-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/moveit_servo/share/moveit_servo/config/panda_simulated_config_pose_tracking.yaml\n'}
+[75.722894] (moveit_servo) StdoutLine: {'line': b'-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/moveit_servo/share/moveit_servo/config/panda_simulated_config.yaml\n'}
+[75.723077] (moveit_servo) StdoutLine: {'line': b'-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/moveit_servo/share/moveit_servo/config/pose_tracking_settings.yaml\n'}
+[75.723268] (moveit_servo) StdoutLine: {'line': b'-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/moveit_servo/share/moveit_servo/config/demo_rviz_config.rviz\n'}
+[75.723529] (moveit_servo) StdoutLine: {'line': b'-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/moveit_servo/share/moveit_servo/environment/library_path.sh\n'}
+[75.723647] (moveit_servo) StdoutLine: {'line': b'-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/moveit_servo/share/moveit_servo/environment/library_path.dsv\n'}
+[75.723916] (moveit_servo) StdoutLine: {'line': b'-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/moveit_servo/share/ament_index/resource_index/package_run_dependencies/moveit_servo\n'}
+[75.724052] (moveit_servo) StdoutLine: {'line': b'-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/moveit_servo/share/ament_index/resource_index/parent_prefix_path/moveit_servo\n'}
+[75.724125] (moveit_servo) StdoutLine: {'line': b'-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/moveit_servo/share/moveit_servo/environment/ament_prefix_path.sh\n'}
+[75.724240] (moveit_servo) StdoutLine: {'line': b'-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/moveit_servo/share/moveit_servo/environment/ament_prefix_path.dsv\n'}
+[75.724348] (moveit_servo) StdoutLine: {'line': b'-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/moveit_servo/share/moveit_servo/environment/path.sh\n'}
+[75.724428] (moveit_servo) StdoutLine: {'line': b'-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/moveit_servo/share/moveit_servo/environment/path.dsv\n'}
+[75.724511] (moveit_servo) StdoutLine: {'line': b'-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/moveit_servo/share/moveit_servo/local_setup.bash\n'}
+[75.724592] (moveit_servo) StdoutLine: {'line': b'-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/moveit_servo/share/moveit_servo/local_setup.sh\n'}
+[75.724675] (moveit_servo) StdoutLine: {'line': b'-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/moveit_servo/share/moveit_servo/local_setup.zsh\n'}
+[75.724760] (moveit_servo) StdoutLine: {'line': b'-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/moveit_servo/share/moveit_servo/local_setup.dsv\n'}
+[75.724840] (moveit_servo) StdoutLine: {'line': b'-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/moveit_servo/share/moveit_servo/package.dsv\n'}
+[75.724965] (moveit_servo) StdoutLine: {'line': b'-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/moveit_servo/share/ament_index/resource_index/packages/moveit_servo\n'}
+[75.725079] (moveit_servo) StdoutLine: {'line': b'-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/moveit_servo/share/ament_index/resource_index/rclcpp_components/moveit_servo\n'}
+[75.725202] (moveit_servo) StdoutLine: {'line': b'-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/moveit_servo/share/moveit_servo/cmake/export_moveit_servoExport.cmake\n'}
+[75.725352] (moveit_servo) StdoutLine: {'line': b'-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/moveit_servo/share/moveit_servo/cmake/export_moveit_servoExport-release.cmake\n'}
+[75.725437] (moveit_servo) StdoutLine: {'line': b'-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/moveit_servo/share/moveit_servo/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[75.725518] (moveit_servo) StdoutLine: {'line': b'-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/moveit_servo/share/moveit_servo/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[75.725604] (moveit_servo) StdoutLine: {'line': b'-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/moveit_servo/share/moveit_servo/cmake/moveit_servoConfig.cmake\n'}
+[75.725671] (moveit_servo) StdoutLine: {'line': b'-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/moveit_servo/share/moveit_servo/cmake/moveit_servoConfig-version.cmake\n'}
+[75.725754] (moveit_servo) StdoutLine: {'line': b'-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/moveit_servo/share/moveit_servo/package.xml\n'}
+[75.726955] (moveit_servo) CommandEnded: {'returncode': 0}
+[75.737422] (moveit_servo) JobEnded: {'identifier': 'moveit_servo', 'rc': 0}
+[75.738006] (-) EventReactorShutdown: {}

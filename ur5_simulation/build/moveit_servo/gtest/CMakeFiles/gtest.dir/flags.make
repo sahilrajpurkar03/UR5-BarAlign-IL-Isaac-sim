@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/rajpurkar/Rahul/ur5_simulation/src/moveit_servo/include -I/opt/ros/humble/src/gtest_vendor/. -isystem /opt/ros/humble/src/gtest_vendor/include
+CXX_INCLUDES = -I/home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/src/moveit_servo/include -I/opt/ros/humble/src/gtest_vendor/. -isystem /opt/ros/humble/src/gtest_vendor/include
 
 CXX_FLAGS = -O3 -DNDEBUG -fPIC -Wno-missing-field-initializers -Wall -Wextra -Wwrite-strings -Wunreachable-code -Wpointer-arith -Wredundant-decls -Wcast-qual -Wno-maybe-uninitialized -Wno-null-dereference -std=c++17
 

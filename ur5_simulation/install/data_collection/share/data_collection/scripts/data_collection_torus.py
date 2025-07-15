@@ -142,7 +142,7 @@ class Data_Recorder(Node):
         self.data_recorded = False
 
         #### log files for multiple runs are NOT overwritten
-        base_dir = os.environ["HOME"] + "/Rahul/ur5_simulation/src/data_collection/scripts/my_pusht/"
+        base_dir = os.environ["HOME"] + "/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/src/data_collection/scripts/my_pusht/"
         self.log_dir = base_dir + "data/chunk_000/"
         if not os.path.exists(self.log_dir):
             os.makedirs(self.log_dir)
@@ -161,17 +161,27 @@ class Data_Recorder(Node):
             os.makedirs(self.state_vid_dir)
 
         # image of a torus shape on the table (background)
-        self.initial_image = cv2.imread(os.environ['HOME'] + "/Rahul/ur5_simulation/images/torus_top_plane.png")
+        self.initial_image = cv2.imread(os.environ['HOME'] + "/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/images/torus_top_plane.png")
         self.initial_image = cv2.rotate(self.initial_image, cv2.ROTATE_90_COUNTERCLOCKWISE)
 
-        # mask for torus region, will be drawn as circle dynamically
+
+        # mask for torus region, will be drawn as circle dynamically (for reward calculation)
         self.torus_region = np.zeros((self.initial_image.shape[0], self.initial_image.shape[1]), np.uint8)
+
+        # filled image of torus on table
+        self.torus_image = cv2.imread(os.environ['HOME'] + "/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/images/torus_top_plane_filled.png")
+        self.torus_image = cv2.rotate(self.initial_image, cv2.ROTATE_90_COUNTERCLOCKWISE)
+
+        img_gray = cv2.cvtColor(self.torus_image, cv2.COLOR_BGR2GRAY)
+        thr, img_th = cv2.threshold(img_gray, 100, 255, cv2.THRESH_BINARY)
+        self.blue_region = cv2.bitwise_not(img_th)
+        self.blue_region_sum = cv2.countNonZero(self.blue_region)
 
         self.pub_img = self.create_publisher(Image, '/pushT_image', 10)
         self.tool_radius = 10  # millimeters (tool circle radius)
         self.scale = 1.639344  # mm/pixel conversion scale
-        self.C_W = 182  # pixel center width offset for coordinate conversion
-        self.C_H = 152  # pixel center height offset for coordinate conversion
+        self.C_W = 300  # pixel center width offset for coordinate conversion
+        self.C_H = 320  # pixel center height offset for coordinate conversion
 
         self.radius = int(self.tool_radius / self.scale)  # radius in pixels
 
@@ -199,35 +209,44 @@ class Data_Recorder(Node):
         self.torus_region[:] = 0  # reset torus region mask to blank
 
         # Convert torus position to pixel coordinates
-        torus_x_pix = int(self.C_W + 1000 * torus_pose_xyw[0] / self.scale)
-        torus_y_pix = int(self.C_H + (1000 * torus_pose_xyw[1] - 320) / self.scale)
+        torus_x_pix = int((1000 * torus_pose_xyw[0] + self.C_W ) / self.scale)
+        torus_y_pix = int((1000 * torus_pose_xyw[1] - self.C_H ) / self.scale)
+        
 
         # Convert tool position to pixel coordinates
-        tool_x_pix = int(self.C_W + 1000 * tool_pose_xy[0] / self.scale)
-        tool_y_pix = int(self.C_H + (1000 * tool_pose_xy[1] - 320) / self.scale)
+        tool_x_pix = int((1000 * tool_pose_xy[0] + self.C_W )/ self.scale)
+        tool_y_pix = int((1000 * tool_pose_xy[1] - self.C_H) / self.scale)
 
         # Torus radius in pixels (adjust based on actual torus size)
-        torus_radius_pix = 40
+        torus_radius_pix = 48
 
         # Draw tool circle (gray)
         cv2.circle(image, (tool_x_pix, tool_y_pix), self.radius, (100, 100, 100), thickness=cv2.FILLED)
 
-        # Draw torus circle (blue) and update torus region mask
-        cv2.circle(image, (torus_x_pix, torus_y_pix), torus_radius_pix, (0, 0, 180), thickness=cv2.FILLED)
-        cv2.circle(self.torus_region, (torus_x_pix, torus_y_pix), torus_radius_pix, 255, thickness=cv2.FILLED)
+        # Draw torus circle (red) and update torus region mask
+        cv2.circle(image, (torus_x_pix, torus_y_pix), torus_radius_pix, (0, 0, 180), thickness=30)
+
+        # For the mask (white ring with line thickness of 2 pixels)
+        cv2.circle(self.torus_region, (torus_x_pix, torus_y_pix), torus_radius_pix, 255, thickness=10)
+
 
         # Create binary mask for tool circle
         tool_mask = np.zeros_like(self.torus_region)
         cv2.circle(tool_mask, (tool_x_pix, tool_y_pix), self.radius, 255, thickness=cv2.FILLED)
 
         # Calculate overlap area between tool and torus masks
-        common_part = cv2.bitwise_and(tool_mask, self.torus_region)
+        common_part = cv2.bitwise_and(self.blue_region, self.torus_region)
         common_part_sum = cv2.countNonZero(common_part)
+        sum = common_part_sum/self.blue_region_sum
+        sum_dif = sum - self.prev_sum
+        self.prev_sum = sum
+        # common_part = cv2.bitwise_and(tool_mask, self.torus_region)
+        # common_part_sum = cv2.countNonZero(common_part)
 
-        torus_area = np.pi * (torus_radius_pix ** 2)
-        overlap_ratio = common_part_sum / torus_area
-        diff = overlap_ratio - self.prev_sum
-        self.prev_sum = overlap_ratio
+        # torus_area = np.pi * (torus_radius_pix ** 2)
+        # overlap_ratio = common_part_sum / torus_area
+        # diff = overlap_ratio - self.prev_sum
+        # self.prev_sum = overlap_ratio
 
         # Mark torus center on image (green dot)
         cv2.circle(image, (torus_x_pix, torus_y_pix), 2, (0, 200, 0), thickness=cv2.FILLED)
@@ -237,13 +256,16 @@ class Data_Recorder(Node):
         self.pub_img.publish(img_msg)
 
         if record_data:
-            print(f'\033[32mRECORDING episode:{self.episode_index}, index:{self.index} overlap:{overlap_ratio:.3f}\033[0m')
+            # print(f'\033[32mRECORDING episode:{self.episode_index}, index:{self.index} overlap:{overlap_ratio:.3f}\033[0m')
+            print('\033[32m'+f'RECORDING episode:{self.episode_index}, index:{self.index} sum:{sum}'+'\033[0m')
 
-            if overlap_ratio >= 0.9:
+            # if overlap_ratio >= 9.9:
+            if sum >= 0.90:
                 self.success = True
                 self.done = True
                 record_data = False
-                print(f'\033[31mSUCCESS! overlap: {overlap_ratio:.3f}\033[0m')
+                # print(f'\033[31mSUCCESS! overlap: {overlap_ratio:.3f}\033[0m')
+                print('\033[31m'+'SUCCESS!'+f': {sum}'+'\033[0m')
             else:
                 self.success = False
 
@@ -254,7 +276,8 @@ class Data_Recorder(Node):
                 self.episode_index,
                 self.frame_index,
                 self.time_stamp,
-                overlap_ratio,
+                # overlap_ratio,
+                sum,
                 self.done,
                 self.success,
                 self.index,
@@ -273,41 +296,113 @@ class Data_Recorder(Node):
             self.state_image_array.append(image)
 
         else:
-            # If recording just stopped, save the data to files
-            if self.start_recording and not self.data_recorded:
-                print('\033[31mWRITING A PARQUET FILE\033[0m')
+            # # If recording just stopped, save the data to files
+            # if self.start_recording and not self.data_recorded:
+            #     print('\033[31mWRITING A PARQUET FILE\033[0m')
 
-                # Save data frame to parquet file
-                filename = self.log_dir + f"data_{self.episode_index}_{self.index}.parquet"
+            #     # Save data frame to parquet file
+            #     filename = self.log_dir + f"data_{self.episode_index}_{self.index}.parquet"
+            #     table = pa.Table.from_pandas(self.df)
+            #     pq.write_table(table, filename)
+            #     print(f"Saved data parquet file to {filename}")
+
+            #     # Save wrist camera images
+            #     for i, img in enumerate(self.wrist_camera_array):
+            #         cv2.imwrite(f"{self.wrist_vid_dir}wrist_{self.episode_index}_{i}.png", img)
+
+            #     # Save top camera images
+            #     for i, img in enumerate(self.top_camera_array):
+            #         cv2.imwrite(f"{self.top_vid_dir}top_{self.episode_index}_{i}.png", img)
+
+            #     # Save state images
+            #     for i, img in enumerate(self.state_image_array):
+            #         cv2.imwrite(f"{self.state_vid_dir}state_{self.episode_index}_{i}.png", img)
+
+            #     print("Saved all images.")
+
+            #     self.start_recording = False
+            #     self.data_recorded = True
+
+            #     # Reset data buffers and dataframe for next episode
+            #     self.wrist_camera_array.clear()
+            #     self.top_camera_array.clear()
+            #     self.state_image_array.clear()
+            #     self.df = self.df.iloc[0:0]  # reset dataframe
+            #     self.column_index = 0
+            #     self.frame_index = 0
+            #     self.time_stamp = 0.0
+            #     self.success = False
+            #     self.done = False
+            if(self.start_recording and self.data_recorded == False):
+                print('\033[31m'+'WRITING A PARQUET FILE'+'\033[0m')
+
+                if self.episode_index <= 9:
+                    data_file_name = 'episode_00000' + str(self.episode_index) + '.parquet'
+                    video_file_name = 'episode_00000' + str(self.episode_index) + '.mp4'
+                elif 9 < self.episode_index <= 99:
+                    data_file_name = 'episode_0000' + str(self.episode_index) + '.parquet'
+                    video_file_name = 'episode_0000' + str(self.episode_index) + '.mp4'
+                elif 99 < self.episode_index <= 999:
+                    data_file_name = 'episode_000' + str(self.episode_index) + '.parquet'
+                    video_file_name = 'episode_000' + str(self.episode_index) + '.mp4'
+                elif 999 < self.episode_index <= 9999:
+                    data_file_name = 'episode_00' + str(self.episode_index) + '.parquet'
+                    video_file_name = 'episode_00' + str(self.episode_index) + '.mp4'
+                else:
+                    data_file_name = 'episode_0' + str(self.episode_index) + '.parquet'
+                    video_file_name = 'episode_0' + str(self.episode_index) + '.mp4'
+
                 table = pa.Table.from_pandas(self.df)
-                pq.write_table(table, filename)
-                print(f"Saved data parquet file to {filename}")
+                pq.write_table(table, self.log_dir + data_file_name)
+                print("The parquet file is generated!")
 
-                # Save wrist camera images
-                for i, img in enumerate(self.wrist_camera_array):
-                    cv2.imwrite(f"{self.wrist_vid_dir}wrist_{self.episode_index}_{i}.png", img)
+                
+                fourcc = cv2.VideoWriter_fourcc('m', 'p', '4', 'v')
+                out1 = cv2.VideoWriter(self.wrist_vid_dir + video_file_name, fourcc, self.Hz, (vid_W, vid_H))
+                for frame1 in self.wrist_camera_array:
+                    out1.write(frame1)
+                out1.release()
+                print("The wrist video is generated!")
+                out2 = cv2.VideoWriter(self.top_vid_dir + video_file_name, fourcc, self.Hz, (vid_W, vid_H))
+                for frame2 in self.top_camera_array:
+                    out2.write(frame2)
+                out2.release()
+                print("The top video is generated!")
+                out3 = cv2.VideoWriter(self.state_vid_dir + video_file_name, fourcc, self.Hz, (self.initial_image.shape[1], self.initial_image.shape[0]))
+                for frame3 in self.state_image_array:
+                    out3.write(frame3)
+                out3.release()
+                print("The state video is generated!")
 
-                # Save top camera images
-                for i, img in enumerate(self.top_camera_array):
-                    cv2.imwrite(f"{self.top_vid_dir}top_{self.episode_index}_{i}.png", img)
-
-                # Save state images
-                for i, img in enumerate(self.state_image_array):
-                    cv2.imwrite(f"{self.state_vid_dir}state_{self.episode_index}_{i}.png", img)
-
-                print("Saved all images.")
-
-                self.start_recording = False
                 self.data_recorded = True
 
-                # Reset data buffers and dataframe for next episode
-                self.wrist_camera_array.clear()
-                self.top_camera_array.clear()
-                self.state_image_array.clear()
-                self.df = self.df.iloc[0:0]  # reset dataframe
-                self.column_index = 0
-                self.frame_index = 0
-                self.time_stamp = 0.0
-                self.success = False
-                self.done = False
 
+
+if __name__ == '__main__':
+    rclpy.init(args=None)
+
+    get_poses_subscriber = Get_Poses_Subscriber()
+    joy_subscriber = Joy_Subscriber()
+    wrist_camera_subscriber = Wrist_Camera_Subscriber()
+    top_camera_subscriber = Top_Camera_Subscriber()
+    data_recorder = Data_Recorder()
+
+    executor = rclpy.executors.MultiThreadedExecutor()
+    executor.add_node(get_poses_subscriber)
+    executor.add_node(joy_subscriber)
+    executor.add_node(wrist_camera_subscriber)
+    executor.add_node(top_camera_subscriber)
+    executor.add_node(data_recorder)
+
+    executor_thread = threading.Thread(target=executor.spin, daemon=True)
+    executor_thread.start()
+
+    rate = get_poses_subscriber.create_rate(2)
+    try:
+        while rclpy.ok():
+            rate.sleep()
+    except KeyboardInterrupt:
+        pass
+
+    rclpy.shutdown()
+    executor_thread.join()

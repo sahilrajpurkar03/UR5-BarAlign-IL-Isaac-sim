@@ -1,6 +1,6 @@
 # CMake generated Testfile for 
 # Source directory: /opt/ros/humble/src/gtest_vendor
-# Build directory: /home/rajpurkar/Rahul/ur5_simulation/build/moveit_servo/gtest
+# Build directory: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/build/moveit_servo/gtest
 # 
 # This file includes the relevant testing commands required for 
 # testing this directory and lists subdirectories to be tested as well.

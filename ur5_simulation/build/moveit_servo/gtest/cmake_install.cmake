@@ -2,7 +2,7 @@
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/rajpurkar/Rahul/ur5_simulation/install/moveit_servo")
+  set(CMAKE_INSTALL_PREFIX "/home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/moveit_servo")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 

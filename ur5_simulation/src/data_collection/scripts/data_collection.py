@@ -152,7 +152,7 @@ class Data_Recorder(Node):
             os.makedirs(self.state_vid_dir)
 
         # image of a T shape on the table
-        self.initial_image = cv2.imread(os.environ['HOME'] + "/Rahul/ur5_simulation/images/torus_top_plane.png")
+        self.initial_image = cv2.imread(os.environ['HOME'] + "/Rahul/ur5_simulation/images/stand_top_plane.png")
         self.initial_image = cv2.rotate(self.initial_image, cv2.ROTATE_90_COUNTERCLOCKWISE)
  
         # for reward calculation
@@ -162,6 +162,7 @@ class Data_Recorder(Node):
         self.T_image = cv2.imread(os.environ['HOME'] + "/Rahul/ur5_simulation/images/stand_top_plane_filled.png")
         self.T_image = cv2.rotate(self.T_image, cv2.ROTATE_90_COUNTERCLOCKWISE)
 
+        # converting tbar_filled image to grayscale to get the area blue region (filled image)..sum of pixels
         img_gray = cv2.cvtColor(self.T_image, cv2.COLOR_BGR2GRAY)
         thr, img_th = cv2.threshold(img_gray, 100, 255, cv2.THRESH_BINARY)
         self.blue_region = cv2.bitwise_not(img_th)
@@ -197,6 +198,7 @@ class Data_Recorder(Node):
     def timer_callback(self):
         global tool_pose_xy, tbar_pose_xyw, action, wrist_camera_image, top_camera_image, record_data
         
+        # outline drawing
         image = copy.copy(self.initial_image)
 
         self.Tbar_region[:] = 0
@@ -232,12 +234,12 @@ class Data_Recorder(Node):
         cv2.fillPoly(image, [pts2_ob], (0, 0, 180))
         cv2.fillPoly(self.Tbar_region, [pts2_ob], 255)
 
-        common_part = cv2.bitwise_and(self.blue_region, self.Tbar_region)
+        common_part = cv2.bitwise_and(self.blue_region, self.Tbar_region) # find common areas
         common_part_sum = cv2.countNonZero(common_part)
         sum = common_part_sum/self.blue_region_sum
         sum_dif = sum - self.prev_sum
         self.prev_sum = sum
-
+        
         cv2.circle(image, center=(int(self.C_W + 1000*x1/self.scale), int((1000*y1-320)/self.scale)), radius=2, color=(0, 200, 0), thickness=cv2.FILLED)  
 
         img_msg = bridge.cv2_to_imgmsg(image)  

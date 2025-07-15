@@ -1,8 +1,8 @@
-# Install script for directory: /home/rajpurkar/Rahul/ur5_simulation/src/data_collection
+# Install script for directory: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/src/data_collection
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/rajpurkar/Rahul/ur5_simulation/install/data_collection")
+  set(CMAKE_INSTALL_PREFIX "/home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/data_collection")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -43,19 +43,19 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/data_collection/" TYPE DIRECTORY FILES "/home/rajpurkar/Rahul/ur5_simulation/src/data_collection/scripts")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/data_collection/" TYPE DIRECTORY FILES "/home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/src/data_collection/scripts")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/data_collection" TYPE PROGRAM FILES "/home/rajpurkar/Rahul/ur5_simulation/src/data_collection/scripts/data_collection.py")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/data_collection" TYPE PROGRAM FILES "/home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/src/data_collection/scripts/data_collection.py")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/package_run_dependencies" TYPE FILE FILES "/home/rajpurkar/Rahul/ur5_simulation/build/data_collection/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/data_collection")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/package_run_dependencies" TYPE FILE FILES "/home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/build/data_collection/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/data_collection")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/parent_prefix_path" TYPE FILE FILES "/home/rajpurkar/Rahul/ur5_simulation/build/data_collection/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/data_collection")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/parent_prefix_path" TYPE FILE FILES "/home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/build/data_collection/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/data_collection")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -63,7 +63,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/data_collection/environment" TYPE FILE FILES "/home/rajpurkar/Rahul/ur5_simulation/build/data_collection/ament_cmake_environment_hooks/ament_prefix_path.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/data_collection/environment" TYPE FILE FILES "/home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/build/data_collection/ament_cmake_environment_hooks/ament_prefix_path.dsv")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -71,42 +71,42 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/data_collection/environment" TYPE FILE FILES "/home/rajpurkar/Rahul/ur5_simulation/build/data_collection/ament_cmake_environment_hooks/path.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/data_collection/environment" TYPE FILE FILES "/home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/build/data_collection/ament_cmake_environment_hooks/path.dsv")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/data_collection" TYPE FILE FILES "/home/rajpurkar/Rahul/ur5_simulation/build/data_collection/ament_cmake_environment_hooks/local_setup.bash")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/data_collection" TYPE FILE FILES "/home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/build/data_collection/ament_cmake_environment_hooks/local_setup.bash")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/data_collection" TYPE FILE FILES "/home/rajpurkar/Rahul/ur5_simulation/build/data_collection/ament_cmake_environment_hooks/local_setup.sh")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/data_collection" TYPE FILE FILES "/home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/build/data_collection/ament_cmake_environment_hooks/local_setup.sh")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/data_collection" TYPE FILE FILES "/home/rajpurkar/Rahul/ur5_simulation/build/data_collection/ament_cmake_environment_hooks/local_setup.zsh")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/data_collection" TYPE FILE FILES "/home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/build/data_collection/ament_cmake_environment_hooks/local_setup.zsh")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/data_collection" TYPE FILE FILES "/home/rajpurkar/Rahul/ur5_simulation/build/data_collection/ament_cmake_environment_hooks/local_setup.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/data_collection" TYPE FILE FILES "/home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/build/data_collection/ament_cmake_environment_hooks/local_setup.dsv")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/data_collection" TYPE FILE FILES "/home/rajpurkar/Rahul/ur5_simulation/build/data_collection/ament_cmake_environment_hooks/package.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/data_collection" TYPE FILE FILES "/home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/build/data_collection/ament_cmake_environment_hooks/package.dsv")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/packages" TYPE FILE FILES "/home/rajpurkar/Rahul/ur5_simulation/build/data_collection/ament_cmake_index/share/ament_index/resource_index/packages/data_collection")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/packages" TYPE FILE FILES "/home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/build/data_collection/ament_cmake_index/share/ament_index/resource_index/packages/data_collection")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/data_collection/cmake" TYPE FILE FILES
-    "/home/rajpurkar/Rahul/ur5_simulation/build/data_collection/ament_cmake_core/data_collectionConfig.cmake"
-    "/home/rajpurkar/Rahul/ur5_simulation/build/data_collection/ament_cmake_core/data_collectionConfig-version.cmake"
+    "/home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/build/data_collection/ament_cmake_core/data_collectionConfig.cmake"
+    "/home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/build/data_collection/ament_cmake_core/data_collectionConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/data_collection" TYPE FILE FILES "/home/rajpurkar/Rahul/ur5_simulation/src/data_collection/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/data_collection" TYPE FILE FILES "/home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/src/data_collection/package.xml")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -117,5 +117,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/rajpurkar/Rahul/ur5_simulation/build/data_collection/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/build/data_collection/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

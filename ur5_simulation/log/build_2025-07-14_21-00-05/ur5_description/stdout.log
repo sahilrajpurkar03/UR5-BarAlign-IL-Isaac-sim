@@ -1,0 +1,64 @@
+-- The C compiler identification is GNU 11.4.0
+-- The CXX compiler identification is GNU 11.4.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/build/ur5_description
+-- Install configuration: ""
+-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/ur5_description/share/ament_index/resource_index/package_run_dependencies/ur5_description
+-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/ur5_description/share/ament_index/resource_index/parent_prefix_path/ur5_description
+-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/ur5_description/share/ur5_description/environment/ament_prefix_path.sh
+-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/ur5_description/share/ur5_description/environment/ament_prefix_path.dsv
+-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/ur5_description/share/ur5_description/environment/path.sh
+-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/ur5_description/share/ur5_description/environment/path.dsv
+-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/ur5_description/share/ur5_description/local_setup.bash
+-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/ur5_description/share/ur5_description/local_setup.sh
+-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/ur5_description/share/ur5_description/local_setup.zsh
+-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/ur5_description/share/ur5_description/local_setup.dsv
+-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/ur5_description/share/ur5_description/package.dsv
+-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/ur5_description/share/ament_index/resource_index/packages/ur5_description
+-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/ur5_description/share/ur5_description/cmake/ur5_descriptionConfig.cmake
+-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/ur5_description/share/ur5_description/cmake/ur5_descriptionConfig-version.cmake
+-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/ur5_description/share/ur5_description/package.xml
+-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/ur5_description/share/ur5_description/meshes
+-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/ur5_description/share/ur5_description/meshes/visual
+-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/ur5_description/share/ur5_description/meshes/visual/wrist1.dae
+-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/ur5_description/share/ur5_description/meshes/visual/tool_old.dae
+-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/ur5_description/share/ur5_description/meshes/visual/forearm.dae
+-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/ur5_description/share/ur5_description/meshes/visual/shoulder.dae
+-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/ur5_description/share/ur5_description/meshes/visual/base.dae
+-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/ur5_description/share/ur5_description/meshes/visual/upperarm.dae
+-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/ur5_description/share/ur5_description/meshes/visual/wrist2.dae
+-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/ur5_description/share/ur5_description/meshes/visual/ur5_stand.dae
+-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/ur5_description/share/ur5_description/meshes/visual/wrist3.dae
+-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/ur5_description/share/ur5_description/meshes/visual/tool.dae
+-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/ur5_description/share/ur5_description/meshes/collision
+-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/ur5_description/share/ur5_description/meshes/collision/upperarm.stl
+-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/ur5_description/share/ur5_description/meshes/collision/ur5_stand.stl
+-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/ur5_description/share/ur5_description/meshes/collision/forearm.stl
+-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/ur5_description/share/ur5_description/meshes/collision/wrist1.stl
+-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/ur5_description/share/ur5_description/meshes/collision/wrist3.stl
+-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/ur5_description/share/ur5_description/meshes/collision/tool.stl
+-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/ur5_description/share/ur5_description/meshes/collision/base.stl
+-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/ur5_description/share/ur5_description/meshes/collision/shoulder.stl
+-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/ur5_description/share/ur5_description/meshes/collision/wrist2.stl
+-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/ur5_description/share/ur5_description/meshes/collision/tool_old.stl
+-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/ur5_description/share/ur5_description/urdf
+-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/ur5_description/share/ur5_description/urdf/ur5.urdf
+-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/ur5_description/share/ur5_description/urdf/ur5
+-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/ur5_description/share/ur5_description/urdf/ur5/ur5.usd
+-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/ur5_description/share/ur5_description/urdf/ur5/configuration
+-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/ur5_description/share/ur5_description/urdf/ur5/configuration/ur5_sensor.usd
+-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/ur5_description/share/ur5_description/urdf/ur5/configuration/ur5_physics.usd
+-- Installing: /home/rajpurkar/Rahul/UR5-BarAlign-RL-Isaac-sim/ur5_simulation/install/ur5_description/share/ur5_description/urdf/ur5/configuration/ur5_base.usd
