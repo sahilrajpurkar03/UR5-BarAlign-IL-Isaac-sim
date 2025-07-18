@@ -219,8 +219,8 @@ class Data_Recorder(Node):
         cv2.circle(image, (tool_x_pix, tool_y_pix), self.radius, (100, 100, 100), thickness=cv2.FILLED)
 
         # Torus radii (adjust based on your object size)
-        torus_outer_radius = int(82 / self.scale)       # outer ring radius
-        ring_thickness = 28                           # thickness of the ring
+        torus_outer_radius = int(110 / self.scale)       # outer ring radius
+        ring_thickness = int(60 / self.scale)                            # thickness of the ring
         torus_inner_radius = torus_outer_radius - ring_thickness
 
         if torus_inner_radius < 0:
@@ -243,9 +243,9 @@ class Data_Recorder(Node):
         torus_sum = cv2.countNonZero(self.torus_region)
 
         # for DEBUG
-        print(f"[DEBUG] Common overlapping area (non-zero pixels): {common_part_sum}")
-        print(f"[DEBUG] Blue area (non-zero pixels): {self.blue_region_sum}")
-        print(f"[DEBUG] Torus area (non-zero pixels): {torus_sum}")
+        # print(f"[DEBUG] Common overlapping area (non-zero pixels): {common_part_sum}")
+        # print(f"[DEBUG] Blue area (non-zero pixels): {self.blue_region_sum}")
+        # print(f"[DEBUG] Torus area (non-zero pixels): {torus_sum}")
 
         # Save the mask to desktop (for debug)
         # desktop_path = os.path.join(os.path.expanduser("~"), "Desktop")
@@ -264,7 +264,9 @@ class Data_Recorder(Node):
         self.prev_sum = overlap_ratio
 
         # Draw torus ring and center with matching thickness to mask ring thickness
-        cv2.circle(image, (torus_x_pix, torus_y_pix), torus_outer_radius, (0, 0, 180), thickness=ring_thickness)
+        torus_visual_outer_radius = int(85 / self.scale)
+        torus_visual_thickness = int(55 / self.scale)
+        cv2.circle(image, (torus_x_pix, torus_y_pix),  torus_visual_outer_radius, (0, 0, 180), thickness=torus_visual_thickness )
         cv2.circle(image, (torus_x_pix, torus_y_pix), 2, (0, 200, 0), thickness=cv2.FILLED)
 
         # Publish image to ROS
