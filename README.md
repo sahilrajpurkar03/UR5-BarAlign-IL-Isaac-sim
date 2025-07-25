@@ -1,4 +1,4 @@
-# UR5-BarAlign-RL-Isaac-sim 
+# UR5-BarAlign-RL-Isaac-sim ..
 ![Result](docs/ur5.gif)
 
 ## Prerequisites
