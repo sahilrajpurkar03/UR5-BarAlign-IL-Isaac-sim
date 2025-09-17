@@ -1,4 +1,4 @@
-# UR5-BarAlign-IL-Isaac-sim ..
+# UR5-Object-Alignment
 ![Result](docs/ur5.gif)
 
 ## Prerequisites
